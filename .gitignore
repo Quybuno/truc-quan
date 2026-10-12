@@ -1,0 +1,13 @@
+# Python environment and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Temporary builds, validation copies and local runtime state
+tmp/
+latex/build/
+outputs/buoc_6/test-tmp/
+outputs/buoc_6/runtime/
+debug.log

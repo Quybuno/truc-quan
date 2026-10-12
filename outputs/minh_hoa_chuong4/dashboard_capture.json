@@ -1,0 +1,44 @@
+{
+  "source": "outputs/minh_hoa_chuong4/captures/dashboard_a400_kscatch_original.jpg",
+  "source_sha256": "2e65405bd3b5043ef29e431bcfbfa13205d9d11c2a44197b3cf548044acb5f25",
+  "image": "latex/figures/chuong4/dashboard_a400_kscatch.png",
+  "image_sha256": "19e598dbaec37f2910cd61f960226041474755edc169d21bce6cbe02216284d6",
+  "capture_tool": "computer-use @oai/sky.get_window_state",
+  "browser": "Microsoft Edge",
+  "url": "http://127.0.0.1:8510",
+  "captured_at": "2026-10-12T21:56:59.032287+07:00",
+  "source_pixels": [
+    1346,
+    1025
+  ],
+  "crop_bounds_xyxy": [
+    395,
+    235,
+    1258,
+    815
+  ],
+  "output_pixels": [
+    863,
+    580
+  ],
+  "crop_only": true,
+  "filters_visible": {
+    "Steel_Type": [
+      "A400"
+    ],
+    "Fault_Type_Clean": [
+      "K_Scatch"
+    ],
+    "Steel_Plate_Thickness": [
+      40,
+      300
+    ]
+  },
+  "kpi_visible": {
+    "N": "390",
+    "Labels": "1",
+    "Median_Area": "6.281,5",
+    "Median_Thickness": "40,0"
+  },
+  "independent_kpi_check": "outputs/buoc_6/test_results.json"
+}

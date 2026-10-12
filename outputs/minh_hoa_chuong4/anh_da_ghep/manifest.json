@@ -1,0 +1,47 @@
+{
+  "dataset_sha256": "b5455e1a8d9482fcd8caaaf75d834a424e7cff0f66343a271c6796761e52d45e",
+  "figures": [
+    {
+      "figure": "ch4_01_pareto",
+      "image": "figures/chuong4/ch4_01_pareto.png",
+      "note": "Mẫu số: 1.941 bản ghi lỗi. Đường nét đứt: mốc 80% trên trục lũy kế."
+    },
+    {
+      "figure": "ch4_02_thep_so_luong",
+      "image": "figures/chuong4/ch4_02_thep_so_luong.png",
+      "note": "Màu nhấn: K_Scatch; xanh: Z_Scratch và Stains. Họa tiết phân biệt dòng thép."
+    },
+    {
+      "figure": "ch4_03_thep_ty_trong",
+      "image": "figures/chuong4/ch4_03_thep_ty_trong.png",
+      "note": "Mẫu số: A300 = 777; A400 = 1.164. Tỷ trọng mô tả cơ cấu của các bản ghi lỗi."
+    },
+    {
+      "figure": "ch4_04_scatter_do_sang",
+      "image": "figures/chuong4/ch4_04_scatter_do_sang.png",
+      "note": "Giữ toàn bộ quan sát; độ sáng tối thiểu và tối đa của các nhóm vẫn có vùng chồng lấn."
+    },
+    {
+      "figure": "ch4_05_iqr_do_sang",
+      "image": "figures/chuong4/ch4_05_iqr_do_sang.png",
+      "note": "Đoạn: P25-P75; chấm: trung vị. Chỉ mô tả 50% trung tâm; toàn phạm vi vẫn chồng lấn."
+    },
+    {
+      "figure": "ch4_06_do_day_theo_thep",
+      "image": "figures/chuong4/ch4_06_do_day_theo_thep.png",
+      "note": "Hộp: P25-P75; râu: 1,5 IQR trong nhóm; điểm rời: ngoài râu. ♦: nhóm chỉ có một quan sát."
+    },
+    {
+      "figure": "ch4_07_boxplot_dien_tich",
+      "image": "figures/chuong4/ch4_07_boxplot_dien_tich.png",
+      "note": "Phân vị và râu tính trên diện tích gốc. Trục log chỉ thay hiển thị; giữ mọi điểm ngoài râu."
+    },
+    {
+      "figure": "ch4_08_truoc_sau_xoa_co",
+      "image": "figures/chuong4/ch4_08_truoc_sau_xoa_co.png",
+      "note": "Kịch bản giả định để đối chiếu; dữ liệu phân tích thực tế vẫn giữ toàn bộ 1.941 bản ghi."
+    }
+  ],
+  "inserted": 8,
+  "pending_real_dashboard_captures": 2
+}

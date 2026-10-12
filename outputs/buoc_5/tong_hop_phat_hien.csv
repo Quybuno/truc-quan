@@ -1,0 +1,8 @@
+﻿Cau_hoi,Phat_hien,Bang_chung,Gioi_han,Muc_do_chac_chan
+Q0,"1,941 bản ghi; 52,407 ô đặc trưng có 0 lệch UCI; nhãn khớp",Kiểm tra hoàn thành bước 3; đối chiếu UCI,Đạt cho phân tích bộ dữ liệu hiện tại; phụ thuộc độ đúng của nguồn và khóa ghép,A — mô tả kiểm chứng được trong mẫu
+Q1,Ba nhãn đầu 75.53%; cỡ mẫu lớn nhất/nhỏ nhất=12.24,Hình 1–2; co_cau_loi,Mất cân bằng trong tập lỗi; chưa xếp hạng thiệt hại,A — mô tả kiểm chứng được trong mẫu
+Q2,"Vượt mốc 90%: K_Scatch, Z_Scratch, Stains",Hình 3–4; tap_trung_theo_nhan,Tập trung theo dòng thép trong mẫu; thiếu sản lượng và biến vận hành,A — mô tả kiểm chứng được trong mẫu
+Q3,Pearson=0.4296; IQR Min tách mọi nhãn khác: K_Scatch,Hình 5; dau_hieu_do_sang,Dấu hiệu ở 50% trung tâm; chưa xác nhận phân loại trên toàn bộ điểm,A — mô tả kiểm chứng được trong mẫu
+Q4,"K_Scatch: trung vị 40, SD 2.20; 76.30% toàn tập ở 40–80",Hình 6; do_day_theo_nhan_thep,Đọc kèm dòng thép và N; N=1 không so sánh độ phân tán; chưa có đơn vị,A — mô tả kiểm chứng được trong mẫu
+Q5,"Trung vị K_Scatch=6,281.0; Stains=16.5",Hình 7; thong_ke_dien_tich,Khác biệt quy mô trong mẫu; diện tích chưa đo mức thiệt hại,A — mô tả kiểm chứng được trong mẫu
+Q6,Xuất−nhập âm 9/9 năm; năm cuối -3.91 tỷ USD,Hình 8–9; thuong_mai_theo_nam,Bối cảnh riêng; trị giá danh nghĩa và phiên bản HS chưa quy đổi,A — mô tả kiểm chứng được trong mẫu

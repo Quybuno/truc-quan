@@ -1,0 +1,15 @@
+﻿Fault_Type_Clean,Steel_Type,N,Median
+Other_Faults,A300,266,80.0
+Bumps,A300,279,70.0
+K_Scatch,A300,1,80.0
+Z_Scratch,A300,172,70.0
+Pastry,A300,49,80.0
+Stains,A300,1,100.0
+Dirtiness,A300,9,69.0
+Other_Faults,A400,407,50.0
+Bumps,A400,123,40.0
+K_Scatch,A400,390,40.0
+Z_Scratch,A400,18,175.0
+Pastry,A400,109,90.0
+Stains,A400,71,50.0
+Dirtiness,A400,46,100.0

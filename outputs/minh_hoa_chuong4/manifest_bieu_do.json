@@ -1,0 +1,140 @@
+{
+  "input": "data\\analysis\\loi_thep_phan_tich.csv",
+  "N": 1941,
+  "original_files_unchanged": true,
+  "original_file_sha256": {
+    "data\\analysis\\loi_thep_phan_tich.csv": "b5455e1a8d9482fcd8caaaf75d834a424e7cff0f66343a271c6796761e52d45e",
+    "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb": "c9e80875acf825431659bd851358af17531cd49198f6df4f624efd9469e7dab6",
+    "data\\raw\\practice\\data_chua_sach_ko_sua.xlsx": "2973556203c6b4ddd07bbe523ba9e556c10892bd7e6e3f576efac3032b454189",
+    "data\\raw\\uci\\steel_plates_faults_original.csv": "883ed09b2a46fcde7144dd173092c645aacb45499dea703d00228d3ddc3c60de",
+    "outputs\\buoc_5\\artifact_manifest.csv": "4aa80a7165462ff1bfcf50e95aae1d5d804ec0c8afb1164d510479abb17c2925",
+    "outputs\\buoc_5\\co_cau_loi.csv": "1ef2e85c56dc9c932400b769cb2c728e031bfa842189e281be38fa764f726832",
+    "outputs\\buoc_5\\co_dien_tich_theo_nhan.csv": "6b89518c6553f1bd87ce6a0b0bd31e4996045e7c71bf8380314667a970feb054",
+    "outputs\\buoc_5\\danh_muc_hinh.csv": "7187d24e287bbaee4a3a724ea33ac121c4bfd1c589f040a25175ab84e12b890a",
+    "outputs\\buoc_5\\dau_hieu_do_sang.csv": "2b38183319d90a74400051fe690303bcb83a4ba4d9c94e55f8ec5e0e09a62203",
+    "outputs\\buoc_5\\do_day_theo_nhan_thep.csv": "299e4a1f1baa1f464ad843995b61aeb50d8be33a59c0f24d5cdcee123863aa85",
+    "outputs\\buoc_5\\do_sang_vung.csv": "9fb1adb87d5ef3de8da97209f67a091c1b259fca443b4772b69a7515b931f6ed",
+    "outputs\\buoc_5\\ke_hoach_kiem_chung.csv": "da511d607678cc7e79d297765c0649f49253da764c09aff39301949d25710808",
+    "outputs\\buoc_5\\kiem_tra_hoan_thanh.csv": "6543d559f7ce7c06f0b0eb09efd78d8acf7a078fa8e8f30522331a11a6de0677",
+    "outputs\\buoc_5\\loi_theo_dong_thep.csv": "fbf8d29730076a29915aa51ac1f648af41b9c09848e9fb628fa10ca0eafd8075",
+    "outputs\\buoc_5\\nhan_dinh_va_gioi_han.csv": "e13adab9d607500fd982270bf52ed3214a71033de273e2e9d2d6cca0675659c7",
+    "outputs\\buoc_5\\tap_trung_theo_nhan.csv": "851895a2ae4d3ef1b5cb6eb9f79a0c4b843e684a1aad16bd22fb9a6c6fe1701c",
+    "outputs\\buoc_5\\thong_ke_dien_tich.csv": "e68b5401e2f2a7582116f63d1dc91eaea70cd95b1764a4d92a330089a91572ac",
+    "outputs\\buoc_5\\thong_ke_do_day.csv": "d2b7cc262804ce4369f352e629e10d923e96805d8ba270f1f9d43352b8abdfaf",
+    "outputs\\buoc_5\\thong_ke_do_sang.csv": "809946af1ec203bfd9a6cb64cb43def6d912750fcf6ec61469db26673b252c2c",
+    "outputs\\buoc_5\\thuong_mai_theo_nam.csv": "9d26341bb9dd84080174f37a01c12b9523293cfa924d4be206664bd4017470bb",
+    "outputs\\buoc_5\\tieu_chi_cau_hoi.csv": "b06a7621a0e6a888724463de9d982dc980d7a12776127f1e8702a836d3623d10",
+    "outputs\\buoc_5\\tong_hop_phat_hien.csv": "3113e51b8b0451d1e90dfe06e1e51ec727ec4caf4eb36ca3ba970c8087777443",
+    "outputs\\buoc_5\\tuong_quan_do_sang.csv": "ac3328901ae7e134555caf64218ec72f748f8ce184d5259706937d2b2d78a839",
+    "outputs\\buoc_5\\hinh\\01_co_cau_loi.png": "8aa597c7aa34b577dd465c9b7a0e497cc779fa8e53d983e4ea5b0ee552fea125",
+    "outputs\\buoc_5\\hinh\\01_co_cau_loi.svg": "5d59ec99b7ed0c54dec78f71b6da30d43c62eeac0bff5e6c737a649d218998b0",
+    "outputs\\buoc_5\\hinh\\02_pareto_loi.png": "69c2a136503dc2fa75bf06c82eca6333b4c019fc7f4fb92260c07fe2a1937cac",
+    "outputs\\buoc_5\\hinh\\02_pareto_loi.svg": "873ce0cd8d772ff629649552ddeab242cce4bca88ad15917c74aa9c925f869e5",
+    "outputs\\buoc_5\\hinh\\03_loi_theo_thep_so_luong.png": "1145e4fbb25807228c35146174e99977e0587808ac204cbc1d2073d10206aedb",
+    "outputs\\buoc_5\\hinh\\03_loi_theo_thep_so_luong.svg": "48af12dd3492a1df9ca87288893d6c4f2645795c3455d4b178c9440b1e032cab",
+    "outputs\\buoc_5\\hinh\\04_loi_theo_thep_ty_trong.png": "286728c72518ec8f8ddda93c7165c328433c575d0f789890bf55bb6c714ac549",
+    "outputs\\buoc_5\\hinh\\04_loi_theo_thep_ty_trong.svg": "306e117cc3e8f36d8dabcb0b9726ec5ea57baddc1c985df6b1b6e44e008f41be",
+    "outputs\\buoc_5\\hinh\\05_scatter_do_sang.png": "cba4ecb56b0c2c4311da25e738d7f247ab1c13d58ff1c6373973a4a736360519",
+    "outputs\\buoc_5\\hinh\\05_scatter_do_sang.svg": "85d370c622f1e1b999668e84dfacb9e29f731eeceec801373d4d89239131bb4c",
+    "outputs\\buoc_5\\hinh\\06_boxplot_do_day.png": "707368a082d72488718a9d318c52c30d9552da4f310bb10a8e22a8c21633389e",
+    "outputs\\buoc_5\\hinh\\06_boxplot_do_day.svg": "f3bd44c1997239bceac31ceaa5300d055cc68decc3f6763c99da317dfa66e198",
+    "outputs\\buoc_5\\hinh\\07_boxplot_dien_tich_log.png": "fdd3ede4d571b4b3a9b808f74e460048bb0da7981f2d6308ca9ef74953885b3c",
+    "outputs\\buoc_5\\hinh\\07_boxplot_dien_tich_log.svg": "9bef4c25fee14dec3d37c1c27434be7d5c764242fda8f91b5dc957b1ec0782d3",
+    "outputs\\buoc_5\\hinh\\08_xuat_nhap_khau.png": "6e2291813ca9055bbf32f6ee5badcf4f3b65c21e53df0f062f98c0d8cb6c2ee0",
+    "outputs\\buoc_5\\hinh\\08_xuat_nhap_khau.svg": "f54736253e1c784055e9f86ab570cb29d604ec9da1e6140c8f27dd22f095bd2a",
+    "outputs\\buoc_5\\hinh\\09_chenh_lech_thuong_mai.png": "fa3c9836c989d20664d9197a9e9698360937535631002d722f53f646177921da",
+    "outputs\\buoc_5\\hinh\\09_chenh_lech_thuong_mai.svg": "2acf93324acbd8ae61af9dc7076346aadbe46c57d3c457c3f948613d415c78ce",
+    "latex\\figures\\chuong3\\01_du_lieu_tho.png": "6378f4d690afc400bcbe5ee29ec7537ffcd53d0b868e2981c15077f64e8f74e2",
+    "latex\\figures\\chuong3\\02_chuan_hoa.png": "d006fb5303ff48d88a68b2c7e742560d768bb168f4e924237d0dc5e641340144",
+    "latex\\figures\\chuong3\\03_loai_trung.png": "c878c8077a5bfbf0f981220be6e59667c113ae08b01495e614a81e4f1398c016",
+    "latex\\figures\\chuong3\\04_kiem_tra_noi_tai.png": "07df0003d1648a8f1ce085370c861b2087fe4a2176475aa71062feda92b17781",
+    "latex\\figures\\chuong3\\05_khoi_phuc_uci.png": "6f3316b8343e98bbf664363f8bb33a6c003c87db7d305f4adfb4d40cfa01c76f",
+    "latex\\figures\\chuong3\\06_du_lieu_phan_tich.png": "95a8ca688d188fff24c4e6a3626c5d65e92a5cbcc5fecf80582f996f8504a1d4",
+    "latex\\figures\\chuong3\\07_pareto_loi.png": "b7fbcb4de62b019035bff7c52e13a3844d83839a6548a0f7c0e5827b28988368",
+    "latex\\figures\\chuong3\\07_pareto_loi.svg": "537936441ed22d2a239470fb3eaa5d6599bb1d416b2f599b6ee7db178ea2615b",
+    "latex\\figures\\chuong3\\08_scatter_do_sang.png": "745fab7c0cf7811bbe286ac267d4e8a7af2a5f6e63df7b5d8f9cd49a181c20b7",
+    "latex\\figures\\chuong3\\08_scatter_do_sang.svg": "186032a9abb113564eb03b4fe9a3ec847ed597b70254709e15d6dfd13a3bbab7",
+    "latex\\figures\\chuong3\\09_boxplot_dien_tich_log.png": "a1741694ae9dbccd7e6cfaa0a0879f8b351fca2f8e1eaf03618bd92a22fb56e4",
+    "latex\\figures\\chuong3\\09_boxplot_dien_tich_log.svg": "6f629fe4908f447bdcd1746ad8e6a4ab003e7ff69ec8ef27a63cec636bbcd112"
+  },
+  "steel_sample_sizes": {
+    "A400": 1164,
+    "A300": 777
+  },
+  "quantile_interpolation": "linear",
+  "png_dpi": 300,
+  "charts": [
+    {
+      "name": "01_co_cau_loi",
+      "question": "Q1",
+      "files": [
+        "latex\\figures\\chuong4\\01_co_cau_loi.png",
+        "latex\\figures\\chuong4\\01_co_cau_loi.svg"
+      ],
+      "data": "outputs\\minh_hoa_chuong4\\01_co_cau_loi.csv",
+      "formula": "Count by label; Percent = Count / 1941 * 100",
+      "scope": "Nguồn: bảng lỗi đã đối chiếu UCI | Mẫu số: 1.941 bản ghi lỗi; chưa có số sản phẩm đạt chất lượng.",
+      "embedded_figure_number": false
+    },
+    {
+      "name": "02_loi_theo_thep_so_luong",
+      "question": "Q2",
+      "files": [
+        "latex\\figures\\chuong4\\02_loi_theo_thep_so_luong.png",
+        "latex\\figures\\chuong4\\02_loi_theo_thep_so_luong.svg"
+      ],
+      "data": "outputs\\minh_hoa_chuong4\\02_loi_theo_thep_so_luong.csv",
+      "formula": "Count = cross-tab of defect label and steel type",
+      "scope": "Nguồn: bảng lỗi đã đối chiếu UCI | n=1.941; màu: nhãn lỗi, họa tiết: dòng thép.",
+      "embedded_figure_number": false
+    },
+    {
+      "name": "03_co_cau_trong_dong_thep",
+      "question": "Q2",
+      "files": [
+        "latex\\figures\\chuong4\\03_co_cau_trong_dong_thep.png",
+        "latex\\figures\\chuong4\\03_co_cau_trong_dong_thep.svg"
+      ],
+      "data": "outputs\\minh_hoa_chuong4\\03_co_cau_trong_dong_thep.csv",
+      "formula": "Percent within steel = cross-tab count / number of defect records in that steel type * 100",
+      "scope": "Mẫu số: A300=777; A400=1.164 bản ghi lỗi. Mỗi cột=100%; phần dưới 5% không in nhãn.",
+      "embedded_figure_number": false
+    },
+    {
+      "name": "04_iqr_do_sang_toi_thieu",
+      "question": "Q3",
+      "files": [
+        "latex\\figures\\chuong4\\04_iqr_do_sang_toi_thieu.png",
+        "latex\\figures\\chuong4\\04_iqr_do_sang_toi_thieu.svg"
+      ],
+      "data": "outputs\\minh_hoa_chuong4\\04_iqr_do_sang_toi_thieu.csv",
+      "formula": "Linear quantiles at p=.25 and .75, and median; labels ordered by median ascending",
+      "scope": "n=1.941 | Đoạn màu: P25–P75; chấm: trung vị. Khoảng này chỉ mô tả 50% trung tâm mỗi nhãn.",
+      "embedded_figure_number": false
+    },
+    {
+      "name": "05_do_day_theo_nhan_va_thep",
+      "question": "Q4",
+      "files": [
+        "latex\\figures\\chuong4\\05_do_day_theo_nhan_va_thep.png",
+        "latex\\figures\\chuong4\\05_do_day_theo_nhan_va_thep.svg"
+      ],
+      "data": "outputs\\minh_hoa_chuong4\\05_do_day_theo_nhan_va_thep.csv",
+      "formula": "Separate raw-scale boxplots by label × steel type; whiskers 1.5 IQR; singleton groups drawn as diamonds",
+      "scope": "Hộp: P25–P75; râu: 1,5 IQR trong nhóm. ♦: nhóm n=1, không so sánh độ phân tán. Giữ mọi bản ghi.",
+      "embedded_figure_number": false
+    },
+    {
+      "name": "06_iqr_dien_tich",
+      "question": "Q5",
+      "files": [
+        "latex\\figures\\chuong4\\06_iqr_dien_tich.png",
+        "latex\\figures\\chuong4\\06_iqr_dien_tich.svg"
+      ],
+      "data": "outputs\\minh_hoa_chuong4\\06_iqr_dien_tich.csv",
+      "formula": "Linear original-scale quantiles at p=.25 and .75, median; display x-axis logarithmic base 10",
+      "scope": "n=1.941 | Đoạn màu: P25–P75; chấm: trung vị. Thống kê tính trên thang gốc; trục log chỉ để hiển thị.",
+      "embedded_figure_number": false
+    }
+  ]
+}

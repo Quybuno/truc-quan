@@ -1,0 +1,8 @@
+﻿Mã,Câu hỏi,Nguồn,Biến cần dùng,Phương pháp,Đầu ra,Thực hiện ở
+Q0,Dữ liệu có đủ tin cậy để phân tích không?,Excel thực hành và UCI,"27 đặc trưng, nhãn, tọa độ","Kiểm tra thiếu, trùng, logic và đối chiếu","Bảng chất lượng, nhật ký và đối chiếu",Bước 3; tổng hợp bước 5
+Q1,Bảy loại lỗi phân bố như thế nào?,Lỗi thép sạch,Fault_Type_Clean,"Số đếm, tỷ trọng và lũy kế","Thanh ngang, Pareto và bảng cơ cấu",Bước 4–5
+Q2,Nhãn nào tập trung trên một dòng thép; cơ cấu hai dòng khác nhau ra sao?,Lỗi thép sạch,Nhãn và hai cờ dòng thép,Bảng chéo; tỷ trọng trong từng nhãn và dòng thép,"Cột nhóm, cột chồng 100% và bảng tập trung",Bước 4–5
+Q3,Độ sáng cho thấy dấu hiệu phân tách nhãn nào?,Lỗi thép sạch,"Minimum_of_Luminosity, Maximum_of_Luminosity, nhãn","Scatter, Pearson và IQR theo nhãn",Scatter và bảng dấu hiệu phân tách,Bước 4–5
+Q4,Độ dày khác nhau thế nào theo nhãn và dòng thép?,Lỗi thép sạch,"Steel_Plate_Thickness, nhãn, dòng thép","N, trung vị, IQR và độ lệch chuẩn mẫu",Boxplot và bảng nhãn × dòng thép,Bước 4–5
+Q5,Diện tích khác nhau thế nào giữa các loại lỗi?,Lỗi thép sạch,"Pixels_Areas, nhãn","N, trung vị, IQR và cờ diện tích",Boxplot diện tích trên trục log,Bước 4–5
+Q6,Xuất nhập khẩu sắt thép Việt Nam thay đổi thế nào qua các năm?,UN Comtrade,"Year, flowCode, primaryValue, classificationCode","Trị giá, tăng trưởng và chênh lệch",Đường thương mại và cột chênh lệch,Bước 4–5

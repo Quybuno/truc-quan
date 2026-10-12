@@ -1,0 +1,11 @@
+﻿Kiem_tra,Don_vi_dem,So_truong_hop,Pham_vi_kiem_tra,Dien_giai
+"Ô thiếu trong 27 đặc trưng, trước loại trùng",ô,70,52947,Phát hiện bằng kiểm tra thiếu; chưa xác định giá trị cần điền.
+Chuyển đổi kiểu số thất bại,ô,0,52947,Chuỗi không trống nhưng không chuyển được thành số; không gồm ô vốn thiếu.
+Biểu diễn nhãn gốc,biểu diễn,28,1961,Số cách biểu diễn; không phải số lỗi hoặc số nhãn ngữ nghĩa.
+Dòng trùng theo tiêu chí chuẩn hóa,dòng,20,1961,27 đặc trưng + ngày gốc + nhãn chuẩn; giữ dòng đầu.
+Ô thiếu sau loại trùng,ô,67,52407,Tập bản ghi dùng cho kiểm tra trước khôi phục.
+Quan hệ nội tại: Empty_Index,ô,10,1911,Quan hệ làm việc đã kiểm chứng trong notebook; kiểm tra trước điền/sửa; không khẳng định định nghĩa chính thức UCI.
+Quan hệ nội tại: Log_Y_Index,ô,6,1937,Quan hệ làm việc đã kiểm chứng trong notebook; kiểm tra trước điền/sửa; không khẳng định định nghĩa chính thức UCI.
+Quan hệ nội tại: LogOfAreas,ô,0,1911,Quan hệ làm việc đã kiểm chứng trong notebook; kiểm tra trước điền/sửa; không khẳng định định nghĩa chính thức UCI.
+Quan hệ nội tại: Orientation_Index,ô,0,1937,Quan hệ làm việc đã kiểm chứng trong notebook; kiểm tra trước điền/sửa; không khẳng định định nghĩa chính thức UCI.
+"Empty_Index ngoài [0, 1]",ô,10,1941,Ràng buộc theo công thức làm việc; có thể trùng ô đã gắn cờ bởi quan hệ nội tại.

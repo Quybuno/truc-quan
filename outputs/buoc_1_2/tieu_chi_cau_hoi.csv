@@ -1,0 +1,8 @@
+﻿Cau_hoi,Tieu_chi_danh_gia,Huong_su_dung_ket_qua
+Q0,Không thiếu đặc trưng; khóa duy nhất; nhãn và 27 biến có 0 ô lệch UCI; logic đạt,Đạt: phân tích; chưa đạt: xử lý và kiểm tra lại trước khi xuất bảng
+Q1,"Đọc thứ hạng, tỷ trọng ba nhãn đầu, lũy kế 80% và tỷ số cỡ mẫu lớn nhất/nhỏ nhất","Mất cân bằng: giữ cỡ mẫu, kiểm tra nhãn gộp; nếu mô hình hóa sau này dùng F1 từng lớp/macro"
+Q2,Tập trung khi trên 90% bản ghi của một nhãn nằm ở cùng một dòng thép,Vượt mốc: kiểm chứng riêng tổ hợp nhãn–dòng thép; không vượt: khảo sát cả hai dòng
+Q3,IQR của Min không chồng lấn với mọi nhãn khác là dấu hiệu phân tách trung tâm; xem cả scatter và Max,Có dấu hiệu: ưu tiên đặc trưng để kiểm chứng độc lập; còn chồng lấn: cần thêm đặc trưng
+Q4,"So sánh N, trung vị, IQR, SD theo nhãn và dòng thép; N=1 chỉ mô tả bản ghi",Có tập trung: kiểm tra tổ hợp dòng thép–độ dày; chồng lấn: giữ nhiều chiều khi mô tả
+Q5,"So sánh trung vị, IQR và điểm cực đoan; trục log chỉ đổi hiển thị; giữ bản ghi khớp nguồn",Khác biệt quy mô: khảo sát kích thước và nhãn; chồng lấn: diện tích đơn lẻ chưa đủ
+Q6,Dấu xuất−nhập so với 0; cực trị và tăng trưởng từng năm đủ dữ liệu; đánh dấu đổi HS,Đọc chiều biến động; khi HS thay đổi phải đối chiếu phân loại trước khi giải thích

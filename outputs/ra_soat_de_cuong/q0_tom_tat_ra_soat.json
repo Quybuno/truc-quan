@@ -1,0 +1,12 @@
+{
+  "audit_stage": "after normalization and deduplication, before UCI value restoration",
+  "raw_rows": 1961,
+  "retained_rows": 1941,
+  "intrinsic_formula_flagged_cells": 16,
+  "cells_changed_using_uci_in_existing_notebook": 16,
+  "overlap_flagged_then_changed_using_uci": 16,
+  "changed_using_uci_not_flagged_by_these_intrinsic_rules": 0,
+  "intrinsic_flags_not_in_existing_repair_log": 0,
+  "notebook_status": "Supplementary audit; current notebook checks these formulas after restoration.",
+  "sources_unchanged": true
+}

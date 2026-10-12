@@ -1,0 +1,8 @@
+﻿Truong,Cong_thuc,Pham_vi_don_vi,Muc_dich
+Fault_Type_Clean,Ánh xạ nhãn ở bước 3,7 nhãn,Nhóm lỗi Q1–Q5; dùng lại
+Steel_Type,A300 nếu cờ A300=1; A400 nếu cờ A400=1,A300/A400,So sánh dòng thép Q2
+X_Range,X_Maximum − X_Minimum,Dương; đơn vị chưa công bố,Kích thước khung bao theo X
+Y_Range,Y_Maximum − Y_Minimum,Dương; đơn vị chưa công bố,Kích thước khung bao theo Y
+Luminosity_Range,Maximum_of_Luminosity − Minimum_of_Luminosity,Không âm; theo thang nguồn,Khoảng độ sáng Q3
+Log_Pixels_Areas,"log10(Pixels_Areas), diện tích > 0",Log cơ số 10,Hiển thị diện tích lệch mạnh Q5
+Area_Outlier_Flag,"Diện tích ngoài [Q1−1,5IQR; Q3+1,5IQR]",Boolean,"Gắn cờ, không xóa; dùng lại bước 3"

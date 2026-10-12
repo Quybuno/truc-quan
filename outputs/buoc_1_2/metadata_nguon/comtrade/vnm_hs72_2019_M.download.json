@@ -1,0 +1,20 @@
+{
+  "source_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=704&period=2019&cmdCode=72&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500&includeDesc=true",
+  "resolved_url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=704&period=2019&cmdCode=72&flowCode=M&partnerCode=0&partner2Code=0&customsCode=C00&motCode=0&maxRecords=500&includeDesc=true",
+  "params": {
+    "reporterCode": 704,
+    "period": "2019",
+    "cmdCode": "72",
+    "flowCode": "M",
+    "partnerCode": 0,
+    "partner2Code": 0,
+    "customsCode": "C00",
+    "motCode": 0,
+    "maxRecords": 500,
+    "includeDesc": "true"
+  },
+  "http_status": 200,
+  "retrieved_at": "2026-10-07T21:45:28+07:00",
+  "sha256": "17cba4736d17cc816b017705854453179f24f1ea403caf66c49e1133be21d7f5",
+  "size_bytes": 997
+}

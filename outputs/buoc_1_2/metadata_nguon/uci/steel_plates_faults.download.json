@@ -1,0 +1,9 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/198/steel+plates+faults.zip",
+  "resolved_url": "https://archive.ics.uci.edu/static/public/198/steel+plates+faults.zip",
+  "params": {},
+  "http_status": 200,
+  "retrieved_at": "2026-10-07T21:44:46+07:00",
+  "sha256": "cb8eb9859198b63f053e443513036b401746fa517ef58bd17c846c6741c93919",
+  "size_bytes": 100890
+}

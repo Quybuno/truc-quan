@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "executed_code_cells": 59,
+  "notebook_errors": 0,
+  "fault_rows": 1941,
+  "fault_columns": 41,
+  "fault_structure_rows": 7,
+  "fault_by_steel_rows": 14,
+  "feature_statistics_rows": 28,
+  "trade_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "hs_change_years": [
+    2018,
+    2022
+  ],
+  "missing_year_and_zero_denominator_checks": "passed",
+  "clean_input_hashes_unchanged": true,
+  "raw_manifest_hashes_unchanged": true,
+  "raw_manifest_files_checked": 26
+}

@@ -1,0 +1,4 @@
+﻿Source_Row,Field,Before,Type_before,After,Type_after
+10,X_Perimeter,15,str,15.0,numeric
+1331,X_Perimeter,34,str,34.0,numeric
+7,Pixels_Areas,,str,,missing

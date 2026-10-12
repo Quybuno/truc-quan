@@ -1,0 +1,132 @@
+{
+  "notebook_sha256": "70560ab7e9bac60487e4324b489eabf81f1e0acd217141f3550b4819ce9db10f",
+  "figure_count": 7,
+  "figures": [
+    {
+      "figure_name": "01_co_cau_loi",
+      "chapter_figure_number": 1,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 142,
+      "cell_id": "30613375",
+      "execution_count": 70,
+      "notebook_section": "5.2. Phân tích cơ cấu lỗi — Q1",
+      "notebook_figure_heading": "Hình 1. Số lượng và tỷ trọng từng nhãn",
+      "latex_image": "figures/chuong4/notebook_01_co_cau_loi.png",
+      "format": "image/png",
+      "pixel_size": [
+        1186,
+        682
+      ],
+      "sha256": "9c63627b1a4f336b952959faa20ca7bf4485f2ff4144fb552bf3c3aa3d079f37",
+      "exact_saved_notebook_output": true
+    },
+    {
+      "figure_name": "02_pareto_loi",
+      "chapter_figure_number": 2,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 146,
+      "cell_id": "54576183",
+      "execution_count": 73,
+      "notebook_section": "5.2. Phân tích cơ cấu lỗi — Q1",
+      "notebook_figure_heading": "Hình 2. Pareto và mức tập trung của số bản ghi",
+      "latex_image": "figures/chuong4/notebook_02_pareto_loi.png",
+      "format": "image/png",
+      "pixel_size": [
+        1186,
+        674
+      ],
+      "sha256": "2e821c9d6fa331b4a741a81b7ac8d83a091885c8af4be0db5b0f98a09cb83d5f",
+      "exact_saved_notebook_output": true
+    },
+    {
+      "figure_name": "03_loi_theo_thep_so_luong",
+      "chapter_figure_number": 3,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 150,
+      "cell_id": "446c270c",
+      "execution_count": 76,
+      "notebook_section": "5.3. So sánh theo dòng thép — Q2",
+      "notebook_figure_heading": "Hình 3. So sánh số lượng tuyệt đối",
+      "latex_image": "figures/chuong4/notebook_03_loi_theo_thep_so_luong.png",
+      "format": "image/png",
+      "pixel_size": [
+        1186,
+        682
+      ],
+      "sha256": "3320f6b6377316dcef9fe5146110262537c4b926162794a516853bdb5b18f3c3",
+      "exact_saved_notebook_output": true
+    },
+    {
+      "figure_name": "04_loi_theo_thep_ty_trong",
+      "chapter_figure_number": 4,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 154,
+      "cell_id": "2d14821b",
+      "execution_count": 79,
+      "notebook_section": "5.3. So sánh theo dòng thép — Q2",
+      "notebook_figure_heading": "Hình 4. Cơ cấu trong từng dòng thép (100%)",
+      "latex_image": "figures/chuong4/notebook_04_loi_theo_thep_ty_trong.png",
+      "format": "image/png",
+      "pixel_size": [
+        1184,
+        682
+      ],
+      "sha256": "2684cb886112652ffd1379b557d7fc12e7bb7afaa34623565085fc1d7fc5e50f",
+      "exact_saved_notebook_output": true
+    },
+    {
+      "figure_name": "05_scatter_do_sang",
+      "chapter_figure_number": 5,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 159,
+      "cell_id": "5428c5b6",
+      "execution_count": 82,
+      "notebook_section": "5.4. Phân tích đặc trưng độ sáng — Q3",
+      "notebook_figure_heading": "Hình 5. Scatter Min × Max theo loại lỗi",
+      "latex_image": "figures/chuong4/notebook_05_scatter_do_sang.png",
+      "format": "image/png",
+      "pixel_size": [
+        1182,
+        790
+      ],
+      "sha256": "cb1f8212a357153f1c67afa2fb17f206a39eaab1c15316f4fcc62bca59c87ec8",
+      "exact_saved_notebook_output": true
+    },
+    {
+      "figure_name": "06_boxplot_do_day",
+      "chapter_figure_number": 6,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 166,
+      "cell_id": "f2671a7e",
+      "execution_count": 87,
+      "notebook_section": "5.5. Phân tích độ dày và diện tích — Q4, Q5",
+      "notebook_figure_heading": "Hình 6. Boxplot độ dày theo nhãn",
+      "latex_image": "figures/chuong4/notebook_06_boxplot_do_day.png",
+      "format": "image/png",
+      "pixel_size": [
+        1186,
+        682
+      ],
+      "sha256": "54f16d53893291080236911f40876b12db9d4a8865fe247bf1e761905dd778d5",
+      "exact_saved_notebook_output": true
+    },
+    {
+      "figure_name": "07_boxplot_dien_tich_log",
+      "chapter_figure_number": 7,
+      "notebook": "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb",
+      "notebook_cell_index_1_based": 173,
+      "cell_id": "a637d10c",
+      "execution_count": 92,
+      "notebook_section": "5.5. Phân tích độ dày và diện tích — Q4, Q5",
+      "notebook_figure_heading": "Hình 7. Boxplot diện tích trên trục log",
+      "latex_image": "figures/chuong4/notebook_07_boxplot_dien_tich_log.png",
+      "format": "image/png",
+      "pixel_size": [
+        1186,
+        682
+      ],
+      "sha256": "b4f78d0015691fa5fd39fd82ac187bfd5d6e0e26c73a31fc6294feb7bf2f1b65",
+      "exact_saved_notebook_output": true
+    }
+  ]
+}

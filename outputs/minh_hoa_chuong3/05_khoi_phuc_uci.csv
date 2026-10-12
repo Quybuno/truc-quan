@@ -1,0 +1,5 @@
+﻿Source_Row,Source_Row_UCI,Field,Before,After,Operation
+7,7,Pixels_Areas,,630.0,restore
+26,26,Pixels_Areas,,201.0,restore
+101,101,Empty_Index,2031.0,0.2031,correct
+16,16,Log_Y_Index,18129.0,1.8129,correct

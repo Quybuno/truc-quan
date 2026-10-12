@@ -1,0 +1,34 @@
+{
+  "che_do": "Đọc JSON đã thu thập",
+  "thoi_diem_chay": "2026-10-12T20:19:50+07:00",
+  "url_uci": "https://archive.ics.uci.edu/api/dataset?id=198",
+  "url_comtrade": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+  "tham_so_mau": {
+    "reporterCode": 704,
+    "period": "2023",
+    "cmdCode": "72",
+    "flowCode": "X",
+    "partnerCode": 0,
+    "partner2Code": 0,
+    "customsCode": "C00",
+    "motCode": 0,
+    "maxRecords": 500,
+    "includeDesc": "true"
+  },
+  "cac_nam_truy_van": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "cac_luong_truy_van": [
+    "X",
+    "M"
+  ]
+}

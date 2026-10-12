@@ -1,0 +1,24 @@
+% !TeX root = ../main.tex
+% Mục lục và danh mục được tạo từ các mục/hình/bảng thực sự đã viết.
+\renewcommand{\contentsname}{Mục lục}
+\renewcommand{\listfigurename}{Danh mục hình vẽ}
+\renewcommand{\listtablename}{Danh mục bảng biểu}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Mục lục}
+\begingroup
+\setstretch{1.05}
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Danh mục hình vẽ}
+\listoffigures
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Danh mục bảng biểu}
+\listoftables
+\clearpage

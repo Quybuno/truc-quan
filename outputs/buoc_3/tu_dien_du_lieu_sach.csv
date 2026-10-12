@@ -1,0 +1,37 @@
+﻿Truong,Kieu,Mo_ta,Don_vi
+Source_Row,int64,"Số dòng Excel gốc, tính cả hàng tiêu đề",Không áp dụng
+Source_File,object,Tên file Excel gốc,Không áp dụng
+Source_Row_UCI,int64,"Số dòng CSV UCI dùng để đối chiếu, tính cả tiêu đề",Không áp dụng
+Production_Date,object,"Ngày mô phỏng gốc, giữ hỗn hợp biểu diễn để truy vết",Không áp dụng
+X_Minimum,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+X_Maximum,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Y_Minimum,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Y_Maximum,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Pixels_Areas,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+X_Perimeter,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Y_Perimeter,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Sum_of_Luminosity,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Minimum_of_Luminosity,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Maximum_of_Luminosity,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Length_of_Conveyer,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+TypeOfSteel_A300,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+TypeOfSteel_A400,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Steel_Plate_Thickness,Int64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Edges_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Empty_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Square_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Outside_X_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Edges_X_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Edges_Y_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Outside_Global_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+LogOfAreas,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Log_X_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Log_Y_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Orientation_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Luminosity_Index,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+SigmoidOfAreas,float64,Đặc trưng UCI; cách hiểu tham khảo ở PDF trang 15–16,UCI chưa công bố
+Faults,object,"Nhãn thô, giữ để truy vết",Không áp dụng
+Fault_Type_Clean,object,Nhãn chuẩn 7 lớp; K_Scatch theo gói UCI nguyên bản,Không áp dụng
+Production_Date_Clean,datetime64[ns],Ngày mô phỏng chuẩn hóa theo lịch tháng 11/2025 trong PDF,Không áp dụng
+Date_Is_Simulated,bool,True: không phải ngày sản xuất thật,Không áp dụng
+Area_Outlier_Flag,boolean,Cờ IQR diện tích; không dùng để tự động xóa bản ghi,Không áp dụng

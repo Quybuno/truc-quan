@@ -1,0 +1,1942 @@
+﻿Source_Row,Ngay_goc,Ngay_chuan,Quy_tac
+2,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+3,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+4,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+5,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+6,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+7,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+8,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+9,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+10,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+11,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+12,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+13,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+14,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+15,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+16,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+17,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+18,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+19,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+20,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+21,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+22,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+23,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+24,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+25,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+26,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+27,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+28,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+29,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+30,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+31,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+32,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+33,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+34,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+35,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+36,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+37,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+38,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+39,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+40,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+41,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+42,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+43,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+44,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+45,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+46,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+47,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+48,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+49,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+50,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+51,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+52,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+53,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+54,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+55,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+56,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+57,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+58,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+59,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+60,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+61,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+62,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+63,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+64,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+65,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+66,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+67,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+68,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+69,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+70,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+71,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+72,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+73,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+74,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+75,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+76,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+77,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+78,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+79,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+80,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+81,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+82,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+83,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+84,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+85,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+86,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+87,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+88,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+89,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+90,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+91,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+92,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+93,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+94,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+95,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+96,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+97,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+98,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+99,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+100,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+101,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+102,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+103,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+104,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+105,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+106,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+107,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+108,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+109,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+110,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+111,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+112,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+113,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+114,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+115,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+116,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+117,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+118,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+119,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+120,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+121,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+122,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+123,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+124,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+125,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+126,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+127,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+128,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+129,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+130,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+131,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+132,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+133,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+134,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+135,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+136,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+137,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+138,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+139,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+140,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+141,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+142,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+143,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+144,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+145,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+146,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+147,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+148,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+149,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+150,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+151,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+152,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+153,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+154,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+155,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+156,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+157,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+158,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+159,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+160,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+161,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+162,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+163,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+164,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+165,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+166,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+167,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+168,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+169,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+170,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+171,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+172,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+173,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+174,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+175,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+176,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+177,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+178,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+179,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+180,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+181,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+182,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+183,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+184,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+185,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+186,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+187,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+188,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+189,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+190,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+191,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+192,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+193,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+194,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+195,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+196,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+197,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+198,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+199,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+200,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+201,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+202,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+203,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+204,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+205,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+206,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+207,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+208,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+209,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+210,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+211,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+212,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+213,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+214,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+215,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+216,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+217,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+218,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+219,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+220,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+221,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+222,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+223,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+224,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+225,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+226,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+227,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+228,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+229,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+230,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+231,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+232,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+233,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+234,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+235,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+236,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+237,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+238,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+239,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+240,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+241,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+242,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+243,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+244,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+245,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+246,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+247,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+248,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+249,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+250,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+251,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+252,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+253,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+254,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+255,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+256,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+257,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+258,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+259,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+260,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+261,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+262,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+263,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+264,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+265,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+266,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+267,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+268,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+269,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+270,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+271,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+272,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+273,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+274,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+275,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+276,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+277,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+278,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+279,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+280,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+281,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+282,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+283,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+284,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+285,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+286,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+287,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+288,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+289,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+290,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+291,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+292,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+293,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+294,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+295,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+296,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+297,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+298,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+299,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+300,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+301,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+302,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+303,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+304,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+305,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+306,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+307,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+308,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+309,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+310,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+311,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+312,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+313,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+314,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+315,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+316,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+317,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+318,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+319,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+320,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+321,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+322,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+323,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+324,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+325,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+326,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+327,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+328,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+329,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+330,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+331,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+332,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+333,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+334,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+335,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+336,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+337,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+338,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+339,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+340,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+341,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+342,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+343,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+344,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+345,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+346,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+347,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+348,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+349,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+350,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+351,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+352,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+353,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+354,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+355,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+356,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+357,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+358,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+359,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+360,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+361,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+362,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+363,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+364,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+365,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+366,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+367,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+368,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+369,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+370,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+371,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+372,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+373,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+374,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+375,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+376,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+377,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+378,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+379,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+380,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+381,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+382,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+383,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+384,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+385,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+386,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+387,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+388,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+389,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+390,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+391,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+392,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+393,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+394,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+395,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+396,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+397,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+398,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+399,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+400,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+401,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+402,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+403,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+404,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+405,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+406,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+407,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+408,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+409,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+410,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+411,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+412,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+413,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+414,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+415,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+416,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+417,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+418,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+419,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+420,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+421,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+422,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+423,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+424,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+425,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+426,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+427,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+428,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+429,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+430,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+431,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+432,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+433,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+434,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+435,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+436,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+437,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+438,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+439,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+440,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+441,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+442,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+443,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+444,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+445,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+446,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+447,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+448,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+449,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+450,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+451,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+452,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+453,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+454,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+455,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+456,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+457,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+458,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+459,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+460,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+461,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+462,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+463,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+464,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+465,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+466,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+467,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+468,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+469,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+470,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+471,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+472,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+473,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+474,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+475,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+476,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+477,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+478,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+479,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+480,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+481,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+482,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+483,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+484,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+485,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+486,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+487,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+488,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+489,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+490,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+491,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+492,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+493,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+494,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+495,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+496,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+497,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+498,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+499,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+500,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+501,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+502,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+503,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+504,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+505,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+506,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+507,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+508,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+509,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+510,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+511,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+512,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+513,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+514,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+515,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+516,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+517,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+518,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+519,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+520,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+521,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+522,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+523,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+524,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+525,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+526,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+527,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+528,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+529,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+530,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+531,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+532,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+533,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+534,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+535,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+536,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+537,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+538,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+539,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+540,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+541,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+542,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+543,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+544,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+545,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+546,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+547,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+548,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+549,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+550,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+551,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+552,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+553,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+554,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+555,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+556,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+557,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+558,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+559,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+560,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+561,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+562,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+563,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+564,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+565,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+566,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+567,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+568,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+569,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+570,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+571,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+572,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+573,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+574,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+575,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+576,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+577,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+578,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+579,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+580,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+581,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+582,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+583,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+584,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+585,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+586,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+587,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+588,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+589,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+590,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+591,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+592,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+593,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+594,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+595,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+596,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+597,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+598,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+599,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+600,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+601,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+602,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+603,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+604,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+605,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+606,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+607,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+608,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+609,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+610,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+611,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+612,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+613,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+614,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+615,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+616,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+617,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+618,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+619,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+620,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+621,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+622,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+623,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+624,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+625,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+626,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+627,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+628,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+629,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+630,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+631,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+632,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+633,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+634,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+635,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+636,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+637,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+638,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+639,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+640,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+641,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+642,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+643,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+644,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+645,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+646,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+647,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+648,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+649,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+650,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+651,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+652,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+653,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+654,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+655,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+656,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+657,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+658,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+659,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+660,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+661,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+662,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+663,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+664,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+665,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+666,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+667,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+668,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+669,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+670,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+671,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+672,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+673,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+674,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+675,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+676,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+677,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+678,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+679,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+680,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+681,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+682,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+683,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+684,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+685,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+686,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+687,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+688,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+689,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+690,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+691,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+692,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+693,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+694,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+695,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+696,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+697,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+698,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+699,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+700,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+701,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+702,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+703,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+704,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+705,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+706,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+707,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+708,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+709,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+710,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+711,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+712,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+713,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+714,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+715,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+716,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+717,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+718,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+719,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+720,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+721,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+722,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+723,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+724,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+725,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+726,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+727,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+728,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+729,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+730,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+731,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+732,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+733,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+734,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+735,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+736,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+737,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+738,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+739,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+740,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+741,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+742,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+743,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+744,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+745,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+746,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+747,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+748,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+749,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+750,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+751,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+752,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+753,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+754,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+755,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+756,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+757,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+758,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+759,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+760,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+761,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+762,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+763,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+764,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+765,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+766,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+767,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+768,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+769,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+770,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+771,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+772,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+773,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+774,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+775,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+776,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+777,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+778,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+779,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+780,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+781,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+782,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+783,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+784,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+785,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+786,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+787,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+788,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+789,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+790,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+791,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+792,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+793,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+794,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+795,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+796,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+797,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+798,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+799,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+800,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+801,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+802,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+803,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+804,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+805,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+806,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+807,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+808,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+809,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+810,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+811,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+812,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+813,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+814,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+815,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+816,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+817,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+818,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+819,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+820,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+821,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+822,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+823,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+824,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+825,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+826,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+827,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+828,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+829,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+830,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+831,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+832,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+833,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+834,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+835,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+836,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+837,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+838,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+839,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+840,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+841,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+842,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+843,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+844,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+845,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+846,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+847,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+848,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+849,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+850,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+851,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+852,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+853,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+854,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+855,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+856,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+857,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+858,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+859,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+860,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+861,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+862,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+863,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+864,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+865,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+866,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+867,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+868,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+869,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+870,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+871,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+872,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+873,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+874,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+875,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+876,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+877,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+878,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+879,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+880,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+881,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+882,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+883,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+884,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+885,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+886,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+887,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+888,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+889,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+890,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+891,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+892,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+893,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+894,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+895,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+896,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+897,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+898,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+899,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+900,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+901,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+902,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+903,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+904,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+905,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+906,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+907,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+908,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+909,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+910,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+911,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+912,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+913,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+914,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+915,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+916,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+917,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+918,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+919,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+920,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+921,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+922,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+923,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+924,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+925,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+926,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+927,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+928,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+929,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+930,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+931,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+932,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+933,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+934,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+935,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+936,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+937,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+938,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+939,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+940,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+941,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+942,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+943,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+944,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+945,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+946,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+947,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+948,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+949,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+950,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+951,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+952,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+953,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+954,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+955,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+956,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+957,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+958,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+959,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+960,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+961,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+962,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+963,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+964,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+965,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+966,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+967,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+968,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+969,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+970,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+971,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+972,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+973,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+974,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+975,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+976,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+977,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+978,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+979,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+980,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+981,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+982,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+983,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+984,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+985,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+986,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+987,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+988,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+989,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+990,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+991,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+992,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+993,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+994,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+995,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+996,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+997,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+998,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+999,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1000,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1001,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1002,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1003,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1004,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1005,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1006,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1007,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1008,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1009,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1010,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1011,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1012,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1013,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1014,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1015,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1016,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1017,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1018,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1019,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1020,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1021,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1022,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1023,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1024,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1025,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1026,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1027,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1028,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1029,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1030,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1031,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1032,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1033,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1034,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1035,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1036,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1037,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1038,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1039,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1040,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1041,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1042,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1043,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1044,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1045,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1046,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1047,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1048,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1049,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1050,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1051,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1052,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1053,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1054,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1055,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1056,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1057,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1058,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1059,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1060,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1061,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1062,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1063,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1064,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1065,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1066,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1067,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1068,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1069,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1070,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1071,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1072,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1073,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1074,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1075,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1076,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1077,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1078,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1079,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1080,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1081,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1082,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1083,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1084,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1085,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1086,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1087,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1088,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1089,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1090,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1091,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1092,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1093,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1094,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1095,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1096,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1097,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1098,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1099,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1100,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1101,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1102,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1103,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1104,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1105,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1106,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1107,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1108,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1109,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1110,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1111,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1112,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1113,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1114,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1115,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1116,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1117,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1118,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1119,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1120,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1121,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1122,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1123,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1124,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1125,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1126,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1127,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1128,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1129,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1130,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1131,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1132,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1133,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1134,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1135,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1136,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1137,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1138,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1139,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1140,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1141,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1142,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1143,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1144,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1145,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1146,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1147,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1148,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1149,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1150,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1151,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1152,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1153,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1154,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1155,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1156,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1157,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1158,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1159,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1160,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1161,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1162,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1163,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1164,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1165,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1166,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1167,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1168,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1169,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1170,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1171,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1172,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1173,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1174,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1175,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1176,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1177,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1178,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1179,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1180,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1181,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1182,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1183,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1184,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1185,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1186,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1187,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1188,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1189,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1190,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1191,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1192,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1193,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1194,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1195,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1196,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1197,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1198,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1199,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1200,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1201,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1202,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1203,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1204,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1205,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1206,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1207,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1208,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1209,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1210,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1211,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1212,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1213,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1214,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1215,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1216,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1217,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1218,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1219,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1220,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1221,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1222,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1223,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1224,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1225,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1226,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1227,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1228,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1229,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1230,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1231,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1232,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1233,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1234,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1235,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1236,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1237,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1238,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1239,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1240,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1241,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1242,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1243,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1244,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1245,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1246,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1247,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1248,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1249,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1250,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1251,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1252,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1253,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1254,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1255,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1256,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1257,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1258,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1259,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1260,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1261,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1262,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1263,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1264,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1265,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1266,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1267,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1268,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1269,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1270,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1271,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1272,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1273,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1274,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1275,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1276,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1277,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1278,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1279,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1280,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1281,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1282,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1283,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1284,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1285,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1286,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1287,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1288,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1289,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1290,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1291,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1292,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1293,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1294,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1295,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1296,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1297,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1298,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1299,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1300,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1301,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1302,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1303,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1304,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1305,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1306,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1307,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1308,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1309,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1310,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1311,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1312,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1313,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1314,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1315,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1316,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1317,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1318,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1319,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1320,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1321,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1322,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1323,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1324,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1325,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1326,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1327,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1328,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1329,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1330,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1331,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1332,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1333,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1334,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1335,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1336,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1337,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1338,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1339,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1340,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1341,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1342,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1343,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1344,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1345,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1346,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1347,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1348,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1349,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1350,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1351,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1352,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1353,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1354,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1355,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1356,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1357,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1358,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1359,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1360,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1361,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1362,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1363,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1364,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1365,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1366,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1367,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1368,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1369,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1370,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1371,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1372,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1373,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1374,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1375,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1376,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1377,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1378,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1379,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1380,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1381,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1382,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1383,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1384,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1385,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1386,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1387,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1388,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1389,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1390,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1391,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1392,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1393,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1394,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1395,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1396,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1397,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1398,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1399,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1400,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1401,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1402,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1403,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1404,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1405,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1406,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1407,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1408,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1409,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1410,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1411,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1412,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1413,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1414,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1415,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1416,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1417,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1418,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1419,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1420,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1421,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1422,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1423,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1424,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1425,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1426,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1427,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1428,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1429,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1430,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1431,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1432,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1433,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1434,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1435,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1436,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1437,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1438,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1439,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1440,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1441,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1442,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1443,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1444,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1445,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1446,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1447,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1448,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1449,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1450,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1451,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1452,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1453,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1454,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1455,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1456,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1457,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1458,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1459,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1460,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1461,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1462,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1463,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1464,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1465,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1466,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1467,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1468,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1469,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1470,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1471,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1472,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1473,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1474,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1475,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1476,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1477,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1478,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1479,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1480,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1481,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1482,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1483,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1484,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1485,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1486,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1487,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1488,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1489,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1490,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1491,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1492,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1493,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1494,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1495,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1496,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1497,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1498,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1499,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1500,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1501,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1502,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1503,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1504,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1505,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1506,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1507,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1508,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1509,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1510,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1511,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1512,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1513,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1514,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1515,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1516,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1517,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1518,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1519,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1520,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1521,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1522,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1523,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1524,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1525,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1526,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1527,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1528,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1529,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1530,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1531,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1532,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1533,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1534,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1535,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1536,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1537,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1538,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1539,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1540,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1541,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1542,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1543,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1544,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1545,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1546,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1547,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1548,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1549,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1550,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1551,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1552,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1553,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1554,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1555,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1556,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1557,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1558,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1559,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1560,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1561,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1562,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1563,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1564,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1565,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1566,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1567,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1568,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1569,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1570,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1571,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1572,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1573,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1574,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1575,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1576,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1577,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1578,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1579,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1580,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1581,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1582,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1583,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1584,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1585,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1586,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1587,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1588,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1589,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1590,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1591,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1592,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1593,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1594,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1595,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1596,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1597,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1598,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1599,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1600,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1601,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1602,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1603,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1604,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1605,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1606,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1607,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1608,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1609,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1610,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1611,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1612,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1613,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1614,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1615,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1616,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1617,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1618,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1619,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1620,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1621,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1622,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1623,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1624,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1625,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1626,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1627,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1628,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1629,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1630,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1631,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1632,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1633,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1634,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1635,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1636,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1637,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1638,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1639,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1640,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1641,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1642,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1643,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1644,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1645,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1646,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1647,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1648,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1649,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1650,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1651,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1652,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1653,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1654,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1655,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1656,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1657,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1658,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1659,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1660,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1661,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1662,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1663,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1664,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1665,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1666,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1667,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1668,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1669,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1670,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1671,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1672,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1673,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1674,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1675,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1676,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1677,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1678,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1679,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1680,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1681,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1682,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1683,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1684,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1685,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1686,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1687,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1688,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1689,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1690,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1691,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1692,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1693,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1694,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1695,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1696,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1697,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1698,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1699,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1700,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1701,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1702,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1703,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1704,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1705,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1706,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1707,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1708,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1709,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1710,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1711,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1712,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1713,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1714,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1715,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1716,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1717,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1718,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1719,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1720,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1721,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1722,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1723,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1724,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1725,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1726,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1727,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1728,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1729,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1730,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1731,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1732,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1733,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1734,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1735,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1736,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1737,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1738,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1739,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1740,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1741,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1742,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1743,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1744,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1745,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1746,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1747,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1748,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1749,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1750,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1751,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1752,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1753,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1754,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1755,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1756,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1757,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1758,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1759,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1760,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1761,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1762,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1763,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1764,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1765,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1766,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1767,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1768,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1769,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1770,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1771,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1772,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1773,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1774,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1775,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1776,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1777,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1778,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1779,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1780,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1781,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1782,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1783,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1784,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1785,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1786,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1787,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1788,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1789,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1790,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1791,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1792,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1793,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1794,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1795,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1796,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1797,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1798,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1799,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1800,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1801,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1802,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1803,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1804,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1805,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1806,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1807,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1808,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1809,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1810,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1811,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1812,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1813,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1814,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1815,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1816,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1817,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1818,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1819,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1820,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1821,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1822,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1823,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1824,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1825,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1826,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1827,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1828,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1829,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1830,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1831,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1832,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1833,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1834,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1835,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1836,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1837,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1838,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1839,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1840,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1841,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1842,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1843,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1844,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1845,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1846,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1847,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1848,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1849,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1850,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1851,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1852,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1853,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1854,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1855,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1856,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1857,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1858,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1859,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1860,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1861,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1862,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1863,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1864,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1865,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1866,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1867,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1868,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1869,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1870,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1871,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1872,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1873,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1874,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1875,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1876,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1877,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1878,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1879,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1880,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1881,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1882,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1883,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1884,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1885,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1886,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1887,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1888,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1889,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1890,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1891,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1892,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1893,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1894,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1895,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1896,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1897,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1898,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1899,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1900,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1901,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1902,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1903,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1904,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1905,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1906,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1907,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1908,'21/11/2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1909,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1910,"'Nov 21st, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1911,"datetime.datetime(2025, 11, 21, 0, 0)",2025-11-21,Giữ ngày Excel đúng tháng 11/2025
+1912,"'NOVEMBER 21ST, 2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1913,"'Nov21,2025'",2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1914,'November21st2025',2025-11-21,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1915,'30/11/2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1916,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1917,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1918,"'November 30th, 2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1919,"datetime.datetime(2025, 11, 30, 0, 0)",2025-11-30,Giữ ngày Excel đúng tháng 11/2025
+1920,"'Nov30,2025'",2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1921,'November30th2025',2025-11-30,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1922,"datetime.datetime(2025, 2, 11, 0, 0)",2025-11-02,Đảo ngày/tháng theo lịch mô phỏng PDF
+1923,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1924,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1925,"'November 2nd, 2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1926,"datetime.datetime(2025, 11, 2, 0, 0)",2025-11-02,Giữ ngày Excel đúng tháng 11/2025
+1927,"'Nov2,2025'",2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1928,'November2nd2025',2025-11-02,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1929,"datetime.datetime(2025, 3, 11, 0, 0)",2025-11-03,Đảo ngày/tháng theo lịch mô phỏng PDF
+1930,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1931,"'Nov 3rd, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1932,"datetime.datetime(2025, 11, 3, 0, 0)",2025-11-03,Giữ ngày Excel đúng tháng 11/2025
+1933,"'NOVEMBER 3RD, 2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1934,"'Nov3,2025'",2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1935,'November3rd2025',2025-11-03,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1936,"datetime.datetime(2025, 10, 11, 0, 0)",2025-11-10,Đảo ngày/tháng theo lịch mô phỏng PDF
+1937,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1938,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1939,"'November 10th, 2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1940,"datetime.datetime(2025, 11, 10, 0, 0)",2025-11-10,Giữ ngày Excel đúng tháng 11/2025
+1941,"'Nov10,2025'",2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF
+1942,'November10th2025',2025-11-10,Ánh xạ chuỗi ngày theo lịch mô phỏng PDF

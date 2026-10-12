@@ -1,0 +1,4 @@
+﻿Source_Row,Production_Date_raw,Production_Date_Clean,Date_Is_Simulated
+2,2025-02-11 00:00:00,2025-11-02,True
+5,"November 2nd, 2025",2025-11-02,True
+7,"Nov2,2025",2025-11-02,True

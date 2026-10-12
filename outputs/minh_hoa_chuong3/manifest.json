@@ -1,0 +1,128 @@
+{
+  "image_kind": "Actual VS Code screenshots of executed Python notebook cells",
+  "notebook": "outputs/minh_hoa_chuong3/minh_chung_cell_chuong3.ipynb",
+  "source_row_definition": "Source_Row = original zero-based Excel row index + 2 (header is row 1)",
+  "reference_row_definition": "Source_Row_UCI = zero-based CSV record index + 2 (header is row 1)",
+  "provenance": {
+    "figure_04": "Additional internal audit before reference restoration",
+    "original_notebook_modified": false,
+    "purpose": "Executed supplementary notebook for Chapter 3 data-cell screenshots",
+    "source_sha256": {
+      "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb": "c9e80875acf825431659bd851358af17531cd49198f6df4f624efd9469e7dab6",
+      "data\\raw\\practice\\data_chua_sach_ko_sua.xlsx": "2973556203c6b4ddd07bbe523ba9e556c10892bd7e6e3f576efac3032b454189",
+      "data\\raw\\uci\\steel_plates_faults_original.csv": "883ed09b2a46fcde7144dd173092c645aacb45499dea703d00228d3ddc3c60de"
+    }
+  },
+  "checks": {
+    "executed_code_cells": 7,
+    "native_pandas_dataframe_outputs": 8,
+    "saved_clean_features_and_analysis_fields_matched": true,
+    "saved_csv_previews_matched": true,
+    "six_figure_cells": true,
+    "sources_and_original_notebook_unchanged": true
+  },
+  "figures": [
+    {
+      "name": "01_du_lieu_tho.png",
+      "window": "minh_chung_cell_chuong3.ipynb - Visual Studio Code",
+      "screenshot_id": "screenshot-0",
+      "rectangle": {
+        "left": 64,
+        "top": 653,
+        "width": 682,
+        "height": 306
+      },
+      "source_sha256": "9215c90a4cd16adfb7f6e76e44a4640cc65a634f9e330f6598386a1736dae51a",
+      "figure_sha256": "6378f4d690afc400bcbe5ee29ec7537ffcd53d0b868e2981c15077f64e8f74e2",
+      "processing": "Crop only; native VS Code cell content unchanged",
+      "capture_file": "outputs/minh_hoa_chuong3/captures/01_du_lieu_tho.png",
+      "figure_file": "latex/figures/chuong3/01_du_lieu_tho.png"
+    },
+    {
+      "name": "02_chuan_hoa.png",
+      "window": "minh_chung_cell_chuong3.ipynb - Visual Studio Code",
+      "screenshot_id": "screenshot-0",
+      "rectangle": {
+        "left": 64,
+        "top": 518,
+        "width": 650,
+        "height": 419
+      },
+      "source_sha256": "8211a9f85fca32618b6598c829edc827deb99cb58394dbb24fe6c4b72ab3ec55",
+      "figure_sha256": "d006fb5303ff48d88a68b2c7e742560d768bb168f4e924237d0dc5e641340144",
+      "processing": "Crop only; native VS Code cell content unchanged",
+      "capture_file": "outputs/minh_hoa_chuong3/captures/02_chuan_hoa.png",
+      "figure_file": "latex/figures/chuong3/02_chuan_hoa.png"
+    },
+    {
+      "name": "03_loai_trung.png",
+      "window": "minh_chung_cell_chuong3.ipynb - Visual Studio Code",
+      "screenshot_id": "screenshot-0",
+      "rectangle": {
+        "left": 64,
+        "top": 650,
+        "width": 700,
+        "height": 282
+      },
+      "source_sha256": "bd99074a2db3a61c22b65253f7343f765122deada40c6638e0672924c75ee76b",
+      "figure_sha256": "c878c8077a5bfbf0f981220be6e59667c113ae08b01495e614a81e4f1398c016",
+      "processing": "Crop only; native VS Code cell content unchanged",
+      "capture_file": "outputs/minh_hoa_chuong3/captures/03_loai_trung.png",
+      "figure_file": "latex/figures/chuong3/03_loai_trung.png"
+    },
+    {
+      "name": "04_kiem_tra_noi_tai.png",
+      "window": "minh_chung_cell_chuong3.ipynb - Visual Studio Code",
+      "screenshot_id": "screenshot-0",
+      "rectangle": {
+        "left": 64,
+        "top": 666,
+        "width": 650,
+        "height": 279
+      },
+      "source_sha256": "ef24579a5dfa233bfe374dbaed9e9e489da86b7f296f0353127a01c5c093bbab",
+      "figure_sha256": "07df0003d1648a8f1ce085370c861b2087fe4a2176475aa71062feda92b17781",
+      "processing": "Crop only; native VS Code cell content unchanged",
+      "capture_file": "outputs/minh_hoa_chuong3/captures/04_kiem_tra_noi_tai.png",
+      "figure_file": "latex/figures/chuong3/04_kiem_tra_noi_tai.png"
+    },
+    {
+      "name": "05_khoi_phuc_uci.png",
+      "window": "minh_chung_cell_chuong3.ipynb - Visual Studio Code",
+      "screenshot_id": "screenshot-0",
+      "rectangle": {
+        "left": 64,
+        "top": 660,
+        "width": 650,
+        "height": 287
+      },
+      "source_sha256": "f74a426403aa5ea078c9fae3c2c096ab9743b36e614949f16f399872fb870fa8",
+      "figure_sha256": "6f3316b8343e98bbf664363f8bb33a6c003c87db7d305f4adfb4d40cfa01c76f",
+      "processing": "Crop only; native VS Code cell content unchanged",
+      "capture_file": "outputs/minh_hoa_chuong3/captures/05_khoi_phuc_uci.png",
+      "figure_file": "latex/figures/chuong3/05_khoi_phuc_uci.png"
+    },
+    {
+      "name": "06_du_lieu_phan_tich.png",
+      "window": "minh_chung_cell_chuong3.ipynb - Visual Studio Code",
+      "screenshot_id": "screenshot-0",
+      "rectangle": {
+        "left": 64,
+        "top": 467,
+        "width": 765,
+        "height": 477
+      },
+      "source_sha256": "bcfd491a6cdb1f27d6cf8a5b750a7f7f89ed25d29a87a5a4bc4cabce8105204e",
+      "figure_sha256": "95a8ca688d188fff24c4e6a3626c5d65e92a5cbcc5fecf80582f996f8504a1d4",
+      "processing": "Crop only; native VS Code cell content unchanged",
+      "capture_file": "outputs/minh_hoa_chuong3/captures/06_du_lieu_phan_tich.png",
+      "figure_file": "latex/figures/chuong3/06_du_lieu_phan_tich.png"
+    }
+  ],
+  "regeneration": [
+    "Execute tao_notebook_minh_chung.py",
+    "Open the executed notebook and capture the six cells on VS Code",
+    "Run cat_anh_cell.py with the capture rectangles in captures/manifest.json"
+  ],
+  "processing": "Crop only; native cell content and DataFrame output unchanged"
+}

@@ -1,0 +1,1483 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\RequirePackage{fix-cm}
+\documentclass[12pt,a4paper,oneside]{report}
+
+\usepackage{iftex}
+\ifPDFTeX
+  \errmessage{Hay bien dich bang XeLaTeX, LuaLaTeX hoac Tectonic de hien thi tieng Viet}
+\fi
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}
+  {\setmainfont{Times New Roman}}
+  {\setmainfont{TeX Gyre Termes}}
+\IfFontExistsTF{Arial}
+  {\setsansfont{Arial}}
+  {\setsansfont{TeX Gyre Heros}}
+\IfFontExistsTF{Courier New}
+  {\setmonofont{Courier New}[Scale=MatchLowercase]}
+  {\setmonofont{lmmono10-regular.otf}[Scale=MatchLowercase]}
+\usepackage[vietnamese]{babel}
+\usepackage[left=3cm,right=2cm,top=2.5cm,bottom=2.5cm,headheight=17pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\bfseries,
+  commentstyle=\itshape,
+  frame=single,
+  framerule=0.3pt,
+  aboveskip=8pt,
+  belowskip=8pt,
+  xleftmargin=4pt,
+  xrightmargin=4pt,
+  breaklines=true,
+  breakatwhitespace=false,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  tabsize=4,
+  upquote=true
+}
+\usepackage{booktabs,tabularx,array}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\PassOptionsToPackage{obeyspaces}{url}
+\usepackage{xurl}
+\usepackage[hidelinks,unicode]{hyperref}
+
+% report hỗ trợ tùy chọn 12 pt; đặt cỡ thân bài 13 pt một cách tường minh.
+\makeatletter
+\renewcommand\normalsize{%
+  \@setfontsize\normalsize{13pt}{16pt}%
+  \abovedisplayskip 10pt plus 2pt minus 5pt
+  \abovedisplayshortskip 0pt plus 3pt
+  \belowdisplayshortskip 6pt plus 3pt minus 3pt
+  \belowdisplayskip \abovedisplayskip
+  \let\@listi\@listI}
+\makeatother
+\normalsize
+\DeclareMathSizes{13}{13}{9}{7}
+\setstretch{1.25}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\setlength{\parindent}{1cm}
+\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=1.5em,itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{leftmargin=1.8em,itemsep=2pt,topsep=4pt}
+\setcounter{tocdepth}{2}
+\setcounter{secnumdepth}{2}
+\renewcommand{\arraystretch}{1.15}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\captionsetup{font=small,labelfont=bf,labelsep=period}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\centering\Large}
+  {CHƯƠNG \thechapter}{0.5em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{1.5em}
+\titleformat{\section}{\normalfont\bfseries\large}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.7em}{}
+\titlespacing*{\section}{0pt}{1.2em}{0.5em}
+\titlespacing*{\subsection}{0pt}{0.8em}{0.3em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Tiểu luận môn Trực quan hóa dữ liệu}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\urlstyle{same}
+\fancypagestyle{plain}{%
+  \fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}}
+\hypersetup{
+  pdftitle={Trực quan hóa và phân tích dữ liệu lỗi bề mặt thép bằng Python},
+  pdfsubject={Tiểu luận: Phần mở đầu và các Chương 1, 2, 3, 4},
+  pdfkeywords={trực quan hóa dữ liệu, lỗi bề mặt thép, Python, dashboard}
+}
+\newcommand{\tenDeTai}{Trực quan hóa và phân tích dữ liệu lỗi bề mặt thép bằng Python}
+\newcommand{\tenCot}[1]{\texttt{\detokenize{#1}}}
+% Cho phép ngắt tên cột/đường dẫn dài trong phần triển khai.
+\newcommand{\maCot}[1]{{\urlstyle{tt}\def\UrlBreaks{\do\_\do\/\do\.}\def\UrlBigBreaks{}\nolinkurl{#1}}}
+\newcommand{\mucMoDau}[2]{%
+  \section*{#1. #2}%
+  \phantomsection
+  \addcontentsline{toc}{section}{#1. #2}}
+
+\begin{document}
+
+% Bản gộp gồm phần đầu, bốn chương và tài liệu tham khảo trong một tệp.
+% Thêm bìa theo mẫu môn học ngay trước phần đánh số trang La Mã nếu cần.
+\pagenumbering{roman}
+% ===== BEGIN: phan-dau/danh-muc =====
+% Mục lục và danh mục được tạo từ các mục/hình/bảng thực sự đã viết.
+\renewcommand{\contentsname}{Mục lục}
+\renewcommand{\listfigurename}{Danh mục hình vẽ}
+\renewcommand{\listtablename}{Danh mục bảng biểu}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{Mục lục}
+\begingroup
+\setstretch{1.05}
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Danh mục hình vẽ}
+\listoffigures
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Danh mục bảng biểu}
+\listoftables
+\clearpage
+% ===== END: phan-dau/danh-muc =====
+% ===== BEGIN: phan-dau/thuat-ngu =====
+\chapter*{Thuật ngữ và từ viết tắt}
+\addcontentsline{toc}{chapter}{Thuật ngữ và từ viết tắt}
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{@{}p{1.5cm}Y Y@{}}
+\toprule
+\textbf{Ký hiệu} & \textbf{Tên đầy đủ} & \textbf{Ý nghĩa trong báo cáo} \\
+\midrule
+UCI & University of California, Irvine & Kho dữ liệu cung cấp bộ Steel Plates Faults và nguồn tham chiếu. \\
+EDA & Exploratory Data Analysis & Phân tích khám phá dữ liệu. \\
+IQR & Interquartile Range & Khoảng tứ phân vị, bằng P75 trừ P25. \\
+SD & Standard Deviation & Độ lệch chuẩn; bài sử dụng độ lệch chuẩn mẫu khi tổng hợp. \\
+KPI & Key Performance Indicator & Chỉ số tổng hợp hiển thị trên dashboard; không mặc định là chỉ tiêu vận hành nhà máy. \\
+API & Application Programming Interface & Giao diện lập trình ứng dụng, dùng khi truy vấn nguồn dữ liệu bổ sung. \\
+CSV & Comma-Separated Values & Định dạng văn bản phân cách các trường, dùng lưu dữ liệu dạng bảng. \\
+JSON & JavaScript Object Notation & Định dạng trao đổi và lưu thông tin có cấu trúc. \\
+XLSX & Office Open XML Spreadsheet & Định dạng tệp bảng tính đầu vào; được đọc và xử lý bằng Python. \\
+P25, P75 & 25th, 75th Percentiles & Phân vị 25\% và 75\%, mô tả phần trung tâm của phân bố. \\
+$N$ & Number of observations & Số bản ghi của toàn tập hoặc của nhóm đang xét. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Trong báo cáo, \textit{dashboard} được hiểu là giao diện tổng hợp dữ liệu có bộ lọc, chỉ số, biểu đồ và bảng. A300 và A400 được giữ nguyên theo tên hai dòng thép trong dữ liệu; chúng không được mở rộng thành tiêu chuẩn vật liệu khi metadata chưa xác nhận.
+% ===== END: phan-dau/thuat-ngu =====
+% ===== BEGIN: phan-dau/mo-dau =====
+\chapter*{Phần mở đầu}
+\addcontentsline{toc}{chapter}{Phần mở đầu}
+\label{chap:modau}
+
+\mucMoDau{1}{Bối cảnh và lý do lựa chọn đề tài}
+
+Một biểu đồ có thể làm nổi bật một nhóm lỗi chỉ trong vài giây, nhưng độ tin cậy của nhận xét phụ thuộc vào những việc đã được thực hiện trước khi vẽ. Nhãn được viết không thống nhất có thể làm một nhóm bị tách thành nhiều nhóm; bản ghi trùng làm thay đổi số đếm; giá trị thiếu hoặc bất thường ảnh hưởng đến các đại lượng thống kê. Với dữ liệu lỗi bề mặt thép, kiểm tra đầu vào và lựa chọn cách biểu diễn vì thế cần được xem xét trong cùng một quy trình.
+
+Bộ dữ liệu \textit{Steel Plates Faults} trên UCI Machine Learning Repository gồm 1.941 bản ghi, 27 đặc trưng và bảy nhãn lỗi~\cite{uci}. Các đặc trưng phản ánh những khía cạnh khác nhau của bản ghi, từ tọa độ, diện tích và độ sáng đến dòng thép và độ dày. Khi chỉ đọc bảng, người phân tích khó đồng thời nhận ra nhãn nào xuất hiện nhiều, phân bố đặc trưng khác nhau ra sao và những nhóm nào cần được xem xét kỹ hơn. Biểu đồ giúp tổ chức các thông tin đó thành những góc nhìn có thể đối chiếu.
+
+Đề tài \textit{\tenDeTai} được lựa chọn để thực hiện quá trình từ khảo sát đầu vào đến trình bày kết quả. Quy tắc xử lý, công thức tính và thao tác vẽ được ghi trong mã Python để chạy lại và kiểm tra. Biểu đồ tĩnh phục vụ phần phân tích; dashboard bổ sung khả năng lọc và xem số liệu theo nhóm. Mỗi thao tác được lựa chọn theo vấn đề cụ thể của dữ liệu.
+
+\mucMoDau{2}{Mục tiêu thực hiện}
+
+Mục tiêu chung là xây dựng quy trình xử lý và trực quan hóa dữ liệu lỗi bề mặt thép bằng Python, sau đó tổ chức kết quả thành bảng, biểu đồ và dashboard tương tác. Mục tiêu này được cụ thể hóa thành bốn nội dung có thể đối chiếu với sản phẩm đầu ra.
+
+Trước hết, bài khảo sát nguồn, cấu trúc và chất lượng đầu vào. Tiếp theo, dữ liệu được chuẩn hóa, làm sạch và ghép nguồn tham chiếu có kiểm tra, có nhật ký. Bài sử dụng dữ liệu sau xử lý để tạo biến, tính chỉ số và vẽ biểu đồ cho từng câu hỏi. Cuối cùng, các kết quả được tổ chức thành dashboard; chức năng được kiểm thử và số liệu được đối chiếu với quy trình phân tích.
+
+Mỗi mục tiêu được đối chiếu với đầu ra tương ứng. Người đọc có thể kiểm tra kết quả qua dữ liệu, nhật ký, bảng và hình, cùng bằng chứng về cách tính.
+
+\mucMoDau{3}{Đối tượng và phạm vi thực hiện}
+
+Đối tượng phân tích là các bản ghi có nhãn lỗi trong bộ \textit{Steel Plates Faults} và tệp thực hành tương ứng. Mỗi dòng được xem là một đơn vị quan sát của bài; dữ liệu hiện có chưa đủ để mặc định mỗi dòng là một tấm thép độc lập. Tệp thực hành được dùng làm đầu vào cho các bước khảo sát và làm sạch; nguồn UCI cung cấp metadata và giá trị tham chiếu cho những bản ghi đã xác nhận tương ứng.
+
+Phạm vi nội dung gồm chất lượng dữ liệu, cơ cấu bảy nhãn lỗi và sự khác nhau về dòng thép A300/A400, độ sáng, độ dày, diện tích. Các kết quả mang tính mô tả và khám phá trong tập quan sát. Do chưa có tổng sản lượng, đầy đủ biến vận hành và định danh sản phẩm, bài chưa xác định tỷ lệ sản phẩm lỗi hoặc nguyên nhân gây lỗi. Những thang đo chưa có đơn vị được xác nhận sẽ được giữ theo giá trị của nguồn.
+
+Cột \tenCot{Production_Date} chứa ngày mô phỏng, được chuẩn hóa để quản lý hồ sơ dữ liệu; cột này không dùng để suy ra xu hướng sản xuất thực tế. Phân tích thương mại qua UN Comtrade, mang mã Q6 trong notebook, là nội dung bổ sung ở phụ lục. Nguồn thương mại không có khóa liên hệ với các bản ghi lỗi nên được phân tích riêng. Toàn bộ xử lý và trực quan hóa của đề tài sử dụng Python; XLSX là định dạng tệp đầu vào.
+
+\mucMoDau{4}{Các câu hỏi phân tích}
+
+Các câu hỏi được tổ chức từ kiểm tra dữ liệu đến mô tả cơ cấu và so sánh đặc trưng. Q0 kiểm tra điều kiện đầu vào và kết quả xử lý; Q1--Q5 định hướng nội dung phân tích chính.
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{@{}p{0.75cm}Y@{}}
+\toprule
+\textbf{Mã} & \textbf{Câu hỏi phân tích} \\
+\midrule
+Q0 & Những vấn đề nào được phát hiện trước khi tham chiếu giá trị UCI; việc khôi phục có truy vết và dữ liệu sau xử lý có đáp ứng các điều kiện toàn vẹn không? \\
+Q1 & Cơ cấu bảy nhãn lỗi như thế nào; mức tập trung và mất cân bằng giữa các nhãn ra sao? \\
+Q2 & Cơ cấu nhãn khác nhau thế nào giữa A300/A400; nhãn nào có trên 90\% bản ghi tập trung ở cùng một dòng thép? \\
+Q3 & Phân bố độ sáng tối thiểu/tối đa khác nhau thế nào giữa các nhãn; nhãn nào có khoảng P25--P75 của độ sáng tối thiểu không chồng lấn với mọi nhãn khác? \\
+Q4 & Phân bố độ dày khác nhau thế nào giữa các nhãn và giữa A300/A400 trong cùng nhãn? \\
+Q5 & Diện tích \tenCot{Pixels_Areas} khác nhau thế nào giữa các nhãn về trung vị, IQR và các giá trị ngoài râu boxplot? \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Mốc trên 90\% ở Q2 được sử dụng như một mốc khám phá theo tài liệu đọc, mục V.3~\cite{reading}. Tiêu chí không chồng lấn IQR ở Q3 giúp diễn đạt sự khác nhau của phần trung tâm phân bố; tiêu chí này được bổ sung trong quá trình phân tích, không phải giả thuyết xác định trước. Mẫu số, đầu ra và cách đọc kết quả của từng câu hỏi được cụ thể hóa trong phần yêu cầu phân tích ở Chương 2.
+
+\mucMoDau{5}{Giá trị của đề tài và sản phẩm đầu ra}
+
+Giá trị học tập của đề tài nằm ở việc nối sáu bước môn học thành một quá trình rõ đầu vào và đầu ra. Kiến thức về dữ liệu thiếu, khóa ghép, tỷ trọng, tứ phân vị và thang log giúp giải thích lựa chọn thực hành, kết quả và giới hạn của phương pháp.
+
+Về ứng dụng, bảng và biểu đồ giúp người đọc nhận diện cơ cấu nhãn, đối chiếu các nhóm và tìm những đặc điểm cần kiểm tra thêm. Dashboard cho phép lựa chọn phạm vi quan sát mà vẫn giữ khả năng xem lại số liệu. Những giá trị này được đánh giá qua tính đúng đắn và khả năng hoạt động của sản phẩm; hiệu quả hỗ trợ quyết định trong nhà máy cần một phép đánh giá thực tế riêng.
+
+Sản phẩm đầu ra gồm notebook Python, dữ liệu sau xử lý, nhật ký chuẩn hóa và khôi phục, bảng thống kê, hình trực quan, dashboard cùng kết quả kiểm thử. Báo cáo trình bày những đoạn mã cần thiết để giải thích cách làm; mã đầy đủ, từ điển dữ liệu và các bảng dài được tổ chức trong phụ lục.
+
+\mucMoDau{6}{Bố cục của báo cáo}
+
+Ngoài phần mở đầu, kết luận, tài liệu tham khảo và phụ lục, báo cáo có bốn chương. Chương 1 trình bày bài toán và cơ sở lý thuyết. Chương 2 khảo sát nguồn, cấu trúc, tình trạng dữ liệu, công cụ và yêu cầu thực hiện.
+
+Chương 3 trình bày cách xử lý, tạo biến, xây dựng biểu đồ và dashboard bằng Python. Chương 4 phân tích kết quả, trả lời các câu hỏi, trình bày sản phẩm, kiểm thử và thảo luận. Mạch bài đi từ kiến thức đến vấn đề của dữ liệu, thao tác thực hiện và bằng chứng thu được.
+% ===== END: phan-dau/mo-dau =====
+
+\clearpage
+\pagenumbering{arabic}
+% ===== BEGIN: chuong/chuong1 =====
+% !TeX encoding = UTF-8
+\chapter{Tổng quan bài toán và cơ sở lý thuyết}
+\label{chap:cosolythuyet}
+
+\section{Tổng quan bài toán phân tích lỗi bề mặt thép}
+\label{sec:tongquan}
+
+\subsection{Đặc điểm dữ liệu lỗi bề mặt thép}
+
+Dữ liệu lỗi bề mặt thép mô tả những đặc điểm quan sát được tại vùng lỗi: vị trí, kích thước, diện tích, độ sáng và các thông tin liên quan đến dòng thép, độ dày. Một đặc trưng riêng lẻ chỉ cung cấp một góc nhìn. Diện tích phản ánh quy mô vùng được ghi nhận; độ sáng mô tả đặc điểm ảnh; dòng thép tạo điều kiện so sánh giữa các nhóm. Kết hợp các đặc trưng giúp đặt từng quan sát vào bối cảnh của nhóm tương ứng.
+
+Bộ \textit{Steel Plates Faults} trên UCI cung cấp 27 đặc trưng và bảy nhãn lỗi~\cite{uci}. Các biến định lượng phù hợp với phân tích vị trí trung tâm, độ phân tán và mối liên hệ; nhãn lỗi và dòng thép phù hợp với phép đếm, tỷ trọng và phân nhóm. Cần giữ rõ đơn vị quan sát: số bản ghi mang một nhãn chưa mặc nhiên là số tấm thép độc lập. Mỗi phép tổng hợp cần được diễn giải theo thông tin nguồn cung cấp.
+
+\subsection{Vai trò của phân tích khám phá và trực quan hóa}
+
+Phân tích khám phá dữ liệu (EDA) là quá trình khảo sát cấu trúc, phân bố và các quan hệ đáng chú ý trước khi đưa ra kết luận. Trong bài toán này, EDA giúp nhận diện mức tập trung của nhãn, khác biệt giữa nhóm và những giá trị cần kiểm tra. Biểu đồ hỗ trợ quan sát nhanh; bảng thống kê cung cấp căn cứ định lượng để đối chiếu. Hai hình thức bổ sung nhau: một vùng có vẻ tách biệt trên hình vẫn cần được đọc cùng khoảng tứ phân vị, cỡ mẫu và mức chồng lấn.
+
+Cùng bộ dữ liệu lỗi thép, Kharal trình bày hướng phân loại và giải thích mô hình bằng các công cụ trí tuệ nhân tạo có khả năng giải thích~\cite{kharal}. Với phân tích mô tả, trọng tâm là xác định dữ liệu đang thể hiện điều gì và bằng chứng có giới hạn ra sao. Hình~\ref{fig:machtrinhbay} thể hiện mạch kết nối lý thuyết với khảo sát, thực hiện và kiểm chứng.
+
+\begin{figure}[htbp]
+  \centering
+  \begingroup
+  \footnotesize
+  \setstretch{1}
+  \setlength{\fboxsep}{4pt}
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Kiến thức nền}\\[3pt]Phương pháp\\Chương 1}}
+  \hfill $\longrightarrow$ \hfill
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Khảo sát}\\[3pt]Vấn đề đầu vào\\Chương 2}}
+  \hfill $\longrightarrow$ \hfill
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Thực hiện}\\[3pt]Xử lý và vẽ hình\\Chương 3}}
+  \hfill $\longrightarrow$ \hfill
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Kiểm chứng}\\[3pt]Kết quả và giới hạn\\Chương 4}}
+  \endgroup
+  \caption{Mối liên hệ giữa nền tảng lý thuyết và các phần thực hành}
+  \label{fig:machtrinhbay}
+\end{figure}
+
+\section{Cơ sở về chất lượng và xử lý dữ liệu}
+\label{sec:chatluongdulieu}
+
+\subsection{Dữ liệu thiếu, trùng lặp và không nhất quán}
+
+Chất lượng dữ liệu được xem xét theo yêu cầu của phép phân tích. Ô thiếu làm giảm số quan sát dùng được cho một đặc trưng; dòng trùng có thể làm tăng số đếm; nhãn biểu diễn không thống nhất chia cùng một nhóm thành nhiều nhóm. Sai kiểu hoặc sai định dạng số còn có thể khiến phép tính thất bại hay sử dụng giá trị ngoài dự kiến. Vì vậy, khảo sát cần thực hiện theo từng cột và từng quy tắc, không chỉ dựa vào số dòng của bảng.
+
+Cần phân biệt dấu hiệu nghi ngờ với bằng chứng sai dữ liệu. Một giá trị vi phạm miền hợp lệ hoặc quan hệ giữa các biến cần được kiểm tra; một giá trị lớn nhưng vẫn hợp lệ có thể phản ánh trường hợp hiếm. Điểm nằm ngoài râu boxplot cũng chưa đủ căn cứ để xóa. Nếu chưa xác định được nguyên nhân, gắn cờ và giữ dấu vết là cách xử lý phù hợp hơn việc thay đổi giá trị chỉ để làm phân bố trông đều hơn.
+
+\subsection{Chuẩn hóa, kết hợp và kiểm tra dữ liệu}
+
+Chuẩn hóa đưa những biểu diễn tương đương về cùng dạng, chẳng hạn nhãn có khoảng trắng thừa hoặc cách viết khác nhau đã được xác nhận. Tiêu chí trùng cần được xác định theo các trường có ý nghĩa, đồng thời ghi rõ dòng giữ và dòng loại. Khi chuyển sang kiểu số, phải theo dõi giá trị không chuyển được; nếu chúng bị đổi thành ô thiếu, số thiếu tăng lên cần có lời giải thích.
+
+Kết hợp nguồn tham chiếu chỉ có căn cứ khi xác định đúng bản ghi tương ứng. Với quan hệ một--một, khóa ghép phải đầy đủ và duy nhất ở cả hai bảng; sau ghép cần kiểm tra số dòng, tỷ lệ khớp và bản ghi chưa tìm thấy. Tham số \tenCot{validate} của phép ghép Pandas hỗ trợ kiểm tra quan hệ này~\cite{pandasmerge}. Dấu vết xử lý cần gồm trường thay đổi, giá trị cũ, giá trị mới và căn cứ. Đặc biệt, phát hiện vấn đề, chọn giá trị sửa và kiểm tra sau sửa là ba hoạt động riêng: độ khớp với chính nguồn đã dùng để khôi phục xác nhận thao tác, nhưng không phải phép đánh giá độc lập về khả năng phát hiện sai sót.
+
+\section{Cơ sở thống kê mô tả và tạo biến}
+\label{sec:thongke}
+
+\subsection{Các chỉ số thống kê sử dụng}
+
+Số đếm cho biết quy mô của nhóm, còn tỷ trọng cho biết vị trí của nhóm trong tập đang xét. Gọi $n_g$ là số bản ghi thuộc nhãn $g$ và $N$ là tổng số bản ghi, tỷ trọng là $p_g=100n_g/N$ (\%). Sau khi sắp xếp số đếm giảm dần, tỷ trọng lũy kế $C_k=\sum_{j=1}^{k}p_{(j)}$ biểu thị mức tập trung ở $k$ nhãn đầu. Các đại lượng này chỉ có ý nghĩa khi mẫu số được xác định rõ.
+
+Khi phân nhóm theo dòng thép, cùng một số đếm có thể tạo ra hai tỷ trọng khác nhau. Với $n_{g,s}$ là số bản ghi thuộc nhãn $g$ và dòng thép $s$, ta có
+\begin{equation}
+  p_{g\mid s}=\frac{n_{g,s}}{\sum_h n_{h,s}}\times100\%,
+  \qquad
+  p_{s\mid g}=\frac{n_{g,s}}{\sum_t n_{g,t}}\times100\%.
+  \label{eq:tytronghaichieu}
+\end{equation}
+Tỷ trọng thứ nhất mô tả cơ cấu nhãn trong một dòng thép; tỷ trọng thứ hai mô tả một nhãn phân bố giữa các dòng thép. Nếu mẫu chỉ chứa bản ghi có lỗi, cả hai tỷ trọng đều chưa cho biết xác suất phát sinh lỗi trong sản xuất, bởi chưa có tổng số đơn vị được kiểm tra làm mẫu số.
+
+Đối với biến định lượng, trung vị mô tả vị trí trung tâm; P25 và P75 giới hạn phần trung tâm của phân bố. Khoảng tứ phân vị là $\mathrm{IQR}=\mathrm{P75}-\mathrm{P25}$, phù hợp để đọc độ phân tán khi phân bố lệch. Độ lệch chuẩn mẫu bổ sung thông tin về mức phân tán quanh trung bình~\cite{nistbox}:
+\begin{equation}
+  s=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}},
+  \qquad n\geq2.
+  \label{eq:dolechchuan}
+\end{equation}
+Ở đây, $n$ là số giá trị hợp lệ thực sự tham gia phép tính. Nhóm chỉ có một quan sát chưa xác định được độ lệch chuẩn mẫu; ô thiếu cũng khiến cỡ mẫu của từng đặc trưng khác tổng số dòng. Vì vậy, bảng thống kê cần ghi $n$ thay vì để người đọc tự suy đoán.
+
+Hệ số Pearson đo mức liên hệ tuyến tính giữa hai biến định lượng có phương sai khác không~\cite{niststats}. Giá trị gần $1$ hoặc $-1$ thể hiện liên hệ tuyến tính mạnh theo chiều tương ứng; gần $0$ chưa loại trừ quan hệ phi tuyến. Pearson của độ sáng tối thiểu và tối đa không đo khả năng phân loại nhãn. Nó cần được đọc cùng scatter và thống kê theo nhóm, vì một hệ số chung có thể che khuất khác biệt bên trong các nhóm.
+
+\subsection{Biến phái sinh và phép biến đổi logarit}
+
+Biến phái sinh được tạo để phục vụ phép kiểm tra hoặc cách đọc kết quả. Các cờ nhị phân có thể được tổng hợp thành một biến phân loại khi cấu trúc cờ hợp lệ; hiệu cực đại và cực tiểu mô tả khoảng biến thiên. Những phép tính này phải có điều kiện áp dụng và được đối chiếu với metadata. Nếu nguồn đã chứa cùng thông tin, cột tính lại có giá trị kiểm tra nhưng không trở thành đặc trưng độc lập mới.
+
+Với $x>0$, phép biến đổi $z=\log_{10}(x)$ giúp biểu diễn dải giá trị rộng. Cần phân biệt tính thống kê trên $z$ với chỉ đổi trục hiển thị sang log. Trong cách dựng boxplot diện tích của đề tài, tứ phân vị và râu được tính trên giá trị gốc, sau đó mới đổi trục. Các giá trị không dương phải được kiểm tra trước khi dùng thang log; tên cột và công thức cụ thể được trình bày ở phần thực hiện.
+
+\section{Cơ sở lựa chọn biểu đồ và dashboard}
+\label{sec:bieudodashboard}
+
+\subsection{Biểu đồ cơ cấu và so sánh nhóm}
+
+Thanh ngang thuận tiện khi cần đọc thứ hạng và nhãn dài. Pareto kết hợp số đếm giảm dần với tỷ trọng lũy kế để thể hiện mức tập trung, nhưng tần suất cao chưa đồng nghĩa mức thiệt hại cao. Cột nhóm so sánh số lượng giữa các dòng thép; cột 100\% so sánh cơ cấu bằng cách đưa mỗi nhóm về cùng tổng tỷ trọng. Khi dùng cột 100\%, cần giữ thông tin tổng số quan sát vì nhóm nhỏ và nhóm lớn có thể trông giống nhau về tỷ lệ.
+
+Bảng~\ref{tab:luachonbieudo} tổng hợp căn cứ lựa chọn biểu đồ. Khi xây dựng hình, cần tổ chức trục, chú thích và thang hiển thị phù hợp~\cite{matplotlib}; màu của cùng một nhãn được giữ nhất quán giữa các hình. Trục của cột số đếm nên bắt đầu từ 0 để độ dài cột phản ánh đúng chênh lệch. Khi đơn vị chưa được nguồn xác nhận, nhãn trục giữ thang dữ liệu thay vì tự gán một đơn vị vật lý.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Lựa chọn biểu đồ theo nội dung cần phân tích}
+  \label{tab:luachonbieudo}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}Y Y Y@{}}
+    \toprule
+    Nội dung & Biểu đồ phù hợp & Thông tin cần đọc kèm \\
+    \midrule
+    Cơ cấu và mức tập trung của nhãn & Thanh ngang, Pareto & Tổng số bản ghi, tỷ trọng lũy kế \\
+    So sánh nhãn giữa dòng thép & Cột nhóm, cột 100\% & Tổng từng nhóm, mẫu số tỷ trọng \\
+    Liên hệ giữa hai đặc trưng & Scatter, màu theo nhãn & Mức chồng lấn, số quan sát \\
+    Phân bố độ dày theo nhóm & Boxplot & Trung vị, IQR và cỡ mẫu \\
+    Diện tích có dải giá trị rộng & Boxplot, trục log & Thang hiển thị, giá trị gốc và điểm ngoài râu \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+\subsection{Biểu đồ phân bố và mối liên hệ}
+
+Scatter đặt mỗi quan sát tại vị trí xác định bởi hai biến định lượng. Màu theo nhãn cho phép quan sát vùng tập trung và mức chồng lấn. Khi điểm chồng lên nhau, giảm kích thước và tăng độ trong suốt giúp hình dễ đọc hơn, nhưng không thay thế thông tin về cỡ mẫu. Một cụm có vẻ tách biệt cần được đối chiếu bằng thống kê; hình ảnh riêng lẻ chưa chứng minh hiệu năng phân loại.
+
+Boxplot tóm tắt phân bố qua trung vị, hai tứ phân vị và râu~\cite{nistbox}. Với hệ số $1{,}5$, hàng rào dưới và trên được xác định bởi
+\begin{equation}
+  L=\mathrm{P25}-1{,}5\,\mathrm{IQR},
+  \qquad
+  U=\mathrm{P75}+1{,}5\,\mathrm{IQR}.
+  \label{eq:hangraoiqr}
+\end{equation}
+Râu kết thúc tại các giá trị quan sát xa nhất còn nằm trong $[L,U]$, không mặc nhiên trùng với hai hàng rào. Điểm bên ngoài được hiển thị riêng theo quy tắc này; chúng chưa được xác định là dữ liệu sai. Nếu các tứ phân vị bằng nhau, hộp có thể thu thành đường, nên cần đọc cùng bảng và cỡ mẫu. Các tham số dựng hình phải thống nhất với quy tắc được mô tả.
+
+Với boxplot diện tích trên trục log, khoảng cách bằng nhau thể hiện cùng một tỷ số, không phải cùng một hiệu số. Quy tắc IQR áp dụng toàn tập và quy tắc tính riêng từng nhóm cũng có thể gắn cờ những quan sát khác nhau. Vì vậy, chú thích cần nêu phạm vi tính và thang hiển thị; việc giữ hay loại bản ghi phải dựa trên kiểm tra dữ liệu, thay vì dựa riêng vào vị trí của điểm trên hình.
+
+\subsection{Dashboard tương tác}
+
+Dashboard tổ chức bộ lọc, chỉ số tổng hợp (KPI), biểu đồ và bảng trên cùng giao diện; các thành phần tương tác có thể được triển khai bằng Streamlit~\cite{streamlit}. Khi lọc theo dòng thép, nhãn hoặc độ dày, các thành phần của cùng phần phân tích phải dùng cùng tập con. Tỷ trọng cần xác định lại mẫu số sau lọc và ghi rõ ý nghĩa.
+
+Tập con rỗng cần có thông báo phù hợp. Chức năng tải dữ liệu phải xuất đúng phạm vi đã mô tả; nguồn mới được kiểm tra trước khi sử dụng. Kiểm thử cần đối chiếu số đếm, bảng và hình trong các tình huống cụ thể. Kết quả kiểm thử chức năng cung cấp bằng chứng về hoạt động của ứng dụng; hiệu quả sử dụng cần có phép đo riêng.
+
+\section{Tiểu kết chương}
+
+Chất lượng dữ liệu, mẫu số, cỡ mẫu và lựa chọn biểu đồ quyết định phạm vi diễn giải. Những căn cứ vừa trình bày được dùng để khảo sát đầu vào ở Chương 2, triển khai bằng Python ở Chương 3 và đối chiếu kết quả ở Chương 4.
+% ===== END: chuong/chuong1 =====
+% ===== BEGIN: chuong/chuong2 =====
+% !TeX encoding = UTF-8
+\chapter{Khảo sát dữ liệu, công cụ và yêu cầu thực hiện}
+\label{chap:khaosatdulieu}
+
+\section{Nguồn và cấu trúc dữ liệu}
+\label{sec:nguondulieu}
+
+\subsection{Tệp dữ liệu thực hành}
+
+Trang tính dữ liệu chính trong tệp XLSX gồm 1.961 dòng và 29 cột: 27 đặc trưng, cột ngày \tenCot{Production_Date} và cột nhãn \tenCot{Faults}. Một trang tính kèm theo cung cấp mô tả các biến. Bảng chính được dùng để thực hiện quy trình khảo sát, làm sạch và trực quan hóa. XLSX là định dạng lưu trữ; các thao tác đọc, xử lý và vẽ hình được thực hiện bằng Python.
+
+Để kiểm tra cấu trúc ngay sau khi đọc, sử dụng lệnh dưới đây. Trong các đoạn mã khảo sát, \maCot{df} là bảng dữ liệu thực hành ở trạng thái thô, chưa thêm cột truy vết hoặc thực hiện làm sạch. Bảng được đọc với \maCot{dtype=object} và \maCot{keep_default_na=False} để giữ biểu diễn đầu vào; cách đọc được trình bày ở mục~\ref{sec:ch3docdulieu}.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+df.info()
+\end{lstlisting}
+\end{minipage}\par
+
+Lược trích kết quả cấu trúc từ bảng vừa đọc:
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language={}]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1961 entries, 0 to 1960
+Data columns (total 29 columns):
+...
+dtypes: object(29)
+\end{lstlisting}
+\end{minipage}\par
+
+Kết quả xác nhận quy mô đầu vào và kiểu lưu trữ hiện tại. Do lựa chọn đọc nói trên, cả 29 cột đều có kiểu \maCot{object}; điều này chưa có nghĩa mọi ô đều là chuỗi. Các cột cũng đều được báo có 1.961 giá trị không null, vì chuỗi rỗng vẫn được tính là một giá trị. Bởi vậy, cần kiểm tra riêng ô trống và nội dung từng cột trước khi kết luận dữ liệu đầy đủ.
+
+Số dòng ban đầu chưa thể dùng ngay làm mẫu số phân tích: bảng có ô thiếu, nhãn chưa thống nhất và dòng trùng. Bản gốc cần được giữ riêng; dữ liệu làm việc phải có dấu vết thay đổi. Cột ngày là thông tin mô phỏng bổ sung, không phải thời điểm sản xuất do UCI cung cấp.
+
+\subsection{Nguồn tham chiếu UCI}
+
+Nguồn tham chiếu là bộ \textit{Steel Plates Faults} do Buscema, Terzi và Tastle công bố trên UCI Machine Learning Repository năm 2010, với DOI \texttt{10.24432/C5J88N} và giấy phép CC BY 4.0~\cite{uci}. Bộ dữ liệu có 1.941 bản ghi và 27 đặc trưng. Tệp nguồn biểu diễn bảy nhãn bằng bảy cột nhị phân, nên bảng đọc vào gồm 34 cột. Bảng~\ref{tab:nguonquymo} phân biệt vai trò của hai nguồn.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Quy mô và vai trò của hai nguồn dữ liệu}
+  \label{tab:nguonquymo}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{2.8cm}p{2.6cm}Y@{}}
+    \toprule
+    Nguồn & Quy mô đầu vào & Vai trò \\
+    \midrule
+    Tệp thực hành & 1.961 dòng; 29 cột & Đầu vào cần khảo sát và xử lý; có nhãn văn bản và ngày mô phỏng. \\
+    UCI & 1.941 dòng; 34 cột & Cung cấp cấu trúc đặc trưng, nhãn nhị phân và giá trị tham chiếu. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Bốn tọa độ \tenCot{X_Minimum}, \tenCot{X_Maximum}, \tenCot{Y_Minimum} và \tenCot{Y_Maximum} là khóa ghép dự kiến. Trước khi sử dụng, cần kiểm tra tính đầy đủ, giá trị nguyên, tính duy nhất sau xử lý trùng và mức khớp một--một giữa hai bảng. Ràng buộc ghép được kiểm tra bằng Pandas~\cite{pandasmerge}. Khi khóa chưa đạt yêu cầu, không được tự chọn một dòng tham chiếu để điền giá trị. UCI cung cấp căn cứ khôi phục; độ khớp sau khôi phục chỉ xác nhận thao tác theo nguồn này.
+
+\subsection{Nhóm biến và giới hạn thông tin}
+
+Các đặc trưng gồm tọa độ, kích thước và diện tích; độ sáng; dòng thép và độ dày; các chỉ số hình học, định hướng và logarit. \tenCot{Pixels_Areas} mô tả diện tích; \tenCot{Minimum_of_Luminosity} và \tenCot{Maximum_of_Luminosity} hỗ trợ so sánh độ sáng. Hai cờ A300/A400 cần được kiểm tra trước khi tổng hợp thành dòng thép. Giữ thang số theo nguồn, chưa tự gán đơn vị khi metadata chưa xác nhận. Đặc trưng \tenCot{LogOfAreas} đã có trong nguồn, nên cột logarit diện tích tính thêm cần được kiểm tra sự trùng thông tin.
+
+Bảy nhãn gồm \tenCot{Pastry}, \tenCot{Z_Scratch}, \tenCot{K_Scatch}, \tenCot{Stains}, \tenCot{Dirtiness}, \tenCot{Bumps} và \tenCot{Other_Faults}. Cột \tenCot{K_Scratch} trong bản CSV tham chiếu cần được ánh xạ về \tenCot{K_Scatch} theo nhãn gốc đã kiểm tra. \tenCot{Other_Faults} là nhãn gộp, chưa cho biết thành phần bên trong. Thiếu sản lượng, định danh tấm/cuộn và biến vận hành đầy đủ, dữ liệu chưa cho phép xác định tỷ lệ sản phẩm lỗi. Nguồn UN Comtrade không có khóa liên hệ với các bản ghi lỗi, nên chỉ được trình bày độc lập.
+
+\section{Khảo sát tình trạng dữ liệu trước xử lý}
+\label{sec:tinhtrangbandau}
+
+Sau khi kiểm kê cấu trúc, bảng thô được mô tả bằng lệnh sau:
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+df.describe(include="all")
+\end{lstlisting}
+\end{minipage}\par
+
+Với kiểu \maCot{object} được giữ cho toàn bộ cột, kết quả gồm \maCot{count} (số giá trị không null), \maCot{unique} (số giá trị phân biệt), \maCot{top} (giá trị xuất hiện nhiều nhất) và \maCot{freq} (số lần xuất hiện của giá trị đó). Bảng~\ref{tab:motaraw} trích bốn cột đại diện; các giá trị vẫn được đếm theo biểu diễn ban đầu.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Trích kết quả mô tả bốn cột của bảng dữ liệu thô}
+  \label{tab:motaraw}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.1cm}r r Y r@{}}
+    \toprule
+    Cột & \maCot{count} & \maCot{unique} & \maCot{top} & \maCot{freq} \\
+    \midrule
+    \maCot{Faults} & 1.961 & 28 & \maCot{Other_Faults} & 490 \\
+    \maCot{Production_Date} & 1.961 & 27 & 2025-11-10 00:00:00 & 199 \\
+    \maCot{Pixels_Areas} & 1.961 & 912 & Chuỗi rỗng & 32 \\
+    \maCot{Steel_Plate_Thickness} & 1.961 & 25 & 40 & 710 \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Hai dấu hiệu cần được xử lý trước khi đếm nhóm là 28 giá trị phân biệt ở cột nhãn và 27 giá trị phân biệt ở cột ngày. Đây là số biểu diễn trong bảng thô, chưa phải số loại lỗi hay số ngày đã chuẩn hóa. Riêng cột ngày chứa 908 giá trị kiểu ngày và 1.053 chuỗi, nên cùng một ngày có thể được ghi theo nhiều cách. Với diện tích, chuỗi rỗng xuất hiện 32 lần và còn được báo là giá trị phổ biến nhất; con số \maCot{count} bằng 1.961 vì thế không thể dùng làm cỡ mẫu diện tích hợp lệ. Tương tự, số đếm 490 của \maCot{Other_Faults} chỉ áp dụng cho cách viết đang xuất hiện nhiều nhất, chưa bao gồm các biến thể của nhãn này.
+
+Lệnh mô tả trên chưa cho trung bình, độ lệch chuẩn hoặc tứ phân vị của các đặc trưng, vì bảng đang giữ kiểu \maCot{object}. Những đại lượng đó cần được tính sau khi các cột số được chuyển kiểu và kiểm tra ở Chương 3. Khảo sát đầu vào còn phải tách vấn đề của ô, dòng và nhãn; không thể chỉ dựa vào \maCot{info()} và \maCot{describe()} để phát hiện hết lỗi. Bảng~\ref{tab:tinhtrangbandau} tổng hợp tình trạng trước xử lý từ các kiểm tra bổ sung và yêu cầu phát sinh; đây chưa phải bảng kết quả làm sạch.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Tình trạng đầu vào và yêu cầu xử lý tương ứng}
+  \label{tab:tinhtrangbandau}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{2.25cm}Y Y@{}}
+    \toprule
+    Nội dung & Tình trạng ghi nhận & Yêu cầu phát sinh \\
+    \midrule
+    Kiểu số & Một số cột có biểu diễn hỗn hợp. & Chuyển kiểu có theo dõi giá trị không chuyển được. \\
+    Ô thiếu & 70 ô: diện tích 32; độ dày 30; logarit trục Y 4; định hướng 4. & Xác định vị trí thiếu và căn cứ khôi phục từng ô. \\
+    Trùng lặp & 20 dòng trùng theo tiêu chí đặc trưng, ngày gốc và nhãn chuẩn. & Ghi rõ dòng giữ, dòng loại và tiêu chí so sánh. \\
+    Nhãn & 28 biểu diễn cho bảy nhãn chuẩn. & Kiểm tra ánh xạ và thống nhất tên nhóm. \\
+    Chỉ số & Có giá trị đáng ngờ, cần kiểm tra quan hệ giữa các cột. & Phát hiện trước tham chiếu; lưu căn cứ khi sửa. \\
+    Ngày & Định dạng hỗn hợp; giá trị mô phỏng. & Chuẩn hóa hồ sơ, giữ giá trị gốc để truy vết. \\
+    Diện tích & Dải giá trị rộng, có giá trị rất lớn. & Kiểm tra tính hợp lệ; cân nhắc trục log. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Kiểm tra kiểu của từng ô cho thấy \tenCot{X_Perimeter} chứa 1.946 số nguyên và 15 chuỗi biểu diễn số. Vấn đề cần giải quyết là đưa các giá trị tương đương về cùng kiểu tính toán và theo dõi những giá trị không chuyển được. Việc kiểm kê tại chương này giữ nguyên bảng thô; các phép chuyển kiểu, loại trùng và khôi phục giá trị được triển khai ở Chương 3.
+
+Số 70 là tổng ô thiếu trong 27 đặc trưng ban đầu, nằm ở \tenCot{Pixels_Areas}, \tenCot{Steel_Plate_Thickness}, \tenCot{Log_Y_Index} và \tenCot{Orientation_Index}. Tính thống kê trực tiếp khiến cỡ mẫu diện tích và độ dày khác nhau. Số thiếu cần được xác định lại sau từng bước, vì loại dòng trùng có thể làm thay đổi tổng. Tiêu chí trùng dùng 27 đặc trưng sau chuyển kiểu số, ngày gốc và nhãn chuẩn; giữ bản ghi đầu tiên và ghi nhật ký các dòng loại.
+
+Tương tự, 28 biểu diễn nhãn không đồng nghĩa 28 loại lỗi. Chuẩn hóa phải dựa trên ánh xạ đã kiểm tra. \tenCot{Empty_Index} bằng 2031 hoặc \tenCot{Log_Y_Index} bằng 18129 là dấu hiệu cần đối chiếu với quan hệ phái sinh và nguồn tham chiếu. Dấu hiệu phát hiện phải được ghi riêng với căn cứ chọn giá trị sửa. Diện tích lớn hoặc nằm ngoài râu boxplot chưa đủ căn cứ loại bản ghi.
+
+\section{Công cụ và môi trường thực hiện}
+\label{sec:congcu}
+
+\subsection{Công cụ xử lý và trực quan hóa}
+
+Python và Jupyter Notebook tổ chức các bước cùng phần giải thích và đầu ra. Pandas đảm nhiệm đọc bảng, kiểm tra kiểu, chuẩn hóa, ghép nguồn và tổng hợp; NumPy hỗ trợ phép tính số, logarit. Tệp XLSX được đọc qua \tenCot{openpyxl}. Công thức và điều kiện phải thể hiện rõ trong mã.
+
+Matplotlib tạo biểu đồ tĩnh cho báo cáo~\cite{matplotlib}; Streamlit tổ chức dashboard, còn Plotly cung cấp biểu đồ tương tác~\cite{streamlit}. \tenCot{requests} đọc nguồn qua mạng; \tenCot{json} xử lý phản hồi JSON. Phiên bản và lệnh chạy cần được lưu cùng sản phẩm; chỉ liệt kê thư viện thực sự sử dụng.
+
+\subsection{Căn cứ lựa chọn Python}
+
+Python phù hợp với yêu cầu dùng chung quy trình cho dữ liệu, biểu đồ và dashboard. Quy tắc chuẩn hóa hoặc công thức tỷ trọng được viết rõ có thể chạy lại với cùng đầu vào; bảng thống kê được xuất để đưa vào báo cáo. Ưu điểm được xem xét là khả năng tổ chức và truy vết, chưa có phép đo để so sánh tốc độ hoặc hiệu quả với công cụ khác.
+
+\section{Yêu cầu phân tích và tiêu chí đọc kết quả}
+\label{sec:yeucauphanTich}
+
+\subsection{Đầu ra cho Q0--Q5}
+
+Các câu hỏi ở phần mở đầu được cụ thể hóa trong Bảng~\ref{tab:yeucauq0q5}. Biểu đồ cần đi cùng bảng thống kê, cỡ mẫu và phạm vi tính. Kết quả hoàn chỉnh đặt ở Chương 4.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Đầu ra và trọng tâm đọc kết quả cho Q0--Q5}
+  \label{tab:yeucauq0q5}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{0.7cm}Y Y@{}}
+    \toprule
+    Mã & Đầu ra cần có & Trọng tâm đọc kết quả \\
+    \midrule
+    Q0 & Bảng phát hiện, nhật ký và kiểm tra sau xử lý. & Phân biệt ô/dòng, căn cứ sửa và điều kiện toàn vẹn. \\
+    Q1 & Thanh ngang, Pareto và bảng cơ cấu. & Thứ hạng, ba nhãn đầu, lũy kế 80\% và chênh lệch cỡ mẫu. \\
+    Q2 & Cột nhóm, cột 100\% và tỷ trọng hai chiều. & Cơ cấu trong dòng thép và mức tập trung của từng nhãn. \\
+    Q3 & Scatter độ sáng và bảng tứ phân vị. & Vùng trung tâm, mức chồng lấn và cỡ mẫu theo nhãn. \\
+    Q4 & Boxplot độ dày và bảng nhãn theo dòng thép. & Trung vị, IQR, độ lệch chuẩn và số quan sát. \\
+    Q5 & Boxplot diện tích trục log và bảng thống kê. & Trung vị, IQR, cực trị và điểm ngoài râu theo nhóm. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Ở Q0, bảng phát hiện được lập trước khi sử dụng giá trị tham chiếu. Nhật ký ghi vị trí, giá trị cũ/mới và căn cứ; kiểm tra sau xử lý gồm số dòng, kiểu, nhãn, khóa ghép và mức khớp nguồn. Q1 cần đọc thứ hạng, tỷ trọng ba nhãn đầu, số nhãn để đạt ít nhất 80\% lũy kế và tỷ số cỡ mẫu lớn nhất/nhỏ nhất. Các chỉ số này mô tả cơ cấu mẫu, chưa xếp hạng thiệt hại.
+
+Q2 dùng tỷ trọng dòng thép trong từng nhãn để xác định mức tập trung. Gọi $n_{g,s}$ là số bản ghi thuộc nhãn $g$ và dòng thép $s$, điều kiện là
+\begin{equation}
+  \max_s\frac{n_{g,s}}{\sum_t n_{g,t}}>0{,}90.
+  \label{eq:tieuchiq2}
+\end{equation}
+Mốc trên 90\% được sử dụng theo mục V.3 của tài liệu đọc~\cite{reading}, như một quy ước khám phá. Đây không phải chuẩn kỹ thuật ngành thép. Khi đọc cơ cấu nhãn trong A300/A400, mẫu số đổi sang tổng bản ghi của từng dòng thép, theo hai cách tính ở công thức~\ref{eq:tytronghaichieu}.
+
+Q3 xét khoảng P25--P75 của độ sáng tối thiểu. Nhãn $g$ đáp ứng tiêu chí khi, với mọi nhãn $h\ne g$, có
+\begin{equation}
+  \mathrm{P75}_g<\mathrm{P25}_h
+  \quad\text{hoặc}\quad
+  \mathrm{P25}_g>\mathrm{P75}_h.
+  \label{eq:tieuchiq3}
+\end{equation}
+Khoảng chạm đầu mút không đáp ứng điều kiện. Tiêu chí được bổ sung sau khảo sát kết quả, không phải giả thuyết xác định trước. Nó chỉ mô tả phần trung tâm; scatter và cực trị cần được đọc để nhận diện chồng lấn. Q4 ghi rõ cỡ mẫu; nhóm $N=1$ chỉ mô tả một bản ghi, chưa đánh giá biến thiên hoặc suy rộng. Q5 sử dụng đại lượng thống kê thay cho nhận xét ``khác biệt rõ'' chưa định nghĩa; kiểm tra diện tích dương trước dùng trục log, tính râu trên thang gốc.
+
+\subsection{Yêu cầu dashboard và kiểm thử}
+
+Dashboard cần lọc theo dòng thép, nhãn và khoảng độ dày; KPI, biểu đồ, bảng trong phần phân tích lỗi sử dụng cùng tập con. Tab chất lượng thể hiện tình trạng toàn nguồn và phải ghi rõ phạm vi. Tập rỗng cần có thông báo; CSV xuất đúng phạm vi đã mô tả. Chức năng đọc lại nguồn phải kiểm tra dữ liệu mới, giữ bản hợp lệ gần nhất khi nguồn lỗi. Kiểm thử bao gồm lọc kết hợp, tập rỗng, xuất dữ liệu, cập nhật và lỗi nguồn. Phạm vi năm thương mại độc lập với bộ lọc lỗi.
+
+\section{Định hướng thực hiện và tiểu kết chương}
+
+Khảo sát xác định những vấn đề cần giải quyết trước khi diễn giải biểu đồ: chuẩn hóa kiểu và nhãn, xác định trùng, kiểm tra quan hệ nội tại, xác nhận khóa rồi khôi phục có truy vết. Chương 3 triển khai bằng Python; Chương 4 đối chiếu kết quả với yêu cầu tại mục~\ref{sec:yeucauphanTich}. Tình trạng đầu vào, cách thực hiện và bằng chứng được trình bày theo mạch này.
+% ===== END: chuong/chuong2 =====
+% ===== BEGIN: chuong/chuong3 =====
+% !TeX encoding = UTF-8
+\chapter{Xây dựng quy trình xử lý và trực quan hóa bằng Python}
+\label{chap:thuchien}
+
+\section{Quy trình thực hiện tổng thể}
+
+Một biểu đồ đáng tin cậy phải bắt đầu từ một bảng dữ liệu có thể kiểm tra. Với những vấn đề đã khảo sát ở Chương 2, quy trình được tổ chức để mỗi lần biến đổi đều xác định được đầu vào, điều kiện áp dụng và đầu ra. Tệp thô được giữ nguyên; bảng làm việc, dữ liệu sạch và dữ liệu phân tích được lưu riêng. Nhờ vậy, một giá trị trên biểu đồ có thể được đối chiếu ngược với bản ghi nguồn và nhật ký xử lý.
+
+Sáu bước của bài tập được nối thành một luồng thực hiện trong Bảng~\ref{tab:quytrinhpython}. Các thao tác được trình bày tuần tự trong notebook Python, kèm giải thích và kết quả trung gian. Các hàm xử lý phục vụ dashboard được tập hợp thành một mô-đun, tức một bộ mã có chức năng đọc nguồn, làm sạch và tạo biến để ứng dụng có thể thực hiện lại quy trình. Chương này trình bày cách thực hiện cùng một số biểu đồ đại diện; phần phân tích đầy đủ theo Q1--Q5 được trình bày ở Chương 4.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Tổ chức sáu bước trong quy trình Python}
+  \label{tab:quytrinhpython}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{0.95cm}p{3.85cm}Y@{}}
+    \toprule
+    Bước & Công việc & Đầu ra và điểm kiểm tra \\
+    \midrule
+    1 & Xác định yêu cầu & Q0--Q5; mẫu số, tiêu chí và sản phẩm cần có. \\
+    2 & Đọc, tổ chức nguồn & Bảng thô, hồ sơ nguồn và cấu trúc cột. \\
+    3 & Làm sạch, kết hợp & Bảng sạch, nhật ký, khóa ghép và kiểm tra toàn vẹn. \\
+    4 & Tạo biến, tính chỉ số & Bảng phân tích và thống kê theo nhóm. \\
+    5 & Xây dựng biểu đồ & Hình và bảng hỗ trợ, dùng cùng dữ liệu phân tích. \\
+    6 & Xây dựng dashboard & Lọc, hiển thị, tải CSV và cập nhật nguồn. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Các đoạn mã dưới đây chỉ giữ những dòng quyết định phép biến đổi; phần nhập thư viện, khai báo đường dẫn và xuất toàn bộ nhật ký nằm trong mã đầy đủ. Các hình bảng là ảnh chụp cell Python cùng đầu ra Pandas trên giao diện notebook nền tối. Một notebook minh chứng tập hợp các bảng ở từng giai đoạn của quy trình và lượt kiểm tra nội tại bổ sung; các cell chọn một số dòng, cột thực tế để đầu ra đủ rõ khi đưa vào báo cáo. XLSX chỉ đóng vai trò định dạng đầu vào.
+
+\section{Đọc và tổ chức dữ liệu đầu vào}
+\label{sec:ch3docdulieu}
+
+Python đọc trang tính dữ liệu chính của nguồn thực hành và bảng tham chiếu UCI. Lựa chọn \maCot{dtype=object} và \maCot{keep_default_na=False} giữ biểu diễn ban đầu, kể cả chuỗi rỗng, trước khi kiểm tra và chuyển kiểu. Trong đoạn mã, \maCot{file_thuc_hanh} và \maCot{file_uci} là hai biến đại diện cho nguồn thực hành và nguồn tham chiếu đã mô tả ở mục~\ref{sec:nguondulieu}; \maCot{ten_trang_du_lieu} chỉ trang tính chứa các bản ghi cần đọc. Những biến này được thiết lập theo nguồn đầu vào khi thực thi. Pandas được nhập với tên \maCot{pd}, NumPy với tên \maCot{np}.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+du_lieu_goc = pd.read_excel(
+    file_thuc_hanh, sheet_name=ten_trang_du_lieu,
+    dtype=object, keep_default_na=False)
+uci_goc = pd.read_csv(file_uci)
+du_lieu = du_lieu_goc.copy(deep=True)
+du_lieu.insert(0, "Source_Row", np.arange(2, len(du_lieu) + 2))
+\end{lstlisting}
+\end{minipage}\par
+
+\maCot{Source_Row} lưu số dòng của bảng nguồn, bắt đầu từ 2 vì dòng đầu là tiêu đề. Trường này giữ nguyên qua loại trùng và ghép bảng, giúp tránh nhầm chỉ số DataFrame sau khi sắp xếp với vị trí bản ghi ban đầu. \maCot{Source_File} ghi nhận nguồn xuất xứ; phía UCI có \maCot{Source_Row_UCI} để xác định dòng tham chiếu. Các trường này phục vụ truy vết, không tham gia tính đặc trưng lỗi. Hình~\ref{fig:ch3tho} cho thấy một trích đoạn đầu vào trước khi xử lý. Ô diện tích ở dòng nguồn 7 còn trống; kiểu của các giá trị được đối chiếu ở bước chuẩn hóa tiếp theo.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/01_du_lieu_tho.png}
+  \captionof{figure}{Ảnh cell hiển thị dữ liệu thô trên các dòng nguồn được chọn}
+  \label{fig:ch3tho}
+\end{minipage}\end{center}
+
+Dữ liệu được tổ chức trong các thư mục tương đối tính từ thư mục gốc của dự án. Thư mục \maCot{data/raw} lưu các nguồn đầu vào; \maCot{data/clean} lưu bảng sau làm sạch; \maCot{data/analysis} lưu bảng đã bổ sung biến phái sinh. Nhật ký xử lý và các bảng kiểm tra được lưu tại \maCot{outputs/buoc_3}; các bảng tổng hợp, hình trực quan và kết quả kiểm thử được tổ chức trong thư mục đầu ra của từng bước tiếp theo. Cách bố trí này giúp đối chiếu các trạng thái dữ liệu và tránh ghi đè nguồn đầu vào.
+
+\section{Thực hiện làm sạch, kết hợp và kiểm chứng dữ liệu}
+
+\subsection{Chuẩn hóa nhãn, kiểu số và loại trùng}
+
+Nhãn được đưa về chữ thường, loại ký tự ngăn cách rồi ánh xạ bằng bảng đã kiểm tra. Chẳng hạn, \maCot{Pastry}, \maCot{Pa stry} và \maCot{Pastrry} cùng được đưa về \maCot{Pastry}; phép ánh xạ xử lý biến thể đã xác nhận, không tự đoán mọi chuỗi gần giống. Quy ước \maCot{K_Scatch} được dùng nhất quán ở bảng phân tích; tên \maCot{K_Scratch} ở nguồn UCI được chuyển theo quy ước này. Mọi nhãn chưa có trong ánh xạ phải được phát hiện trước khi tiếp tục.
+
+Trong đoạn mã sau, \maCot{anh_xa_nhan} là bảng ánh xạ và \maCot{cot_so} là danh sách 27 đặc trưng lấy từ cấu trúc UCI. Khi chuyển kiểu, chuỗi rỗng được xem là thiếu. \maCot{errors="coerce"} chỉ an toàn khi đi cùng kiểm tra thất bại: một chuỗi không rỗng mà không chuyển được không được âm thầm bỏ qua.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+k = du_lieu["Faults"].astype(str).str.lower()
+k = k.str.replace(r"[^a-z0-9]", "", regex=True)
+du_lieu["Fault_Type_Clean"] = k.map(anh_xa_nhan)
+assert du_lieu["Fault_Type_Clean"].notna().all()
+for cot in cot_so:
+    cu = du_lieu[cot].copy()
+    so = pd.to_numeric(cu.mask(cu.eq("")), errors="coerce")
+    that_bai = cu.notna() & cu.ne("") & so.isna()
+    assert not that_bai.any()
+    du_lieu[cot] = so
+\end{lstlisting}
+\end{minipage}\par
+
+Hình~\ref{fig:ch3chuanhoa} đối chiếu cùng các dòng trước và sau chuẩn hóa. Số biểu diễn nhãn giảm từ 28 về bảy nhãn chuẩn; không có chuỗi số không rỗng nào chuyển đổi thất bại. Những ô vốn trống được giữ là thiếu để xác định căn cứ khôi phục ở bước sau. Trong bảng đối chiếu, \maCot{str} chỉ kiểu chuỗi, \maCot{numeric} chỉ giá trị đã chuyển sang kiểu số; \maCot{NaN} và \maCot{missing} biểu thị giá trị thiếu sau chuyển kiểu.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/02_chuan_hoa.png}
+  \captionof{figure}{Ảnh cell đối chiếu nhãn và kiểu số trước, sau chuẩn hóa}
+  \label{fig:ch3chuanhoa}
+\end{minipage}\end{center}
+
+Trùng lặp được xác định sau chuẩn hóa theo 27 đặc trưng, ngày gốc và nhãn chuẩn. Chỉ có chung tọa độ chưa đủ để loại một dòng nếu các trường còn lại khác nhau. Mã giữ lần xuất hiện đầu tiên; nhật ký lưu cả \maCot{Source_Row} của dòng loại và \maCot{Kept_Source_Row} của dòng giữ. Cờ \maCot{bi_trung} được tính trước khi lọc để thông tin này không bị mất.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+tieu_chi = cot_so + ["Production_Date", "Fault_Type_Clean"]
+bi_trung = du_lieu.duplicated(tieu_chi, keep="first")
+du_lieu = du_lieu.loc[~bi_trung].copy()
+\end{lstlisting}
+\end{minipage}\par
+
+Hình~\ref{fig:ch3trung} minh họa các cặp dòng giữ--loại được ghi trong nhật ký loại trùng. Sau thao tác này, 1.961 dòng còn 1.941 dòng; tổng ô thiếu trong 27 đặc trưng giảm từ 70 xuống 67. Ba ô thiếu không cần điền nữa thuộc các bản sao đã loại, vì vậy số khôi phục không được lấy trực tiếp từ tổng thiếu ban đầu.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/03_loai_trung.png}
+  \captionof{figure}{Ảnh cell hiển thị các cặp bản ghi trùng và dòng được giữ}
+  \label{fig:ch3trung}
+\end{minipage}\end{center}
+
+\subsection{Kiểm tra nội tại trước khôi phục}
+\label{sec:ch3kiemtranoitai}
+
+Phép kiểm tra nội tại sử dụng bảng đã chuẩn hóa và loại trùng, trước khi lấy giá trị UCI để điền hoặc sửa. Trong notebook, kiểm tra công thức được thực hiện sau khôi phục. Vì vậy, bài bổ sung một lượt rà soát trên bảng chưa khôi phục để xác định những sai lệch có thể phát hiện từ quan hệ giữa các cột. Các hình và số đếm ở giai đoạn này sử dụng kết quả rà soát bổ sung, được ghi riêng với kết quả đối chiếu nguồn.
+
+Các quan hệ làm việc gồm \maCot{Empty_Index} với diện tích và khung bao, \maCot{Log_Y_Index} với khoảng tọa độ Y, \maCot{LogOfAreas} với diện tích và \maCot{Orientation_Index} với hai kích thước khung bao. Chúng đã được đối chiếu trong quy trình, nhưng không được coi là định nghĩa chính thức do metadata UCI cung cấp. Mã minh họa dưới đây giữ một quan hệ tiêu biểu; \maCot{du_lieu} vẫn là bảng chưa khôi phục.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+dx = du_lieu["X_Maximum"] - du_lieu["X_Minimum"]
+dy = du_lieu["Y_Maximum"] - du_lieu["Y_Minimum"]
+du_kien = 1 - du_lieu["Pixels_Areas"] / (dx * dy)
+du_dieu_kien = du_lieu["Empty_Index"].notna()
+du_dieu_kien &= du_kien.notna() & np.isfinite(du_kien)
+sai_lech = (du_lieu["Empty_Index"] - du_kien.round(4)).abs()
+gan_co = du_dieu_kien & sai_lech.gt(0.00010001)
+\end{lstlisting}
+\end{minipage}\par
+
+Điều kiện đủ toán hạng và hữu hạn loại khỏi phép kiểm tra những trường hợp chưa tính được giá trị dự kiến. Dung sai xét đến độ chính xác làm tròn của chỉ số. Hình~\ref{fig:ch3noitai} thể hiện giá trị trong tệp và giá trị tính từ những cột cùng dòng; chưa sử dụng giá trị tham chiếu để tạo dấu hiệu phát hiện.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/04_kiem_tra_noi_tai.png}
+  \captionof{figure}{Ảnh cell kiểm tra nội tại bổ sung trên bảng chưa khôi phục}
+  \label{fig:ch3noitai}
+\end{minipage}\end{center}
+
+Lượt kiểm tra bổ sung gắn cờ 16 ô: mười ô \maCot{Empty_Index} và sáu ô \maCot{Log_Y_Index}. Một ô có thể vi phạm cả miền giá trị lẫn quan hệ phái sinh; tổng được tính theo cặp dòng--trường duy nhất. Cờ chỉ xác định vị trí cần xem xét. Giá trị thay thế vẫn phải có căn cứ riêng, được xác nhận khi ghép với nguồn tương ứng.
+
+\subsection{Ghép UCI và khôi phục có truy vết}
+
+Bốn trường \maCot{X_Minimum}, \maCot{X_Maximum}, \maCot{Y_Minimum}, \maCot{Y_Maximum} được chọn làm \maCot{khoa_ghep} sau khi kiểm tra ở cả hai bảng: không thiếu, có giá trị nguyên và không trùng tổ hợp khóa. Bảng \maCot{tham_chieu} chứa 27 đặc trưng, dòng UCI và nhãn suy ra từ bảy cột one-hot; mỗi dòng nguồn phải có đúng một cờ nhãn bằng 1. Các điều kiện này bảo vệ phép ghép khỏi nhân bản bản ghi hoặc chọn nhầm nguồn.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+du_lieu_ghep = du_lieu.merge(
+    tham_chieu, on=khoa_ghep, how="left",
+    suffixes=("", "_UCI"), validate="one_to_one", indicator=True)
+assert du_lieu_ghep["_merge"].eq("both").all()
+assert du_lieu_ghep["Fault_Type_Clean"].eq(
+    du_lieu_ghep["Fault_Type_UCI"]).all()
+\end{lstlisting}
+\end{minipage}\par
+
+\maCot{validate="one_to_one"} yêu cầu quan hệ một--một; \maCot{indicator=True} cho phép kiểm tra dòng khớp và chưa khớp~\cite{pandasmerge}. Chỉ khi toàn bộ bản ghi ghép được và nhãn tương ứng nhất quán, giá trị tham chiếu mới được dùng. Hình~\ref{fig:ch3khoiphuc} minh họa ô thiếu và ô có giá trị khác nguồn, cùng vị trí dòng UCI đã xác định.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/05_khoi_phuc_uci.png}
+  \captionof{figure}{Ảnh cell trích nhật ký khôi phục và sửa giá trị theo UCI}
+  \label{fig:ch3khoiphuc}
+\end{minipage}\end{center}
+
+Hai thao tác được phân biệt trong nhật ký: khôi phục ô đang thiếu và sửa ô có giá trị khác nguồn. Ví dụ, \maCot{Pixels_Areas} tại dòng nguồn 7 được khôi phục thành 630; \maCot{Empty_Index} tại dòng 101 được sửa từ 2031 thành 0,2031. Giá trị sau lấy từ UCI tại khóa đã ghép, không suy đoán bằng cách dịch dấu thập phân. Đoạn mã sau minh họa một trường \maCot{cot} không thuộc khóa; mã đầy đủ bổ sung loại thao tác và căn cứ trước khi ghép nhật ký của các trường.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+cu = du_lieu_ghep[cot].copy()
+moi = du_lieu_ghep[cot + "_UCI"]
+thieu = cu.isna()
+khac = ~thieu & ~np.isclose(cu, moi, rtol=0, atol=1e-9)
+doi = thieu | khac
+nhat_ky = du_lieu_ghep.loc[doi,
+    ["Source_Row", "Source_Row_UCI"]].copy()
+nhat_ky["Truong"] = cot
+nhat_ky["Gia_tri_truoc"] = cu[doi]
+nhat_ky["Gia_tri_sau"] = moi[doi]
+du_lieu_ghep.loc[doi, cot] = moi[doi]
+\end{lstlisting}
+\end{minipage}\par
+
+Quy trình khôi phục 67 ô thiếu và sửa 16 giá trị số. Các ví dụ ở Hình~\ref{fig:ch3khoiphuc} được trích từ nhật ký khôi phục ô thiếu và nhật ký sửa giá trị; mỗi mục ghi dòng nguồn, dòng tham chiếu, trường thay đổi và giá trị trước--sau. Sau xử lý, 52.407 ô đặc trưng được đối chiếu với nguồn tham chiếu. Độ khớp này xác nhận đúng phép ghép và thao tác khôi phục; do UCI đã cung cấp giá trị thay thế, nó không phải thước đo độc lập về khả năng phát hiện sai sót. Nhật ký phát hiện trước tham chiếu và nhật ký thay đổi được giữ riêng để kiểm tra hai hoạt động này.
+
+\subsection{Chuẩn hóa ngày, gắn cờ diện tích và kiểm tra đầu ra}
+
+Ngày gốc được giữ trong \maCot{Production_Date}; ngày chuẩn lưu ở \maCot{Production_Date_Clean}, kèm cờ \maCot{Date_Is_Simulated} để nhận biết ngày mô phỏng. Hàm \maCot{clean_simulated_date} chuẩn hóa các cách biểu diễn ngày theo lịch mô phỏng gồm các ngày 2, 3, 10, 21 và 30 tháng 11 năm 2025. Ví dụ, giá trị đầu vào tại dòng 2 là 2025-02-11 được chuyển thành 2025-11-02 theo lịch đã biết. Đây là quy tắc riêng của dữ liệu thực hành, không phải cách đảo ngày/tháng áp dụng cho mọi dữ liệu. Chuẩn hóa phục vụ tính nhất quán và truy vết; ngày này không được dùng để phân tích xu hướng sản xuất.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+du_lieu_ghep["Production_Date_Clean"] = pd.to_datetime(
+    du_lieu_ghep["Production_Date"].map(clean_simulated_date))
+du_lieu_ghep["Date_Is_Simulated"] = True
+area = du_lieu_ghep["Pixels_Areas"]
+q1, q3 = area.quantile([0.25, 0.75])
+du_lieu_ghep["Area_Outlier_Flag"] = (
+    area.lt(q1 - 1.5 * (q3 - q1)) | area.gt(q3 + 1.5 * (q3 - q1)))
+\end{lstlisting}
+\end{minipage}\par
+
+Cờ diện tích được tính trên toàn bộ 1.941 dòng đã khôi phục theo hàng rào $1{,}5\times\mathrm{IQR}$. Có 395 dòng được gắn cờ và giữ lại. Cờ toàn tập này phục vụ xem xét dữ liệu; các điểm ngoài râu ở boxplot Q5 được tính lại trong từng nhóm, nên hai số đếm không đồng nghĩa. Theo nguyên tắc ở Chương 1, diện tích lớn chưa đủ căn cứ xác định sai dữ liệu~\cite{nistbox}.
+
+Trước khi xuất bảng sau làm sạch, quy trình kiểm tra số dòng, nhãn hợp lệ, không thiếu đặc trưng, cờ dòng thép, quan hệ tọa độ, miền độ sáng và các công thức làm việc. Bảng được lưu ở định dạng CSV rồi đọc lại để đối chiếu dữ liệu số và nhãn; ngày được phân tích về kiểu ngày khi cần so sánh. Tùy chọn \maCot{index=False} tránh xuất thêm chỉ số dòng của DataFrame; mã hóa \maCot{utf-8-sig} hỗ trợ lưu chữ tiếng Việt. Kiểm tra sau xuất bảo đảm bảng giao cho bước phân tích giữ đúng giá trị đã xử lý.
+
+\section{Tạo biến phái sinh và các bảng thống kê}
+
+Bảng phân tích được tạo từ bản sao bảng sau làm sạch. Trong mã minh họa, \maCot{loi_thep_sach} đại diện cho bảng sau làm sạch và \maCot{d} là tên viết gọn của bảng phân tích. Trước khi tổng hợp cột dòng thép \maCot{Steel_Type}, hai cờ A300/A400 được kiểm tra chỉ nhận 0 hoặc 1 và có tổng bằng 1 trên mỗi dòng. Kích thước, diện tích và độ dày phải dương; độ sáng tối đa không được nhỏ hơn tối thiểu. Những điều kiện này cần đạt trước khi lấy hiệu hoặc logarit.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+d = loi_thep_sach.copy(deep=True)
+d["Steel_Type"] = np.where(
+    d["TypeOfSteel_A300"].eq(1), "A300", "A400")
+d["X_Range"] = d["X_Maximum"] - d["X_Minimum"]
+d["Y_Range"] = d["Y_Maximum"] - d["Y_Minimum"]
+d["Luminosity_Range"] = (
+    d["Maximum_of_Luminosity"] - d["Minimum_of_Luminosity"])
+d["Log_Pixels_Areas"] = np.log10(d["Pixels_Areas"].astype(float))
+\end{lstlisting}
+\end{minipage}\par
+
+Hình~\ref{fig:ch3phantich} minh họa các trường bổ sung trên những bản ghi thực tế, cùng ngày chuẩn và cờ mô phỏng. \maCot{X_Range} và \maCot{Y_Range} mô tả kích thước khung bao, không thay thế diện tích vùng lỗi. \maCot{Luminosity_Range} là hiệu độ sáng tối đa--tối thiểu; chưa có căn cứ đồng nhất nó với \maCot{Luminosity_Index}. \maCot{Log_Pixels_Areas} dùng cơ số 10 và tính lại thông tin đã có trong \maCot{LogOfAreas}; sai khác được kiểm tra trong dung sai 0,00010001 do làm tròn. Cột này hỗ trợ kiểm chứng, không tăng số đặc trưng độc lập.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/06_du_lieu_phan_tich.png}
+  \captionof{figure}{Ảnh cell hiển thị biến phái sinh và ngày mô phỏng sau chuẩn hóa}
+  \label{fig:ch3phantich}
+\end{minipage}\end{center}
+
+Các bảng thống kê được tính trực tiếp từ bảng phân tích. Q1 dùng số đếm giảm dần, tỷ trọng và lũy kế. Q2 bắt đầu từ bảng chéo nhãn--dòng thép; chuẩn hóa theo cột cho cơ cấu nhãn trong dòng thép, chuẩn hóa theo hàng cho phân bố dòng thép trong từng nhãn. Hai tỷ trọng được lưu thành hai trường riêng trong bảng thống kê; mã minh họa dưới đây thể hiện phép chia theo hai chiều.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+dem = pd.crosstab(d["Fault_Type_Clean"], d["Steel_Type"])
+trong_dong_thep = dem.div(dem.sum(axis=0), axis=1) * 100
+trong_nhan = dem.div(dem.sum(axis=1), axis=0) * 100
+g = d.groupby("Fault_Type_Clean")["Pixels_Areas"]
+thong_ke = g.agg(N="count", Median="median", SD="std")
+thong_ke["P25"] = g.quantile(0.25)
+thong_ke["P75"] = g.quantile(0.75)
+thong_ke["IQR"] = thong_ke["P75"] - thong_ke["P25"]
+\end{lstlisting}
+\end{minipage}\par
+
+Mã minh họa thống kê diện tích được áp dụng tương tự cho độ sáng và độ dày; bổ sung min/max khi xuất bảng. Độ dày còn được nhóm theo nhãn và dòng thép để so sánh trong cùng nhãn. \maCot{std} sử dụng độ lệch chuẩn mẫu với mẫu số $N-1$; nhóm $N=1$ giữ kết quả chưa xác định, không điền 0. Với dashboard, dòng thép không có quan sát sau lọc cũng chưa có tỷ trọng. Bảng thống kê và biểu đồ đều phải giữ cỡ mẫu tương ứng với phạm vi đang xét.
+
+\section{Xây dựng biểu đồ theo câu hỏi phân tích}
+
+Biểu đồ được dựng từ bảng phân tích và các bảng tổng hợp đã kiểm tra, không tính lại trên nguồn thô. Ba hình dưới đây minh họa trực tiếp cách chuyển số liệu thành biểu đồ cơ cấu, quan hệ giữa hai biến và phân bố theo nhóm. Mã được rút gọn để làm rõ thao tác chính; tiêu đề, nhãn trục, cỡ mẫu, màu và chú thích nguồn được bổ sung trong mã đầy đủ. \maCot{MAU_LOI} là bảng màu gắn cố định với bảy nhãn, được dùng thống nhất giữa các hình.
+
+Những hình còn lại được tổ chức theo cùng nguyên tắc. Q2 dùng số đếm cho cột nhóm, còn cột 100\% dùng tỷ trọng trong từng dòng thép; bảng tỷ trọng trong nhãn cung cấp căn cứ đọc ngưỡng trên 90\%. Q4 dùng boxplot độ dày và bảng nhãn--dòng thép. Mỗi hình phải ghi rõ phạm vi và giữ cỡ mẫu khi so sánh.
+
+\subsection{Biểu đồ cơ cấu và tỷ trọng lũy kế}
+
+Thanh ngang và Pareto ở Q1 cùng sử dụng thứ tự số đếm giảm dần. Trong Pareto, cột biểu diễn số bản ghi, còn đường biểu diễn tỷ trọng lũy kế trên tổng bản ghi lỗi. Hai đại lượng dùng hai trục tung riêng. Mốc 80\% được vẽ ở trục phần trăm để đọc mức tập trung trong mẫu.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+dem = d["Fault_Type_Clean"].value_counts()
+luy_ke = dem.cumsum() / dem.sum() * 100
+fig, ax = plt.subplots(figsize=(11, 6))
+ax.bar(dem.index, dem, color=[MAU_LOI[n] for n in dem.index])
+ax_luy_ke = ax.twinx()
+ax_luy_ke.plot(dem.index, luy_ke, marker="o", color="black")
+ax_luy_ke.axhline(80, linestyle="--", color="gray")
+ax_luy_ke.set_ylim(0, 105)
+\end{lstlisting}
+\end{minipage}\par
+
+Hình~\ref{fig:ch3pareto} là sản phẩm từ mã vẽ đầy đủ trên 1.941 bản ghi sau xử lý. Nhãn phần trăm nằm trên đường lũy kế; tên loại lỗi được xoay để tránh chồng chữ. Chú thích phân biệt số lượng với phần trăm, giúp người đọc theo dõi đúng mẫu số khi đối chiếu bảng cơ cấu.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/07_pareto_loi.png}
+  \captionof{figure}{Minh họa Pareto từ bảng số đếm và tỷ trọng lũy kế của các nhãn lỗi}
+  \label{fig:ch3pareto}
+\end{minipage}\end{center}
+
+\subsection{Biểu đồ phân tán độ sáng theo nhãn}
+
+Q3 đặt độ sáng tối thiểu trên trục ngang và tối đa trên trục dọc. Mỗi bản ghi tạo một điểm; nhóm nhãn quyết định màu. Tham số \maCot{alpha=0.35} giảm độ đậm để các vùng có nhiều điểm chồng lên nhau vẫn đọc được. Không nối các điểm, vì dữ liệu không biểu diễn một chuỗi có thứ tự.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+fig, ax = plt.subplots(figsize=(11, 7))
+for nhan, nhom in d.groupby("Fault_Type_Clean"):
+    ax.scatter(
+        nhom["Minimum_of_Luminosity"],
+        nhom["Maximum_of_Luminosity"],
+        s=22, alpha=0.35, color=MAU_LOI[nhan],
+        edgecolors="none", label=f"{nhan} (n={len(nhom)})")
+ax.legend(title="Loai loi", bbox_to_anchor=(1.02, 1))
+\end{lstlisting}
+\end{minipage}\par
+
+Hình~\ref{fig:ch3scatter} giữ toàn bộ bản ghi, ghi cỡ mẫu từng nhãn trong chú giải và sử dụng thang độ sáng theo nguồn. Hệ số Pearson trong tiêu đề là thông tin bổ trợ về quan hệ giữa hai biến. Nhận xét vùng trung tâm cần đối chiếu thêm P25/P75 theo tiêu chí tại mục~\ref{sec:yeucauphanTich}, vì độ trong suốt và sự chồng điểm chưa thay thế được bảng thống kê.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/08_scatter_do_sang.png}
+  \captionof{figure}{Minh họa scatter độ sáng tối thiểu--tối đa, phân biệt nhãn bằng màu và cỡ mẫu}
+  \label{fig:ch3scatter}
+\end{minipage}\end{center}
+
+\subsection{Boxplot diện tích trên trục logarit}
+
+Q5 giữ diện tích gốc để tính hộp, râu và điểm ngoài râu, sau đó mới đổi trục hiển thị sang log. Các nhãn được xếp cùng thứ tự với bảng cơ cấu; hộp nằm ngang để đọc rõ tên nhóm và cỡ mẫu. Điều kiện diện tích dương đã được kiểm tra ở bước tạo bảng phân tích.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+nhan = d["Fault_Type_Clean"].value_counts().index.tolist()
+mau = [d.loc[d["Fault_Type_Clean"].eq(n), "Pixels_Areas"]
+       for n in nhan]
+fig, ax = plt.subplots(figsize=(10, 5))
+ax.boxplot(mau, vert=False, whis=1.5, showfliers=True)
+ax.set_yticks(range(1, len(nhan) + 1), nhan)
+ax.invert_yaxis()
+ax.set_xscale("log")
+\end{lstlisting}
+\end{minipage}\par
+
+Hình~\ref{fig:ch3boxarea} là đầu ra hoàn chỉnh tương ứng với đoạn mã minh họa. \maCot{set_xscale("log")} thay cách hiển thị sau khi hộp đã được tính từ \maCot{Pixels_Areas}; nó không thay dữ liệu đầu vào thành cột logarit. Nhãn trục vẫn ghi diện tích gốc. Các điểm ngoài râu được giữ và tính theo từng nhãn, khác với cờ IQR toàn tập ở bước làm sạch.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{figures/chuong3/09_boxplot_dien_tich_log.png}
+  \captionof{figure}{Minh họa boxplot tính trên diện tích gốc rồi hiển thị với trục log cơ số 10}
+  \label{fig:ch3boxarea}
+\end{minipage}\end{center}
+
+Các hình được xuất PNG độ phân giải 300 dpi và SVG để có thể đưa vào báo cáo với chữ rõ~\cite{matplotlib}. Bảng hỗ trợ được xuất CSV cùng giai đoạn, giúp đối chiếu hình với số liệu. Các minh họa ở mục này thể hiện cách dựng và quy tắc hiển thị; phần trả lời đầy đủ Q1--Q5 được triển khai ở Chương 4.
+
+\section{Xây dựng dashboard tương tác}
+
+\subsection{Kiến trúc và tổ chức giao diện}
+
+Dashboard dùng Streamlit để tổ chức giao diện và Plotly để vẽ biểu đồ tương tác. Khi đọc nguồn, mô-đun xử lý tái lập quy trình làm sạch và tạo biến từ bảng thực hành cùng bảng tham chiếu UCI. Kết quả hợp lệ được giữ trong một bản dữ liệu cùng thông tin chất lượng và thời điểm kiểm tra. Dashboard không chỉnh trực tiếp dữ liệu gốc khi người dùng thao tác bộ lọc.
+
+\begin{center}\begin{minipage}{\linewidth}
+  \centering
+  \begingroup
+  \small
+  \setstretch{1.05}
+  \setlength{\fboxsep}{6pt}
+  \fbox{\parbox{0.88\linewidth}{\centering
+  \textbf{Đọc nguồn và kiểm tra} $\longrightarrow$ \textbf{Bản dữ liệu hợp lệ}\\[5pt]
+  $\downarrow$\\[5pt]
+  \textbf{Áp dụng bộ lọc lỗi} $\longrightarrow$ \textbf{Tập con đang chọn}\\[5pt]
+  $\downarrow$\\[5pt]
+  \textbf{KPI -- biểu đồ -- bảng thống kê -- CSV}\\[5pt]
+  Tab chất lượng đọc thông tin toàn nguồn từ bản dữ liệu hợp lệ.
+  }}
+  \endgroup
+  \captionof{figure}{Luồng dữ liệu trong phần phân tích lỗi của dashboard}
+  \label{fig:ch3dashboardflow}
+\end{minipage}\end{center}
+
+Giao diện có ba tab: phân tích lỗi thép, bối cảnh ngành và dữ liệu--chất lượng. Tab chất lượng cho biết toàn bộ nguồn có đáp ứng điều kiện xử lý hay không. Tab bối cảnh sử dụng UN Comtrade độc lập, có bộ lọc năm riêng; đây là chức năng bổ sung, không ghép thương mại với từng bản ghi lỗi. Hình~\ref{fig:ch3dashboardflow} thể hiện luồng của phần phân tích chính.
+
+\subsection{Bộ lọc, KPI, biểu đồ và bảng dữ liệu}
+
+Ba bộ lọc chính chọn dòng thép, nhãn và khoảng độ dày. Kết quả lọc được lưu thành một bảng \maCot{selected}; số bản ghi, số nhãn, trung vị diện tích, trung vị độ dày và các biểu đồ đều tính từ bảng này. Đoạn mã dưới đây rút gọn thao tác trong mô-đun xử lý; \maCot{steels}, \maCot{labels} và \maCot{thickness} nhận giá trị từ giao diện.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+chon = (data["Steel_Type"].isin(steels)
+    & data["Fault_Type_Clean"].isin(labels)
+    & data["Steel_Plate_Thickness"].between(*thickness))
+selected = data.loc[chon].copy()
+n = len(selected)
+median_area = selected["Pixels_Areas"].median()
+csv = selected.to_csv(index=False).encode("utf-8-sig")
+\end{lstlisting}
+\end{minipage}\par
+
+Khi tập con rỗng, dashboard thông báo không có bản ghi phù hợp; các trung vị hiển thị dấu gạch thay vì 0. Người dùng có thể mở rộng phạm vi hoặc đặt lại bộ lọc. Bảng hỗ trợ và CSV trong phần lỗi dùng đúng tập con, còn các chỉ số chất lượng ghi rõ phạm vi toàn nguồn. Cách tổ chức này giúp kiểm thử một thao tác lọc bằng cách đối chiếu số dòng, KPI, hình và tệp tải về.
+
+\subsection{Cập nhật nguồn và xử lý lỗi}
+
+Nút làm mới đọc lại nguồn và kiểm tra trước khi thay bản dữ liệu đang hiển thị. Chế độ tự động đọc lại mỗi năm phút sử dụng \maCot{st.fragment}; thay đổi bộ lọc chỉ tính và vẽ lại từ bản đang giữ, không kích hoạt đọc tệp cho từng thao tác. Trạng thái bộ lọc được rà soát khi nguồn thay đổi để loại lựa chọn không còn hợp lệ. Cách dùng trạng thái phù hợp với cơ chế widget của Streamlit~\cite{streamlit}.
+
+Nếu nguồn mới không đạt điều kiện, ứng dụng giữ bản hợp lệ gần nhất và hiển thị lỗi cùng thời điểm bản đó được kiểm tra. Khi chưa có bản trong phiên, chương trình có thể đọc bản đã lưu; nếu vẫn không có dữ liệu hợp lệ, giao diện dừng phần phân tích và báo nguyên nhân. Cơ chế này tránh để dữ liệu chưa kiểm chứng thay thế kết quả đang xem.
+
+Với chức năng thương mại bổ sung, gọi API là lựa chọn riêng. Bộ nhớ đệm có thời hạn 15 phút; nút làm mới chủ động xóa đệm khi người dùng chọn gọi lại API. Chu kỳ năm phút là đọc lại tệp hoặc nguồn được cấu hình, chưa phải thu nhận cảm biến thời gian thực. Thời điểm kiểm tra nguồn cũng độc lập với \maCot{Production_Date_Clean} mô phỏng.
+
+\section{Tổ chức thực thi và tiểu kết}
+
+Notebook được thực thi tuần tự; bước sau chỉ sử dụng bảng đã đạt điều kiện kiểm tra của bước trước. Bảng trung gian, nhật ký và dữ liệu xuất được giữ để đối chiếu khi chạy lại. Kiểm tra nội tại trước khôi phục là lượt rà soát bổ sung đã mô tả ở mục~\ref{sec:ch3kiemtranoitai}. Dashboard được chạy trong môi trường Python, sử dụng mô-đun xử lý để tái lập bảng dữ liệu trước khi hiển thị.
+
+Các hình trung gian và đoạn mã cho phép theo dõi dữ liệu từ biểu diễn thô đến bảng phân tích, đồng thời xác định căn cứ của từng thay đổi. Chương 4 trình bày kết quả Q0--Q5, giao diện thực tế và minh chứng kiểm thử từ những đầu ra này.
+% ===== END: chuong/chuong3 =====
+% ===== BEGIN: chuong/chuong4 =====
+\chapter{Kết quả phân tích, kiểm thử và thảo luận}
+\label{chap:ketqua}
+
+% Khi có ảnh: thay từng lệnh \ghiChuHinh{...} bên dưới bằng
+% \includegraphics[width=\linewidth]{figures/chuong4/ten-anh.png}.
+% Giữ nguyên \captionof và \label để số hình và tham chiếu tự cập nhật.
+\newcommand{\ghiChuHinh}[1]{\fbox{\parbox{0.90\linewidth}{\small\setstretch{1.1}\textbf{Vị trí chèn hình.} #1}}}
+
+Nhìn theo số lượng, \maCot{Other_Faults} đứng đầu tập bản ghi lỗi. Khi xem thêm dòng thép, độ sáng và diện tích, \maCot{K_Scatch} nổi lên với những đặc điểm đáng chú ý dù chỉ đứng thứ ba về số lượng. Sự thay đổi góc nhìn này là mạch chính của chương: bắt đầu từ cơ cấu chung, tách các nhóm quan sát, rồi xem những đặc trưng nào giúp mô tả rõ hơn từng nhóm.
+
+Các phân tích Q1--Q5 sử dụng 1.941 bản ghi sau làm sạch, gồm 777 bản ghi A300 và 1.164 bản ghi A400, với bảy nhãn lỗi. Mỗi biểu đồ được đọc theo một nhận xét chính, đối chiếu bằng số liệu và nối với câu hỏi tiếp theo; các bảng giữ vai trò kiểm tra chi tiết. Độ dày và độ sáng dùng thang đo nguồn, tỷ trọng được làm tròn khi trình bày. Những khác biệt được mô tả trong tập quan sát này; chưa có tổng sản lượng để chuyển chúng thành tỷ lệ sản phẩm lỗi.
+
+\section{Làm rõ bức tranh trước khi đọc biểu đồ: Q0}
+\label{sec:ch4q0}
+
+\subsection{Những khác biệt bắt đầu từ cách ghi dữ liệu}
+
+Một biểu đồ cơ cấu chỉ có ý nghĩa khi mỗi nhãn đại diện cho cùng một cách phân nhóm. Tệp thực hành có 28 cách biểu diễn cho bảy nhãn; nếu vẽ trực tiếp, các cách viết khác nhau của cùng một nhãn có thể trở thành những thanh riêng. Dữ liệu còn 70 ô thiếu trong 27 đặc trưng và một số giá trị số được lưu dưới dạng chuỗi. Những khác biệt này xuất phát từ cách ghi và tình trạng dữ liệu, cần được xử lý trước khi đọc thành đặc điểm của lỗi.
+
+Sau chuẩn hóa và loại 20 bản ghi trùng, bảng còn 1.941 dòng, với 67 ô đặc trưng cần khôi phục. Số dòng giảm giúp mỗi bản ghi được tính một lần theo tiêu chí đã xác định; nhãn thống nhất giúp chiều dài các thanh phản ánh cơ cấu quan sát. Đây là nền để so sánh các nhóm ở những mục tiếp theo.
+
+Các hình dữ liệu trung gian ở Chương 3 còn cho thấy vì sao một con số cần được đặt cạnh các trường liên quan. Chẳng hạn, \maCot{Empty_Index} bằng 2.031 ở dòng nguồn 101 không phù hợp với giá trị xấp xỉ 0,2031 tính từ diện tích và khung bao; \maCot{Log_Y_Index} bằng 18.129 ở dòng nguồn 16 không phù hợp với giá trị xấp xỉ 1,8129 từ khoảng tọa độ Y. Lượt rà soát nội tại bổ sung trước khôi phục gắn cờ mười ô \maCot{Empty_Index} và sáu ô \maCot{Log_Y_Index}; cả 16 ô đều có trong nhật ký sửa đối chiếu UCI.
+
+Những ví dụ này xác định được vị trí cần xem xét từ chính dữ liệu trên cùng dòng. Giá trị thay thế vẫn phải có căn cứ riêng, lấy từ bản ghi UCI đã xác nhận tương ứng. Nhật ký trước--sau vì vậy giúp người đọc theo dõi cả dấu hiệu phát hiện và lý do thay đổi, thay vì chỉ nhìn một bảng đã hết lỗi hiển thị.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Kết quả Q0 theo từng trạng thái dữ liệu}
+\label{tab:ch4chatluong}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y p{3.1cm}p{3.1cm}@{}}
+\toprule
+Nội dung kiểm tra & Trước xử lý & Kết quả xử lý \\
+\midrule
+Số bản ghi & 1.961 & 1.941; loại 20 dòng trùng \\
+Biểu diễn nhãn & 28 cách viết & 7 nhãn chuẩn \\
+Ô thiếu trong 27 đặc trưng & 70 ô ở bảng đầu vào & Còn 67 sau loại trùng; khôi phục đủ \\
+Ô sai lệch do kiểm tra nội tại bổ sung & 16 ô được gắn cờ trước khôi phục & 16 ô có giá trị sửa đối chiếu UCI \\
+Ngày trong hồ sơ thực hành & 27 biểu diễn & 5 ngày mô phỏng; giữ ngày gốc \\
+Khóa ghép tọa độ & Kiểm tra ở cả hai nguồn & Ghép một--một, không tăng số dòng \\
+Đặc trưng sau khôi phục & 27 đặc trưng mỗi bản ghi & 52.407 ô khớp nguồn tham chiếu \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+\subsection{Giữ những quan sát có căn cứ để không làm đổi cơ cấu}
+
+Sau xử lý, 27 đặc trưng không còn giá trị thiếu, nhãn chuẩn khớp nguồn tham chiếu và phép ghép không làm tăng số dòng. Toàn bộ $1.941\times27=52.407$ ô đặc trưng khớp UCI. Bảng~\ref{tab:ch4chatluong} cho thấy quá trình xử lý đã đưa những biểu diễn khác nhau về cùng một cơ sở so sánh, đồng thời giữ thông tin truy vết.
+
+Mức khớp này xác nhận việc tái lập dữ liệu tham chiếu, vì UCI cũng cung cấp giá trị điền và sửa. Nó chưa xác nhận độc lập độ đúng của phép đo tại nhà máy. Phần phát hiện trước tham chiếu gồm ô thiếu, nhãn chưa chuẩn, dòng trùng và sai lệch quan hệ nội tại; phần khớp nguồn xác nhận đầu ra của khôi phục. Hai kết quả cùng hỗ trợ khả năng kiểm tra của bảng phân tích.
+
+Có 395 bản ghi bị gắn cờ diện tích theo IQR toàn tập và vẫn được giữ vì giá trị khớp nguồn. Lựa chọn này có ảnh hưởng trực tiếp đến bức tranh sẽ đọc: một nhóm vốn có diện tích lớn có thể bị mất nhiều quan sát nếu mọi cờ thống kê đều bị xóa. Q5 sẽ quay lại điểm này. Trước hết, trên bảng đã thống nhất và giữ đủ các quan sát có căn cứ, Q1 xác định nơi số bản ghi tập trung nhiều nhất.
+
+\section{Ba nhãn chiếm hơn ba phần tư số bản ghi: Q1}
+\label{sec:ch4q1}
+
+Bức tranh đầu tiên là sự tập trung về số lượng. Ba nhãn \maCot{Other_Faults}, \maCot{Bumps} và \maCot{K_Scatch} chứa 1.466 trong 1.941 bản ghi, tương ứng 75,53\%. Trên Hình~\ref{fig:ch4cocau}, ba thanh dài nhất chiếm phần lớn tổng số quan sát; bốn nhãn còn lại chia nhau 24,47\%. Đây là điểm xuất phát để chọn những nhóm cần nhìn sâu hơn.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Thêm biểu đồ thanh ngang của bảy nhãn, sắp giảm dần theo số bản ghi, hiện số đếm và tỷ trọng trên 1.941 bản ghi. Thông điệp cần làm rõ: ba nhãn đầu chiếm 75,53\%; giữ màu nhãn thống nhất với Chương 3.}
+\captionof{figure}{Ba nhãn đầu chiếm 75,53\% trong cơ cấu bảy nhãn lỗi}
+\label{fig:ch4cocau}
+\end{minipage}\end{center}
+
+\maCot{Other_Faults} đứng đầu với 673 bản ghi, chiếm 34,67\%, tức khoảng một phần ba toàn tập. \maCot{Bumps} và \maCot{K_Scatch} lần lượt có 402 và 391 bản ghi, chỉ chênh 11. Hai thanh gần bằng nhau gợi ý rằng chúng có mức xuất hiện tương tự trong mẫu, nhưng chưa nói chúng có đặc điểm giống nhau. Sự khác nhau giữa hai nhóm này sẽ rõ hơn khi tách theo dòng thép và diện tích.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Số lượng, tỷ trọng và tỷ trọng lũy kế theo nhãn}
+\label{tab:ch4cocau}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y rrr@{}}
+\toprule
+Nhãn & Số bản ghi & Tỷ trọng (\%) & Lũy kế (\%) \\
+\midrule
+\maCot{Other_Faults} & 673 & 34,67 & 34,67 \\
+\maCot{Bumps} & 402 & 20,71 & 55,38 \\
+\maCot{K_Scatch} & 391 & 20,14 & 75,53 \\
+\maCot{Z_Scratch} & 190 & 9,79 & 85,32 \\
+\maCot{Pastry} & 158 & 8,14 & 93,46 \\
+\maCot{Stains} & 72 & 3,71 & 97,17 \\
+\maCot{Dirtiness} & 55 & 2,83 & 100,00 \\
+\midrule
+Tổng & 1.941 & 100,00 & \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+Đường lũy kế ở Hình~\ref{fig:ch3pareto} bổ sung ý nghĩa cho thứ hạng: sau ba nhãn đầu, tỷ trọng đạt 75,53\%; thêm \maCot{Z_Scratch} thì tăng lên 85,32\% và vượt mốc 80\%. Như vậy, cần bốn nhãn để bao quát ít nhất 80\% bản ghi. Bảng~\ref{tab:ch4cocau} giữ các giá trị chi tiết để đối chiếu với đường lũy kế, thay vì mặc định tập dữ liệu phải tuân theo một tỷ lệ ``80/20''.
+
+Ở đầu còn lại, \maCot{Dirtiness} có 55 bản ghi, chiếm 2,83\%. Nhóm lớn nhất gấp nhóm nhỏ nhất khoảng 12,24 lần. Khi chuyển sang scatter, nhóm đông có thể tạo vùng điểm dày hơn chỉ vì có nhiều quan sát; khi đọc boxplot, nhóm ít quan sát cần được nhìn cùng cỡ mẫu. Biểu đồ cơ cấu vì thế còn cung cấp bối cảnh để đọc các hình phía sau.
+
+Thứ hạng này định hướng việc xem xét dữ liệu, còn ưu tiên xử lý tại nhà máy cần mức độ nghiêm trọng và chi phí. Đặc biệt, nhãn gộp \maCot{Other_Faults} chưa cho biết 673 bản ghi thuộc một cơ chế lỗi hay nhiều trường hợp khác nhau. Q1 xác định những nhóm xuất hiện nhiều; bước tiếp theo là xem cơ cấu đó có giữ khi chia tập quan sát thành A300 và A400 hay không.
+
+\section{Cơ cấu lỗi thay đổi khi tách A300 và A400: Q2}
+\label{sec:ch4q2}
+
+\subsection{Hai nhãn gần nhau về số lượng có phân bố khác nhau}
+
+Ở toàn tập, \maCot{Bumps} và \maCot{K_Scatch} gần bằng nhau về số bản ghi. Hình~\ref{fig:ch4thepsoluong} cho thấy sự gần nhau ấy không còn phản ánh phân bố theo dòng thép: \maCot{Bumps} có 279 bản ghi A300 và 123 bản ghi A400; \maCot{K_Scatch} có 390 bản ghi A400 và chỉ một bản ghi A300. Cơ cấu gộp đã che đi khác biệt giữa hai nhóm.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Thêm biểu đồ cột nhóm nhãn lỗi theo A300/A400, với trục đứng là số bản ghi và tổng nhóm 777/1.164. Làm rõ sự đối chiếu: Bumps có 279/123 bản ghi, còn K\_Scatch có 1/390 bản ghi theo A300/A400.}
+\captionof{figure}{Số bản ghi của từng nhãn trong A300 và A400}
+\label{fig:ch4thepsoluong}
+\end{minipage}\end{center}
+
+Số đếm giúp nhận ra sự tập trung, nhưng A300 và A400 có tổng quan sát khác nhau: 777 và 1.164, tương ứng 40,03\% và 59,97\% toàn tập. Để so sánh phần của từng nhãn trong hai nhóm, Hình~\ref{fig:ch4theptytrong} đưa mỗi dòng thép về một cột 100\%. Góc nhìn này giữ cơ cấu của mỗi nhóm mà không để chênh lệch cỡ mẫu quyết định chiều cao cột.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Thêm hai cột chồng 100\%, các phần màu là bảy nhãn. Ghi mẫu số A300 bằng 777 và A400 bằng 1.164. Thông điệp: Bumps chiếm phần lớn hơn ở A300, K\_Scatch chiếm phần lớn hơn ở A400, còn Other\_Faults gần một phần ba ở cả hai.}
+\captionof{figure}{Cơ cấu A300 nổi bật Bumps, cơ cấu A400 nổi bật K\_Scatch}
+\label{fig:ch4theptytrong}
+\end{minipage}\end{center}
+
+Trong cột A300, phần của \maCot{Bumps} là 35,91\% và \maCot{Z_Scratch} là 22,14\%. Trong cột A400, phần của \maCot{K_Scatch} mở rộng tới 33,51\%, còn \maCot{Bumps} chỉ chiếm 10,57\%. Riêng \maCot{Other_Faults} giữ tỷ trọng khá gần nhau, 34,23\% và 34,97\%. Hai cột vì vậy có phần nhãn gộp tương tự, đồng thời khác nhau ở những nhãn cụ thể chiếm tỷ trọng lớn.
+
+\subsection{Đổi mẫu số để làm rõ nơi từng nhãn tập trung}
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Phân bố A300/A400 trong từng nhãn và mốc tập trung trên 90\%}
+\label{tab:ch4taptrung}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y rr p{2.0cm}r@{}}
+\toprule
+Nhãn & A300 & A400 & Dòng tập trung & Tỷ trọng trong nhãn (\%) \\
+\midrule
+\maCot{Other_Faults} & 266 & 407 & A400 & 60,48 \\
+\maCot{Bumps} & 279 & 123 & A300 & 69,40 \\
+\maCot{K_Scatch} & 1 & 390 & A400 & 99,74 \\
+\maCot{Z_Scratch} & 172 & 18 & A300 & 90,53 \\
+\maCot{Pastry} & 49 & 109 & A400 & 68,99 \\
+\maCot{Stains} & 1 & 71 & A400 & 98,61 \\
+\maCot{Dirtiness} & 9 & 46 & A400 & 83,64 \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+Khi đổi mẫu số từ tổng của dòng thép sang tổng của từng nhãn, ba sự tập trung nổi bật được xác định: 99,74\% \maCot{K_Scatch} thuộc A400; 90,53\% \maCot{Z_Scratch} thuộc A300; 98,61\% \maCot{Stains} thuộc A400. Cả ba vượt mốc khám phá ở công thức~\ref{eq:tieuchiq2}. Bảng~\ref{tab:ch4taptrung} đặt kết quả này cạnh số đếm, giúp thấy mức tập trung không phải do bỏ qua những nhóm nhỏ còn lại.
+
+Hai mẫu số tạo ra hai câu trả lời khác nhau ngay với \maCot{K_Scatch}:
+\begin{equation}
+\frac{390}{391}\times100\%\approx99{,}74\%,
+\qquad
+\frac{390}{1.164}\times100\%\approx33{,}51\%.
+\label{eq:ch4mauso}
+\end{equation}
+Tỷ lệ thứ nhất cho biết nơi \maCot{K_Scatch} tập trung; tỷ lệ thứ hai cho biết vai trò của nhãn trong cơ cấu lỗi A400. Giữ rõ mẫu số giúp câu chuyện không chuyển thành khẳng định về toàn bộ sản phẩm A400. Kết quả ở đây là sự phân bố của các bản ghi lỗi; muốn đánh giá dòng thép nào có xác suất lỗi cao hơn còn cần tổng sản lượng đã được kiểm tra.
+
+Sau Q2, \maCot{K_Scatch} đã có một đặc điểm cụ thể hơn vị trí thứ ba ở Q1: gần như nằm trong A400. Độ sáng được xem tiếp để biết nhóm này còn có dấu hiệu nào trên đặc trưng của bản ghi.
+
+\section{Độ sáng làm nổi bật vùng trung tâm của K\_Scatch: Q3}
+\label{sec:ch4q3}
+
+Scatter ở Hình~\ref{fig:ch3scatter} đưa người đọc tới từng cặp độ sáng tối thiểu/tối đa. Nhiều màu điểm chồng lên nhau, nên biểu đồ không tạo những vùng nhãn tách hoàn toàn. Pearson toàn tập bằng 0,4296 mô tả liên hệ tuyến tính dương ở mức vừa giữa hai đại lượng, còn điểm đáng chú ý theo nhãn nằm ở độ sáng tối thiểu của \maCot{K_Scatch}. Hình~\ref{fig:ch4iqrsang} thu gọn góc nhìn về trung vị và phần trung tâm phân bố để làm rõ đặc điểm đó.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Thêm biểu đồ khoảng P25--P75 và điểm trung vị của độ sáng tối thiểu cho bảy nhãn. Thông điệp: khoảng 35--49 của K\_Scatch nằm thấp và không chồng IQR các nhãn khác; đây chỉ là phần trung tâm. Giữ thang đo nguồn.}
+\captionof{figure}{Vùng trung tâm độ sáng tối thiểu của K\_Scatch thấp hơn các nhãn còn lại}
+\label{fig:ch4iqrsang}
+\end{minipage}\end{center}
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Phần trung tâm phân bố độ sáng tối thiểu và tối đa}
+\label{tab:ch4dosang}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y r r p{2.1cm}r p{2.1cm}@{}}
+\toprule
+Nhãn & $N$ & Trung vị Min & P25--P75 Min & Trung vị Max & P25--P75 Max \\
+\midrule
+\maCot{Other_Faults} & 673 & 97 & 80--111 & 127 & 119--140 \\
+\maCot{Bumps} & 402 & 91 & 79,25--102 & 127 & 124--134 \\
+\maCot{K_Scatch} & 391 & 41 & 35--49 & 134 & 126--141 \\
+\maCot{Z_Scratch} & 190 & 93 & 81--104 & 124 & 111--132 \\
+\maCot{Pastry} & 158 & 80 & 64--94 & 126 & 119--133 \\
+\maCot{Stains} & 72 & 115 & 110--120 & 140 & 135--142 \\
+\maCot{Dirtiness} & 55 & 107 & 96,5--111 & 132 & 127--140 \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+Đoạn IQR của \maCot{K_Scatch} nằm về phía giá trị thấp, từ 35 đến 49, với trung vị 41. Đoạn gần nhất là \maCot{Pastry}, bắt đầu ở 64, cách đầu trên của \maCot{K_Scatch} 15 đơn vị thang nguồn. Khoảng trống giữa các đoạn làm rõ điều khó đọc hơn trên scatter: phần trung tâm của nhóm này có độ sáng tối thiểu thấp hơn phần trung tâm các nhóm còn lại. Chỉ \maCot{K_Scatch} đáp ứng tiêu chí không chồng IQR với mọi nhãn tại công thức~\ref{eq:tieuchiq3}.
+
+Vùng trung tâm này cần được đặt lại cạnh các điểm quan sát. Độ sáng tối thiểu của \maCot{K_Scatch} trải từ 0 đến 196, nên toàn bộ phạm vi vẫn chồng với những nhãn khác. IQR độ sáng tối đa của nhóm là 126--141, cũng chồng nhiều nhóm. Dấu hiệu nhìn thấy là sự khác nhau ở phần trung tâm của độ sáng tối thiểu; nó chưa đủ để gán nhãn chính xác cho mọi bản ghi mới.
+
+Ở phía giá trị cao, \maCot{Stains} có trung vị 115 và IQR hẹp, 110--120. Khoảng này vẫn chồng với \maCot{Other_Faults} và \maCot{Dirtiness}. So sánh hai đầu của biểu đồ cho thấy mỗi nhóm có một hồ sơ độ sáng riêng: \maCot{K_Scatch} nổi bật về vùng trung tâm thấp, còn \maCot{Stains} có trung vị cao nhưng chưa tách khỏi mọi nhãn. Bảng~\ref{tab:ch4dosang} giữ cả độ sáng tối đa để việc mô tả không chỉ dựa vào một chiều đã thuận lợi cho phân biệt.
+
+Q3 bổ sung một đặc điểm cho nhóm \maCot{K_Scatch} đã nổi bật ở A400. Bước tiếp theo xem độ dày có tập trung trong nhóm này hay thay đổi rộng, đồng thời kiểm tra sự khác nhau khi giữ cùng nhãn và tách dòng thép.
+
+\section{Độ dày tập trung mạnh trong một số nhóm lỗi: Q4}
+\label{sec:ch4q4}
+
+\subsection{Những hộp thu hẹp và những phân bố rộng}
+
+Độ dày toàn tập tập trung nhiều ở khoảng 40--80: có 1.481 bản ghi, chiếm 76,30\%, tính cả hai đầu mút; trung vị là 70. P25--P75 cũng bằng 40--80, nhưng số dòng nằm trong khoảng vượt 50\% do nhiều giá trị lặp ở các đầu mút. Bảng~\ref{tab:ch4doday} cho thấy khi chia theo nhãn, khoảng phổ biến chung này tách thành những phân bố có độ rộng rất khác nhau.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Thống kê độ dày theo nhãn trên thang đo nguồn}
+\label{tab:ch4doday}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y r r p{2.3cm}r r@{}}
+\toprule
+Nhãn & $N$ & Trung vị & P25--P75 & IQR & SD mẫu \\
+\midrule
+\maCot{Other_Faults} & 673 & 70 & 40--130 & 90 & 73,85 \\
+\maCot{Bumps} & 402 & 70 & 60--80 & 20 & 38,05 \\
+\maCot{K_Scatch} & 391 & 40 & 40--40 & 0 & 2,20 \\
+\maCot{Z_Scratch} & 190 & 70 & 70--70 & 0 & 24,70 \\
+\maCot{Pastry} & 158 & 85 & 60--100 & 40 & 51,59 \\
+\maCot{Stains} & 72 & 50 & 50--50 & 0 & 5,89 \\
+\maCot{Dirtiness} & 55 & 100 & 69--100 & 31 & 28,66 \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+\maCot{Other_Faults} và \maCot{Bumps} cùng có trung vị 70, nhưng IQR lần lượt là 90 và 20. Nếu chỉ nhìn trung vị, hai nhóm trông tương tự; độ rộng của hộp làm rõ rằng phần trung tâm \maCot{Other_Faults} trải rộng hơn. \maCot{Dirtiness} có trung vị cao nhất, bằng 100, nhưng chỉ có 55 bản ghi. Cỡ mẫu vẫn đi cùng những khác biệt nhìn thấy, như bối cảnh đã xác định ở Q1.
+
+Điểm dễ thu hút sự chú ý trên boxplot là những hộp thu hẹp thành một vạch. \maCot{K_Scatch} có 387/391 bản ghi ở độ dày 40, ba ở 50 và một ở 80; IQR bằng 0 nhưng SD mẫu vẫn là 2,20. \maCot{Z_Scratch} có IQR bằng 0 tại 70, còn SD mẫu là 24,70 vì có thêm các giá trị 40, 100 và 175. Vạch hộp thể hiện sự tập trung của các phân vị, trong khi các điểm ngoài hộp kể thêm về những quan sát ít phổ biến. IQR bằng 0 vì thế vẫn có thể đi cùng biến thiên.
+
+\subsection{Giữ cùng nhãn để nhìn khác biệt giữa hai dòng thép}
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Thêm boxplot độ dày gồm hai phần A300/A400 và cỡ mẫu từng nhãn. Làm rõ sự tập trung của K\_Scatch/A400 tại 40 cùng khác biệt của Bumps và Other\_Faults giữa hai dòng thép. Nhóm chỉ có một bản ghi dùng điểm riêng; trục ghi ``giá trị nguồn'', không gán đơn vị mm.}
+\captionof{figure}{Phân bố độ dày thay đổi theo dòng thép ngay trong cùng nhãn lỗi}
+\label{fig:ch4dodaythep}
+\end{minipage}\end{center}
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Cỡ mẫu và trung vị độ dày trong từng tổ hợp nhãn--dòng thép}
+\label{tab:ch4dodaythep}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y rrrr@{}}
+\toprule
+Nhãn & $N$ A300 & Trung vị A300 & $N$ A400 & Trung vị A400 \\
+\midrule
+\maCot{Other_Faults} & 266 & 80 & 407 & 50 \\
+\maCot{Bumps} & 279 & 70 & 123 & 40 \\
+\maCot{K_Scatch} & 1 & 80 & 390 & 40 \\
+\maCot{Z_Scratch} & 172 & 70 & 18 & 175 \\
+\maCot{Pastry} & 49 & 80 & 109 & 90 \\
+\maCot{Stains} & 1 & 100 & 71 & 50 \\
+\maCot{Dirtiness} & 9 & 69 & 46 & 100 \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+Khi tách hai phần của Hình~\ref{fig:ch4dodaythep}, \maCot{Bumps} có trung vị 70 ở A300 và 40 ở A400; \maCot{Other_Faults} có trung vị tương ứng 80 và 50. Vị trí hộp thay đổi dù giữ cùng nhãn. Điều này giải thích vì sao trung vị gộp chưa đủ mô tả một nhóm: nó có thể che đi khác biệt giữa các dòng thép bên trong.
+
+\maCot{Z_Scratch} tạo một đối chiếu rõ hơn: 172 bản ghi A300 có trung vị 70 và IQR bằng 0; 18 bản ghi A400 có trung vị 175, với P25--P75 từ 40 đến 175. Một phía tập trung ở giá trị lặp, phía kia có phần trung tâm rộng và ít quan sát hơn. Trung vị cao của nhóm nhỏ cần được giữ trong đúng phạm vi 18 bản ghi đó.
+
+Hai điểm riêng \maCot{K_Scatch}/A300 và \maCot{Stains}/A300 nhắc người đọc về giới hạn của góc nhìn này: mỗi nhóm chỉ có một quan sát, lần lượt là 80 và 100. Với $N=1$, SD mẫu không xác định; IQR tính bằng 0 không cho biết độ ổn định của nhóm. Không thể từ hai điểm đó mô tả một phân bố đại diện cho các nhóm A300 tương ứng.
+
+Kết nối Q2 với Q4 cho một kết quả cụ thể: 387/391 bản ghi \maCot{K_Scatch}, tức 98,98\%, đồng thời thuộc A400 và có độ dày 40. \maCot{Stains} cũng tập trung ở A400 nhưng tại độ dày 50: 71/72 bản ghi, tương ứng 98,61\%. Cùng một dòng thép vẫn chứa những nhóm có hồ sơ khác nhau. Những tổ hợp này mô tả nơi các bản ghi tập trung; vai trò riêng của dòng thép và độ dày chưa được tách. Q5 nhìn tiếp vào diện tích để xem sự khác nhau về quy mô vùng lỗi.
+
+\section{Diện tích làm rõ những khác biệt mà số đếm chưa thể hiện: Q5}
+\label{sec:ch4q5}
+
+\subsection{Hai phía của phân bố: K\_Scatch và Stains}
+
+Q1 cho thấy \maCot{K_Scatch} và \maCot{Bumps} gần nhau về số lượng, nhưng diện tích đưa hai nhóm về những vị trí khác hẳn. Trung vị \maCot{K_Scatch} là 6.281 pixel, còn \maCot{Bumps} là 120,5 pixel. \maCot{Stains} nằm ở phía quy mô nhỏ nhất, với trung vị 16,5 pixel. Một thứ hạng số đếm vì vậy chưa thể mô tả đầy đủ đặc điểm của từng nhóm.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Thêm biểu đồ khoảng P25--P75 và trung vị diện tích theo nhãn, dùng trục log cơ số 10. Thông điệp: phần trung tâm K\_Scatch nằm ở quy mô lớn, Stains ở quy mô nhỏ. Phân vị tính trên diện tích gốc; trục ghi pixel, giữ đủ các nhóm ở giữa.}
+\captionof{figure}{Phần trung tâm diện tích K\_Scatch và Stains nằm ở hai quy mô khác nhau}
+\label{fig:ch4iqrarea}
+\end{minipage}\end{center}
+
+Trên Hình~\ref{fig:ch4iqrarea}, khoảng trung tâm \maCot{K_Scatch} nằm ở phía diện tích lớn, còn \maCot{Stains} nằm ở phía diện tích nhỏ. Tỷ số hai trung vị xấp xỉ 380,67 lần. Nếu dùng trục tuyến tính bao trùm quy mô lớn này, những nhóm nhỏ sẽ khó nhìn rõ; trục logarit giúp đặt các nhóm cạnh nhau mà vẫn giữ giá trị diện tích gốc trên nhãn trục. Các phân vị được tính trước khi đổi thang hiển thị.
+
+Khoảng P25--P75 của \maCot{K_Scatch} là 3.948,5--10.908,5, nằm trên IQR mọi nhãn khác; khoảng của \maCot{Stains} là 13,5--18, nằm dưới các IQR còn lại. Các nhóm ở giữa còn chồng nhau nhiều. Khác biệt giữa hai phía vì vậy xuất hiện cả ở phần trung tâm, không chỉ ở một vài giá trị cực lớn hoặc cực nhỏ. Boxplot tại Hình~\ref{fig:ch3boxarea} mở rộng góc nhìn tới râu và các bản ghi ngoài râu; Bảng~\ref{tab:ch4area} giữ cực trị để không bỏ qua những trường hợp khác với trung tâm.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Thống kê diện tích và số bản ghi ngoài râu theo từng nhãn}
+\label{tab:ch4area}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y r p{3.1cm}r r r@{}}
+\toprule
+Nhãn & Trung vị & P25--P75 & Nhỏ nhất & Lớn nhất & Ngoài râu \\
+\midrule
+\maCot{Other_Faults} & 146 & 81--308 & 15 & 37.334 & 103 \\
+\maCot{Bumps} & 120,5 & 78,25--197,5 & 25 & 8.391 & 44 \\
+\maCot{K_Scatch} & 6.281 & 3.948,5--10.908,5 & 2 & 152.655 & 6 \\
+\maCot{Z_Scratch} & 146 & 75,25--442 & 51 & 7.579 & 23 \\
+\maCot{Pastry} & 209 & 112,5--381,25 & 30 & 10.914 & 19 \\
+\maCot{Stains} & 16,5 & 13,5--18 & 6 & 86 & 13 \\
+\maCot{Dirtiness} & 145 & 84,5--581,5 & 52 & 2.028 & 1 \\
+\bottomrule
+\end{tabularx}
+\smallskip
+\par\raggedright\footnotesize Ngoài râu: số bản ghi nằm ngoài khoảng từ P25 trừ 1,5 lần IQR đến P75 cộng 1,5 lần IQR, tính riêng cho từng nhãn trên thang diện tích gốc.
+\end{minipage}\end{center}
+
+\maCot{K_Scatch} vẫn có diện tích nhỏ nhất là 2 pixel, cũng là nhỏ nhất toàn tập, và lớn nhất là 152.655 pixel. Trường hợp này giữ lại một chi tiết quan trọng: đặc điểm phổ biến của nhóm không áp dụng cho mọi bản ghi. Diện tích mô tả quy mô vùng lỗi trong dữ liệu; để xác định thiệt hại còn cần vị trí, mức hạ cấp, chi phí và tiêu chí kiểm soát chất lượng.
+
+\subsection{Một ngưỡng chung có thể làm đổi chính bức tranh cơ cấu}
+
+Các điểm ngoài râu đưa câu chuyện trở lại lựa chọn làm sạch ở Q0. Theo toàn tập, P25 bằng 84, P75 bằng 822 và hàng rào trên bằng 1.929; quy tắc này gắn cờ 395 bản ghi. Khi tính IQR riêng từng nhãn, có 209 bản ghi ngoài râu. Bản ghi vượt ngưỡng IQR toàn tập và bản ghi vượt ngưỡng IQR riêng từng nhãn là hai cách so sánh khác nhau.
+
+Trong 395 cờ toàn tập, 326 thuộc \maCot{K_Scatch}. Cùng nhãn này chỉ có sáu bản ghi ngoài râu khi tính theo phân bố riêng. Trên boxplot, hộp của nhóm nằm cao vì diện tích lớn là đặc điểm phổ biến trong nhóm; nhiều giá trị ấy lại vượt ngưỡng IQR toàn tập. \maCot{Stains} cho góc nhìn ngược lại: 13 bản ghi ngoài râu riêng của nhóm dù quy mô của chúng vẫn nhỏ hơn trung tâm nhiều nhãn khác.
+
+Một phép kiểm tra giả định làm rõ hệ quả: nếu loại toàn bộ 395 bản ghi bị gắn cờ chung, tập còn 1.546 dòng và \maCot{K_Scatch} chỉ còn 65 bản ghi. Nhãn này mất 83,38\% quan sát, tỷ trọng giảm từ 20,14\% xuống 4,20\% và thứ hạng từ ba xuống sáu. Đây là kịch bản tính để đối chiếu; dữ liệu phân tích thực tế vẫn giữ các bản ghi. Việc xóa tự động theo một ngưỡng chung sẽ khiến biểu đồ cơ cấu kể một bức tranh khác về nhóm vốn có diện tích lớn.
+
+Số bản ghi ngoài râu được tính từ bảng vì các điểm có thể chồng trên hình. Q5 làm rõ quy mô vùng lỗi và lý do giữ những quan sát đã có căn cứ nguồn. Đến đây, hồ sơ \maCot{K_Scatch} đã nối được số lượng, dòng thép, độ sáng, độ dày và diện tích; dashboard cho phép người đọc tự thu hẹp phạm vi để kiểm tra các kết quả ấy.
+
+\section{Giao diện dashboard và kết quả kiểm thử}
+\label{sec:ch4dashboard}
+
+\subsection{Theo dõi hồ sơ nhóm khi thu hẹp phạm vi quan sát}
+
+Những đặc điểm của \maCot{K_Scatch} đã xuất hiện qua nhiều góc nhìn: số bản ghi, dòng thép, độ sáng, độ dày và diện tích. Đến đây, cần xem hồ sơ đó thay đổi ra sao khi chỉ giữ đúng nhóm đang quan tâm. Dashboard cho phép thực hiện phép đối chiếu này bằng cách chọn dòng thép, nhãn và khoảng độ dày. Bộ lọc xác định tập con; KPI, biểu đồ và bảng cùng phản ánh tập con ấy. Do đó, mỗi số liệu trên giao diện phải được đọc cùng trạng thái lựa chọn của nó.
+
+Hai phạm vi minh họa được chọn là toàn bộ dữ liệu lỗi và nhóm A400 thuộc nhãn \maCot{K_Scatch}. Ở phạm vi đầu tiên, dashboard hiển thị 1.941 bản ghi với đủ bảy nhãn; trung vị diện tích là 174,0 và trung vị độ dày là 70,0. Đây là điểm xuất phát để người đọc nhận biết quy mô và đặc trưng trung tâm của toàn tập trước khi thu hẹp quan sát.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Tự chụp dashboard ở phạm vi toàn bộ: chọn cả A300/A400, cả bảy nhãn và toàn khoảng độ dày. Ảnh cần thấy bộ lọc cùng bốn KPI: 1.941; 7; 174,0; 70,0. Cắt phần thanh trình duyệt hoặc đường dẫn máy nếu không cần thiết; giữ nguyên nội dung giao diện.}
+\captionof{figure}{Giao diện thật của dashboard ở phạm vi toàn bộ dữ liệu lỗi}
+\label{fig:ch4dashboardall}
+\end{minipage}\end{center}
+
+Khi chỉ chọn A400 và \maCot{K_Scatch}, số bản ghi còn 390 và số nhãn còn một. Trung vị diện tích tăng lên 6.281,5, còn trung vị độ dày giảm xuống 40,0. Hai trung vị này thuộc một phạm vi khác với toàn tập nên sự thay đổi là điều cần được giải thích qua bộ lọc. Riêng diện tích 6.281,5 cũng khác nhẹ với giá trị 6.281 của Q5: Q5 dùng cả 391 bản ghi \maCot{K_Scatch}, trong khi lựa chọn trên giao diện loại ra một bản ghi thuộc A300. Phép đối chiếu giúp nối nhận xét theo nhãn ở các mục trước với nhóm dòng thép cụ thể đang được xem.
+
+\begin{center}\begin{minipage}{\linewidth}
+\centering
+\ghiChuHinh{Tự chụp dashboard sau khi chỉ chọn A400 và K\_Scatch, giữ toàn khoảng độ dày. Ảnh cần thấy bộ lọc cùng bốn KPI: 390; 1; 6.281,5; 40,0. Chụp ứng dụng thực tế, không dựng lại giao diện bằng bảng minh họa.}
+\captionof{figure}{Giao diện thật sau khi chọn A400 và nhãn K\_Scatch}
+\label{fig:ch4dashboardfilter}
+\end{minipage}\end{center}
+
+Bảng~\ref{tab:ch4kpi} giữ các kết quả ở những phạm vi tiêu biểu để kiểm tra số liệu trên giao diện. Trường hợp không chọn nhãn cũng cần được đưa vào: tập con rỗng có số bản ghi và số nhãn đều bằng 0, nhưng hai trung vị không có giá trị để tính. Dấu gạch trong bảng thể hiện sự thiếu kết quả đó; dùng số 0 thay thế sẽ làm người đọc hiểu sai đặc trưng của một tập không tồn tại.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{KPI đối chiếu tại các phạm vi lọc tiêu biểu}
+\label{tab:ch4kpi}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}Y r r r r@{}}
+\toprule
+Phạm vi & Số bản ghi & Số nhãn & Trung vị diện tích & Trung vị độ dày \\
+\midrule
+Toàn bộ & 1.941 & 7 & 174,0 & 70,0 \\
+A300 & 777 & 7 & 113,0 & 70,0 \\
+A400 và \maCot{K_Scatch} & 390 & 1 & 6.281,5 & 40,0 \\
+Không chọn nhãn & 0 & 0 & -- & -- \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+Một phạm vi khác vẫn được giữ ở tab dữ liệu--chất lượng: tab này phản ánh toàn nguồn để theo dõi tình trạng làm sạch. Số liệu của nó không giảm khi bộ lọc lỗi được thu hẹp. Sự phân biệt này giúp đọc đúng hai thông tin thường nằm cạnh nhau trên một dashboard: dữ liệu nguồn đã qua xử lý như thế nào và tập bản ghi nào đang được phân tích.
+
+\subsection{Kiểm thử sự nhất quán của phạm vi và cập nhật}
+
+Số liệu có vẻ hợp lý trên một ảnh giao diện chưa đủ để xác nhận bộ lọc và cập nhật hoạt động đúng. Bộ kiểm thử được chạy lại trên bản sao cô lập của dự án với mã hiện tại và đầu vào tương ứng, nhờ đó có thể thử nguồn bị thay đổi hoặc nguồn lỗi mà không sửa dữ liệu đang dùng trong bài. Cả 11 ca đều đạt, không có ca lỗi hoặc bị bỏ qua. Bảng~\ref{tab:ch4test} nhóm các tình huống đã kiểm tra; một nhóm chức năng có thể được bao quát bởi nhiều ca.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Các nhóm chức năng và bằng chứng kiểm thử dashboard}
+\label{tab:ch4test}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}p{3.0cm}Y p{0.9cm}@{}}
+\toprule
+Nhóm chức năng & Tình huống và kết quả kiểm chứng & Kết quả \\
+\midrule
+Khởi động, thành phần & Hiển thị ba tab, chín biểu đồ, hai nút tải CSV; toàn bộ có 1.941 bản ghi. & Đạt \\
+Bộ lọc, đặt lại & A300 còn 777; A300 và \maCot{K_Scatch} còn một; độ dày đúng khoảng; đặt lại về 1.941. & Đạt \\
+Phạm vi rỗng & Không chọn nhãn cho 0 dòng và trung vị là dấu gạch; năm thương mại thiếu có thông báo. & Đạt \\
+Nạp nguồn, giữ bản hợp lệ & Nguồn thử giảm một bản ghi làm kết quả còn 1.940; nguồn thiếu cột bị từ chối, giữ bản hợp lệ. & Đạt \\
+Làm mới, chu kỳ & Nút làm mới gọi bộ đọc một lần; giả lập qua 301 giây gọi một lần; tắt tự động không gọi. & Đạt \\
+Lỗi API, nguồn bổ sung & Mất mạng giữ bản cũ; HTTP 429 thử lại một lần; sai quốc gia bị từ chối. & Đạt \\
+Nhất quán tính toán & Bảng phân tích, cơ cấu, hai mẫu số và thống kê khớp notebook; boxplot log giữ phân vị thang gốc. & Đạt \\
+\bottomrule
+\end{tabularx}
+\end{minipage}\end{center}
+
+Hai hành vi có ý nghĩa trực tiếp với việc đọc kết quả là giữ đúng phạm vi và phản ánh đúng nguồn đang có. Bộ lọc cho số bản ghi như dự kiến, thao tác đặt lại đưa tập về 1.941 dòng; khi nguồn thử giảm một bản ghi, kết quả cập nhật còn 1.940. Với nguồn thiếu cột, ứng dụng từ chối cập nhật và giữ bản hợp lệ trước đó. Các kiểm tra này cho thấy giao diện không chỉ lặp lại số liệu ban đầu mà xử lý những thay đổi đã được thiết lập trong ca thử.
+
+Phạm vi kiểm chứng vẫn có giới hạn. Các lỗi API được mô phỏng; chu kỳ năm phút được kiểm tra bằng giả lập thời gian đã qua, chưa phải theo dõi ứng dụng chạy liên tục trong nhiều giờ. Hai nút tải CSV đã được kiểm tra về sự hiện diện, nhưng chưa có ca riêng đối chiếu tệp tải qua trình duyệt; việc hết hạn bộ nhớ đệm API 15 phút cũng chưa được kiểm thử riêng. Kết quả 11/11 vì vậy xác nhận những chức năng và tình huống đã thử. Nó chưa đo mức độ dễ sử dụng, thời gian hoàn thành nhiệm vụ hay hiệu quả giảm lỗi trong sản xuất. Ảnh chụp ở Hình~\ref{fig:ch4dashboardall} và Hình~\ref{fig:ch4dashboardfilter} bổ sung trạng thái trình bày để người đọc đối chiếu; kiểm thử hành vi cung cấp căn cứ khác cho độ nhất quán của sản phẩm.
+
+\section{Thảo luận kết quả và giới hạn}
+\label{sec:ch4thaoluan}
+
+\subsection{Từ tần suất xuất hiện đến hồ sơ của từng nhóm}
+
+Q1 đặt các nhãn cạnh nhau theo số bản ghi; Q2--Q5 lần lượt làm rõ dòng thép và các đặc trưng đi cùng từng nhãn. Khi đọc liền mạch, \maCot{K_Scatch} trở thành một nhóm đáng chú ý vì vừa đông thứ ba, vừa có 99,74\% bản ghi thuộc A400, tập trung mạnh ở độ dày 40, có vùng trung tâm độ sáng tối thiểu thấp và trung vị diện tích lớn. Dashboard tiếp tục thu hẹp tới 390 bản ghi A400 để kiểm tra hồ sơ ấy trong một phạm vi xác định. Đây là mô tả cụ thể hơn so với việc chỉ gọi nhóm này là ``lỗi phổ biến''.
+
+Tần suất và quy mô diện tích lại cho những thông tin khác nhau. \maCot{Stains} có ít bản ghi và diện tích trung tâm nhỏ, nhưng hai đặc điểm ấy chưa cho biết mức độ quan trọng đối với chất lượng sản phẩm. Một vùng lỗi nhỏ vẫn cần được đánh giá theo yêu cầu chấp nhận, vị trí và thiệt hại thực tế; những thông tin này không có trong dữ liệu đang xét. Vì vậy, thứ hạng số đếm và chênh lệch diện tích là căn cứ để chọn nhóm cần xem thêm, chưa đủ để xếp thứ tự ưu tiên xử lý trong sản xuất.
+
+Ở đầu kia của cơ cấu, \maCot{Other_Faults} đông nhất và có độ phân tán rộng về độ dày, diện tích. Đọc nhãn này cùng biểu đồ cho thấy nhu cầu làm rõ ý nghĩa nghiệp vụ của nhóm. Kết quả gợi ý xem lại định nghĩa nhãn, ảnh bề mặt và hồ sơ bản ghi; nó chưa xác định được những loại lỗi con đang nằm trong nhóm. Chia nhỏ nhãn chỉ có ý nghĩa khi cách chia phản ánh quy trình kiểm soát chất lượng và có thể được áp dụng nhất quán.
+
+Các đặc trưng trên đều được tính từ cùng những bản ghi. Để tìm hiểu vai trò riêng của độ sáng hoặc diện tích, bước tiếp theo cần đối chiếu các nhóm có cùng dòng thép, độ dày và điều kiện thu nhận. Dữ liệu hiện tại chưa đủ ở một số tổ hợp: \maCot{K_Scatch}/A300 và \maCot{Stains}/A300 đều chỉ có một quan sát. Chênh lệch đang thấy vì vậy giúp xác định câu hỏi cần kiểm tra thêm, nhưng chưa tách được tác động riêng của từng yếu tố.
+
+\subsection{Đặt từng kết luận trong phạm vi bằng chứng}
+
+Bảng~\ref{tab:ch4bangchung} phân biệt kết quả có thể tái tính từ dữ liệu với nhận định cần kiểm tra và kết luận còn thiếu căn cứ. Cách đọc này giữ mạch phân tích ở đúng mức: mô tả một nhóm nổi bật là kết quả hiện có; giải thích nguyên nhân hoặc đề xuất điều chỉnh vận hành cần thêm bằng chứng.
+
+\begin{center}\begin{minipage}{\linewidth}
+\captionof{table}{Phân biệt kết quả mô tả, nội dung cần kiểm tra và kết luận chưa đủ căn cứ}
+\label{tab:ch4bangchung}
+\small\setstretch{1.1}
+\begin{tabularx}{\linewidth}{@{}p{0.8cm}Y Y@{}}
+\toprule
+Mức & Nội dung & Căn cứ hoặc phần còn thiếu \\
+\midrule
+A & Cơ cấu nhãn, tỷ trọng A300/A400, trung vị, IQR, số điểm ngoài râu; các ca chức năng đã đạt. & Tái tính được từ bảng và kiểm thử; có hiệu lực trong dữ liệu, phạm vi đã nêu. \\
+B & Độ sáng thấp có thể hỗ trợ nhận diện \maCot{K_Scatch}; cần xem kỹ tổ hợp A400--độ dày 40. & Cần dữ liệu độc lập, đủ quan sát trong từng tổ hợp và đánh giá sai nhãn. \\
+C & Dòng thép dễ lỗi hơn, nguyên nhân vật lý, nhãn gây thiệt hại lớn nhất hoặc xu hướng sản xuất theo thời gian. & Thiếu sản lượng, điều kiện vận hành, chi phí, định danh sản phẩm và thời gian thực. \\
+\bottomrule
+\end{tabularx}
+\smallskip
+\par\raggedright\footnotesize A/B/C là quy ước trình bày của bài để phân biệt phạm vi bằng chứng, không phải thang điểm hay mức tin cậy thống kê.
+\end{minipage}\end{center}
+
+Trước hết, tập dữ liệu chỉ gồm các quan sát đã có nhãn lỗi, không có tổng sản lượng đạt và không đạt chất lượng. Q1--Q2 vì vậy mô tả cơ cấu trong tập lỗi, chưa tính được xác suất phát sinh lỗi của một dòng thép. Việc chưa có định danh tấm hoặc cuộn cũng khiến mức độc lập giữa các dòng chưa được xác nhận. Cùng với dữ liệu sản lượng, các định danh này là điều kiện để đặt kết quả của bài vào phạm vi vận hành rộng hơn.
+
+Căn cứ xử lý dữ liệu và căn cứ phân tích cũng cần được giữ riêng. Khôi phục theo UCI giúp tái lập bảng tham chiếu, còn độ đúng của giá trị sau khôi phục phụ thuộc vào nguồn và việc ghép đúng bản ghi. Nhật ký cùng kiểm tra nội tại cho phép theo dõi phép sửa, không thay thế kiểm chứng phép đo. Kết quả phát hiện 16 ô bằng quan hệ nội tại chỉ có hiệu lực với những trường đã đặt quy tắc; nó không bảo đảm mọi loại sai sót đều được tìm ra.
+
+Ở các biểu đồ, scatter có điểm chồng lấn, IQR chỉ phản ánh phần trung tâm và nhóm $N=1$ không cho biết độ phân tán. Tiêu chí bổ sung của Q3 được đặt sau khảo sát nên dấu hiệu phân tách cần được kiểm tra trên dữ liệu khác trước khi dùng để nhận diện nhãn. Q5 giữ các giá trị ngoài râu và phân biệt ngưỡng từng nhóm với ngưỡng toàn tập; một cờ thống kê là lý do xem lại quan sát, chưa phải căn cứ tự động xóa nó.
+
+Cuối cùng, ngày đã chuẩn hóa là ngày mô phỏng, nên không hỗ trợ kết luận về diễn biến lỗi theo ca hoặc ngày sản xuất. Nguồn thương mại bổ sung không có khóa liên hệ với từng bản ghi lỗi và không được dùng để giải thích Q1--Q5. Dashboard đã có bằng chứng chức năng trong những tình huống đã thử; đánh giá với người dùng tại nhà máy và kiểm tra cập nhật dài hạn vẫn là công việc tiếp theo.
+
+\section{Tiểu kết chương và hướng hoàn thiện}
+
+Mạch kết quả bắt đầu từ dữ liệu có thể kiểm tra lại: Q0 làm rõ những vấn đề đã phát hiện và căn cứ xử lý, sau đó Q1--Q5 chuyển từ cơ cấu nhãn tới đặc trưng của từng nhóm. \maCot{K_Scatch} nổi bật ở nhiều góc nhìn; \maCot{Stains} và \maCot{Other_Faults} cho thấy tần suất, diện tích và ý nghĩa nhãn cần được đọc cùng nhau. Dashboard đưa các phép đối chiếu vào cùng phạm vi lọc, với 11 ca kiểm thử chức năng đạt trên phiên bản hiện tại.
+
+Các kết quả đó dẫn tới công việc tiếp theo cụ thể: bổ sung sản lượng theo dòng thép và độ dày, định danh sản phẩm, thời gian sản xuất thực, điều kiện thu nhận ảnh và mức độ thiệt hại; kiểm tra lại dấu hiệu độ sáng trên dữ liệu khác; làm rõ nhãn nghiệp vụ trước khi đề xuất ưu tiên xử lý. Với dashboard, cần đối chiếu tệp tải xuống, theo dõi cập nhật dài hạn và đánh giá nhiệm vụ sử dụng. Giữ được đường đối chiếu từ nhận xét về lại dữ liệu và phép tính sẽ giúp những phần mở rộng này nối tiếp kết quả hiện có trên cùng một căn cứ.
+% ===== END: chuong/chuong4 =====
+% ===== BEGIN: tailieu-thamkhao =====
+\clearpage
+\renewcommand{\bibname}{Tài liệu tham khảo}
+\begin{thebibliography}{9}
+  \addcontentsline{toc}{chapter}{Tài liệu tham khảo}
+
+  \bibitem{uci}
+  M. Buscema, S. Terzi và W. Tastle,
+  \textit{Steel Plates Faults} [Bộ dữ liệu],
+  UCI Machine Learning Repository, 2010.
+  Giấy phép CC BY 4.0.
+  \par\noindent
+  DOI: \href{https://doi.org/10.24432/C5J88N}{10.24432/C5J88N}.
+  Truy cập ngày 11/10/2026.
+
+  \bibitem{reading}
+  Đinh Nhật Anh, Nguyễn Thị Phương và Nguyễn Lê Ngọc Khôi,
+  \textit{Phân tích nguy cơ xảy ra lỗi trong dây chuyền sản xuất thép},
+  tài liệu đọc, không ghi năm, mục V.3.
+
+  \bibitem{pandasmerge}
+  pandas development team,
+  \textit{pandas.merge}, tài liệu pandas.
+  \par\noindent
+  \url{https://pandas.pydata.org/docs/reference/api/pandas.merge.html}.
+  Truy cập ngày 11/10/2026.
+
+  \bibitem{nistbox}
+  NIST/SEMATECH,
+  \textit{e-Handbook of Statistical Methods},
+  mục 1.3.3.7: Box Plot và mục 1.3.5.6: Measures of Scale.
+  \par\noindent
+  \url{https://www.itl.nist.gov/div898/handbook/eda/section3/boxplot.htm}.
+  \par\noindent
+  \url{https://www.itl.nist.gov/div898/handbook/eda/section3/eda356.htm}.
+  Truy cập ngày 11/10/2026.
+
+  \bibitem{niststats}
+  National Institute of Standards and Technology (NIST),
+  \textit{Dataplot Reference Manual}, mục Correlation.
+  \par\noindent
+  \url{https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/correlat.htm}.
+  Truy cập ngày 11/10/2026.
+
+  \bibitem{matplotlib}
+  Matplotlib development team,
+  \textit{Quick start guide}, tài liệu Matplotlib.
+  \par\noindent
+  \url{https://matplotlib.org/stable/users/explain/quick_start.html}.
+  Truy cập ngày 11/10/2026.
+
+  \bibitem{streamlit}
+  Streamlit,
+  \textit{Widget behavior}, tài liệu Streamlit.
+  \par\noindent
+  \url{https://docs.streamlit.io/develop/concepts/architecture/widget-behavior}.\space
+  Truy cập ngày 11/10/2026.
+
+  \bibitem{kharal}
+  A. Kharal,
+  \textit{Explainable Artificial Intelligence Based Fault Diagnosis and Insight Harvesting for Steel Plates Manufacturing},
+  arXiv:2008.04448, bản v1, 2020.
+  \par\noindent
+  \url{https://arxiv.org/abs/2008.04448}.
+  Truy cập ngày 11/10/2026.
+\end{thebibliography}
+% ===== END: tailieu-thamkhao =====
+
+\end{document}

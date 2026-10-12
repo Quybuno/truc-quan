@@ -1,0 +1,75 @@
+{
+  "input": "data\\analysis\\loi_thep_phan_tich.csv",
+  "N": 1941,
+  "counts": {
+    "Other_Faults": 673,
+    "Bumps": 402,
+    "K_Scatch": 391,
+    "Z_Scratch": 190,
+    "Pastry": 158,
+    "Stains": 72,
+    "Dirtiness": 55
+  },
+  "pearson_r": 0.42960457671396335,
+  "charts": [
+    {
+      "name": "07_pareto_loi",
+      "question": "Q1",
+      "files": [
+        "latex\\figures\\chuong3\\07_pareto_loi.png",
+        "latex\\figures\\chuong3\\07_pareto_loi.svg"
+      ],
+      "source_notebook_title": "Hình 2. Pareto số bản ghi lỗi",
+      "change": "Remove embedded figure-number prefix only",
+      "scope": "Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Lũy kế theo số lượng, không theo thiệt hại"
+    },
+    {
+      "name": "08_scatter_do_sang",
+      "question": "Q3",
+      "files": [
+        "latex\\figures\\chuong3\\08_scatter_do_sang.png",
+        "latex\\figures\\chuong3\\08_scatter_do_sang.svg"
+      ],
+      "source_notebook_title": "Hình 5. Độ sáng nhỏ nhất và lớn nhất | Pearson r=0.4296",
+      "change": "Remove embedded figure-number prefix only",
+      "scope": "Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Mỗi điểm là một bản ghi; các điểm có thể chồng lên nhau"
+    },
+    {
+      "name": "09_boxplot_dien_tich_log",
+      "question": "Q5",
+      "files": [
+        "latex\\figures\\chuong3\\09_boxplot_dien_tich_log.png",
+        "latex\\figures\\chuong3\\09_boxplot_dien_tich_log.svg"
+      ],
+      "source_notebook_title": "Hình 7. Phân bố diện tích theo loại lỗi",
+      "change": "Remove embedded figure-number prefix only",
+      "scope": "Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Boxplot tính trên thang gốc; trục log; giữ mọi bản ghi"
+    }
+  ],
+  "original_files_unchanged": true,
+  "original_file_sha256": {
+    "data\\analysis\\loi_thep_phan_tich.csv": "b5455e1a8d9482fcd8caaaf75d834a424e7cff0f66343a271c6796761e52d45e",
+    "buoc_1_2_3_4_5_6_loi_be_mat_thep.ipynb": "c9e80875acf825431659bd851358af17531cd49198f6df4f624efd9469e7dab6",
+    "outputs\\buoc_5\\co_cau_loi.csv": "1ef2e85c56dc9c932400b769cb2c728e031bfa842189e281be38fa764f726832",
+    "outputs\\buoc_5\\tuong_quan_do_sang.csv": "ac3328901ae7e134555caf64218ec72f748f8ce184d5259706937d2b2d78a839",
+    "outputs\\buoc_5\\thong_ke_dien_tich.csv": "e68b5401e2f2a7582116f63d1dc91eaea70cd95b1764a4d92a330089a91572ac",
+    "outputs\\buoc_5\\hinh\\01_co_cau_loi.png": "8aa597c7aa34b577dd465c9b7a0e497cc779fa8e53d983e4ea5b0ee552fea125",
+    "outputs\\buoc_5\\hinh\\02_pareto_loi.png": "69c2a136503dc2fa75bf06c82eca6333b4c019fc7f4fb92260c07fe2a1937cac",
+    "outputs\\buoc_5\\hinh\\03_loi_theo_thep_so_luong.png": "1145e4fbb25807228c35146174e99977e0587808ac204cbc1d2073d10206aedb",
+    "outputs\\buoc_5\\hinh\\04_loi_theo_thep_ty_trong.png": "286728c72518ec8f8ddda93c7165c328433c575d0f789890bf55bb6c714ac549",
+    "outputs\\buoc_5\\hinh\\05_scatter_do_sang.png": "cba4ecb56b0c2c4311da25e738d7f247ab1c13d58ff1c6373973a4a736360519",
+    "outputs\\buoc_5\\hinh\\06_boxplot_do_day.png": "707368a082d72488718a9d318c52c30d9552da4f310bb10a8e22a8c21633389e",
+    "outputs\\buoc_5\\hinh\\07_boxplot_dien_tich_log.png": "fdd3ede4d571b4b3a9b808f74e460048bb0da7981f2d6308ca9ef74953885b3c",
+    "outputs\\buoc_5\\hinh\\08_xuat_nhap_khau.png": "6e2291813ca9055bbf32f6ee5badcf4f3b65c21e53df0f062f98c0d8cb6c2ee0",
+    "outputs\\buoc_5\\hinh\\09_chenh_lech_thuong_mai.png": "fa3c9836c989d20664d9197a9e9698360937535631002d722f53f646177921da",
+    "outputs\\buoc_5\\hinh\\01_co_cau_loi.svg": "5d59ec99b7ed0c54dec78f71b6da30d43c62eeac0bff5e6c737a649d218998b0",
+    "outputs\\buoc_5\\hinh\\02_pareto_loi.svg": "873ce0cd8d772ff629649552ddeab242cce4bca88ad15917c74aa9c925f869e5",
+    "outputs\\buoc_5\\hinh\\03_loi_theo_thep_so_luong.svg": "48af12dd3492a1df9ca87288893d6c4f2645795c3455d4b178c9440b1e032cab",
+    "outputs\\buoc_5\\hinh\\04_loi_theo_thep_ty_trong.svg": "306e117cc3e8f36d8dabcb0b9726ec5ea57baddc1c985df6b1b6e44e008f41be",
+    "outputs\\buoc_5\\hinh\\05_scatter_do_sang.svg": "85d370c622f1e1b999668e84dfacb9e29f731eeceec801373d4d89239131bb4c",
+    "outputs\\buoc_5\\hinh\\06_boxplot_do_day.svg": "f3bd44c1997239bceac31ceaa5300d055cc68decc3f6763c99da317dfa66e198",
+    "outputs\\buoc_5\\hinh\\07_boxplot_dien_tich_log.svg": "9bef4c25fee14dec3d37c1c27434be7d5c764242fda8f91b5dc957b1ec0782d3",
+    "outputs\\buoc_5\\hinh\\08_xuat_nhap_khau.svg": "f54736253e1c784055e9f86ab570cb29d604ec9da1e6140c8f27dd22f095bd2a",
+    "outputs\\buoc_5\\hinh\\09_chenh_lech_thuong_mai.svg": "2acf93324acbd8ae61af9dc7076346aadbe46c57d3c457c3f948613d415c78ce"
+  }
+}

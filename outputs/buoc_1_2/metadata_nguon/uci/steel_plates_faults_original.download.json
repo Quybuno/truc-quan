@@ -1,0 +1,9 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/198/data.csv",
+  "resolved_url": "https://archive.ics.uci.edu/static/public/198/data.csv",
+  "params": {},
+  "http_status": 200,
+  "retrieved_at": "2026-10-07T21:44:44+07:00",
+  "sha256": "883ed09b2a46fcde7144dd173092c645aacb45499dea703d00228d3ddc3c60de",
+  "size_bytes": 299947
+}

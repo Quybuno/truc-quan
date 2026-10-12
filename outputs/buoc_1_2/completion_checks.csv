@@ -1,0 +1,10 @@
+﻿Phạm vi,Điều kiện,Đạt
+Bước 1,"Q0–Q6 có nguồn, phương pháp và đầu ra",True
+Bước 2,Đọc được dữ liệu thực hành,True
+Bước 2,27 đặc trưng UCI có trong file thực hành,True
+Bước 2,UCI khớp quy mô metadata và nhãn one-hot,True
+Bước 2,CSV UCI và Faults.NNA cùng giá trị số,True
+Bước 2,Đã kiểm tra đủ 20 truy vấn UN Comtrade,True
+Bước 2,Mọi truy vấn UN Comtrade trả dữ liệu đúng phạm vi hoặc kết quả rỗng được ghi nhận,True
+Bước 2,Chốt được khoảng năm có đủ hai luồng cho phân tích thương mại,True
+Bước 2,Bản Excel thô giữ nguyên SHA-256 ban đầu,True

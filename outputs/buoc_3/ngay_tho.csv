@@ -1,0 +1,28 @@
+﻿Biểu diễn ngày gốc,Số dòng
+"datetime.datetime(2025, 11, 10, 0, 0)",199
+"datetime.datetime(2025, 11, 2, 0, 0)",174
+"datetime.datetime(2025, 11, 21, 0, 0)",122
+"datetime.datetime(2025, 11, 30, 0, 0)",120
+"datetime.datetime(2025, 11, 3, 0, 0)",117
+'November10th2025',68
+"'Nov10,2025'",67
+"'November 10th, 2025'",67
+"'Nov 21st, 2025'",63
+'November3rd2025',63
+"'Nov3,2025'",62
+'21/11/2025',62
+"datetime.datetime(2025, 10, 11, 0, 0)",62
+'November2nd2025',59
+"datetime.datetime(2025, 3, 11, 0, 0)",59
+"'November 2nd, 2025'",58
+"'Nov 3rd, 2025'",58
+"'Nov2,2025'",58
+"'NOVEMBER 3RD, 2025'",58
+"datetime.datetime(2025, 2, 11, 0, 0)",55
+"'NOVEMBER 21ST, 2025'",54
+"'Nov21,2025'",53
+'November21st2025',45
+'30/11/2025',40
+"'November 30th, 2025'",40
+"'Nov30,2025'",39
+'November30th2025',39

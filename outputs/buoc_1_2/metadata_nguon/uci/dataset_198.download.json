@@ -1,0 +1,9 @@
+{
+  "source_url": "https://archive.ics.uci.edu/api/dataset?id=198",
+  "resolved_url": "https://archive.ics.uci.edu/api/dataset?id=198",
+  "params": {},
+  "http_status": 200,
+  "retrieved_at": "2026-10-07T21:44:38+07:00",
+  "sha256": "5849dcb7dbaf914208b534a6c45a000759d0f0b3a6be4a5e1dd2d1ced3b8d9a2",
+  "size_bytes": 6310
+}

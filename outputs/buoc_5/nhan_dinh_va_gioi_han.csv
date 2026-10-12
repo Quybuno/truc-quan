@@ -1,0 +1,9 @@
+﻿Muc,Nhan_dinh_hoac_cau_hoi,Bang_chung_con_thieu
+B,Min thấp có thể hỗ trợ nhận diện K_Scatch,IQR tách chỉ là dấu hiệu; cần tập kiểm tra độc lập và precision/recall
+B,K_Scatch cần kiểm chứng ở tổ hợp A400–độ dày 40,Dòng thép và độ dày cùng tập trung; chưa tách được yếu tố nào đi kèm
+B,Other_Faults có thể chứa những nhóm con khác nhau,"Cần ảnh lỗi, định nghĩa QC và kiểm chứng nhóm con trên dữ liệu mới"
+C,Tỷ lệ sản phẩm bị lỗi hoặc dòng thép nào dễ lỗi hơn,Thiếu tổng sản lượng theo dòng thép và độ dày
+C,Nguyên nhân vật lý hoặc thiết bị gây lỗi,"Thiếu mã tấm/cuộn, thiết bị, ca và biến vận hành; cần xác nhận hiện trường"
+C,Loại lỗi gây thiệt hại nghiêm trọng nhất,"Thiếu chi phí, mức hạ cấp và định nghĩa mức độ nghiêm trọng"
+C,Xu hướng lỗi theo thời gian sản xuất,Production_Date là ngày mô phỏng
+C,Độ dày có đơn vị mm; thương mại Việt Nam giải thích lỗi UCI,Nguồn chưa xác nhận đơn vị hoặc quan hệ giữa hai tập dữ liệu

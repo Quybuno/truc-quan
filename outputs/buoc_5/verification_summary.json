@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "execution_method": "Full Run All with nbclient in an isolated copy, cached JSON only",
+  "executed_code_cells": 113,
+  "notebook_errors": 0,
+  "elapsed_seconds": 33.77,
+  "embedded_charts": 9,
+  "chart_cells_and_ids": [
+    [
+      142,
+      "30613375"
+    ],
+    [
+      146,
+      "54576183"
+    ],
+    [
+      150,
+      "446c270c"
+    ],
+    [
+      154,
+      "2d14821b"
+    ],
+    [
+      159,
+      "5428c5b6"
+    ],
+    [
+      166,
+      "f2671a7e"
+    ],
+    [
+      173,
+      "a637d10c"
+    ],
+    [
+      179,
+      "ab929438"
+    ],
+    [
+      183,
+      "05cabf9e"
+    ]
+  ],
+  "seven_fault_charts_without_title_or_source": true,
+  "global_font_size_pt": 14,
+  "minimum_explicit_chart_font_size_pt": 13,
+  "png_files_300dpi": 9,
+  "svg_files": 9,
+  "raw_files_verified": 24,
+  "raw_input_hashes_unchanged": true,
+  "api_requests_enabled": false,
+  "group_flier_counts_descending_label_order": [
+    103,
+    44,
+    6,
+    23,
+    19,
+    13,
+    1
+  ],
+  "group_flier_total": 209,
+  "notebook_sha256": "70560ab7e9bac60487e4324b489eabf81f1e0acd217141f3550b4819ce9db10f",
+  "notebook_warning_streams": 0,
+  "visual_review": "passed: all nine PNGs inspected; seven fault charts have readable labels and no embedded title/source",
+  "latest_test_display_refresh": {
+    "cell_id": "1aed4c4c",
+    "cell_ordinal": 215,
+    "source_file": "outputs/buoc_6/test_results.json",
+    "run_at": "2026-10-12T21:53:19+07:00",
+    "tests_run": 11,
+    "method": "Executed unchanged display cell in a fresh Jupyter kernel; only its output replaced"
+  }
+}

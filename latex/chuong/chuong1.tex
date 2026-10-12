@@ -1,0 +1,139 @@
+% !TeX root = ../main.tex
+% !TeX encoding = UTF-8
+\chapter{Tổng quan bài toán và cơ sở lý thuyết}
+\label{chap:cosolythuyet}
+
+\section{Tổng quan bài toán phân tích lỗi bề mặt thép}
+\label{sec:tongquan}
+
+\subsection{Đặc điểm dữ liệu lỗi bề mặt thép}
+
+Dữ liệu lỗi bề mặt thép mô tả những đặc điểm quan sát được tại vùng lỗi: vị trí, kích thước, diện tích, độ sáng và các thông tin liên quan đến dòng thép, độ dày. Một đặc trưng riêng lẻ chỉ cung cấp một góc nhìn. Diện tích phản ánh quy mô vùng được ghi nhận; độ sáng mô tả đặc điểm ảnh; dòng thép tạo điều kiện so sánh giữa các nhóm. Kết hợp các đặc trưng giúp đặt từng quan sát vào bối cảnh của nhóm tương ứng.
+
+Bộ \textit{Steel Plates Faults} trên UCI cung cấp 27 đặc trưng và bảy nhãn lỗi~\cite{uci}. Các biến định lượng phù hợp với phân tích vị trí trung tâm, độ phân tán và mối liên hệ; nhãn lỗi và dòng thép phù hợp với phép đếm, tỷ trọng và phân nhóm. Cần giữ rõ đơn vị quan sát: số bản ghi mang một nhãn chưa mặc nhiên là số tấm thép độc lập. Mỗi phép tổng hợp cần được diễn giải theo thông tin nguồn cung cấp.
+
+\subsection{Vai trò của phân tích khám phá và trực quan hóa}
+
+Phân tích khám phá dữ liệu (EDA) là quá trình khảo sát cấu trúc, phân bố và các quan hệ đáng chú ý trước khi đưa ra kết luận. Trong bài toán này, EDA giúp nhận diện mức tập trung của nhãn, khác biệt giữa nhóm và những giá trị cần kiểm tra. Biểu đồ hỗ trợ quan sát nhanh; bảng thống kê cung cấp căn cứ định lượng để đối chiếu. Hai hình thức bổ sung nhau: một vùng có vẻ tách biệt trên hình vẫn cần được đọc cùng khoảng tứ phân vị, cỡ mẫu và mức chồng lấn.
+
+Cùng bộ dữ liệu lỗi thép, Kharal trình bày hướng phân loại và giải thích mô hình bằng các công cụ trí tuệ nhân tạo có khả năng giải thích~\cite{kharal}. Với phân tích mô tả, trọng tâm là xác định dữ liệu đang thể hiện điều gì và bằng chứng có giới hạn ra sao. Hình~\ref{fig:machtrinhbay} thể hiện mạch kết nối lý thuyết với khảo sát, thực hiện và kiểm chứng.
+
+\begin{figure}[htbp]
+  \centering
+  \begingroup
+  \footnotesize
+  \setstretch{1}
+  \setlength{\fboxsep}{4pt}
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Kiến thức nền}\\[3pt]Phương pháp\\Chương 1}}
+  \hfill $\longrightarrow$ \hfill
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Khảo sát}\\[3pt]Vấn đề đầu vào\\Chương 2}}
+  \hfill $\longrightarrow$ \hfill
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Thực hiện}\\[3pt]Xử lý và vẽ hình\\Chương 3}}
+  \hfill $\longrightarrow$ \hfill
+  \fbox{\parbox[c][1.65cm][c]{0.18\linewidth}{\centering\textbf{Kiểm chứng}\\[3pt]Kết quả và giới hạn\\Chương 4}}
+  \endgroup
+  \caption{Mối liên hệ giữa nền tảng lý thuyết và các phần thực hành}
+  \label{fig:machtrinhbay}
+\end{figure}
+
+\section{Cơ sở về chất lượng và xử lý dữ liệu}
+\label{sec:chatluongdulieu}
+
+\subsection{Dữ liệu thiếu, trùng lặp và không nhất quán}
+
+Chất lượng dữ liệu được xem xét theo yêu cầu của phép phân tích. Ô thiếu làm giảm số quan sát dùng được cho một đặc trưng; dòng trùng có thể làm tăng số đếm; nhãn biểu diễn không thống nhất chia cùng một nhóm thành nhiều nhóm. Sai kiểu hoặc sai định dạng số còn có thể khiến phép tính thất bại hay sử dụng giá trị ngoài dự kiến. Vì vậy, khảo sát cần thực hiện theo từng cột và từng quy tắc, không chỉ dựa vào số dòng của bảng.
+
+Cần phân biệt dấu hiệu nghi ngờ với bằng chứng sai dữ liệu. Một giá trị vi phạm miền hợp lệ hoặc quan hệ giữa các biến cần được kiểm tra; một giá trị lớn nhưng vẫn hợp lệ có thể phản ánh trường hợp hiếm. Điểm nằm ngoài râu boxplot cũng chưa đủ căn cứ để xóa. Nếu chưa xác định được nguyên nhân, gắn cờ và giữ dấu vết là cách xử lý phù hợp hơn việc thay đổi giá trị chỉ để làm phân bố trông đều hơn.
+
+\subsection{Chuẩn hóa, kết hợp và kiểm tra dữ liệu}
+
+Chuẩn hóa đưa những biểu diễn tương đương về cùng dạng, chẳng hạn nhãn có khoảng trắng thừa hoặc cách viết khác nhau đã được xác nhận. Tiêu chí trùng cần được xác định theo các trường có ý nghĩa, đồng thời ghi rõ dòng giữ và dòng loại. Khi chuyển sang kiểu số, phải theo dõi giá trị không chuyển được; nếu chúng bị đổi thành ô thiếu, số thiếu tăng lên cần có lời giải thích.
+
+Kết hợp nguồn tham chiếu chỉ có căn cứ khi xác định đúng bản ghi tương ứng. Với quan hệ một--một, khóa ghép phải đầy đủ và duy nhất ở cả hai bảng; sau ghép cần kiểm tra số dòng, tỷ lệ khớp và bản ghi chưa tìm thấy. Tham số \tenCot{validate} của phép ghép Pandas hỗ trợ kiểm tra quan hệ này~\cite{pandasmerge}. Dấu vết xử lý cần gồm trường thay đổi, giá trị cũ, giá trị mới và căn cứ. Đặc biệt, phát hiện vấn đề, chọn giá trị sửa và kiểm tra sau sửa là ba hoạt động riêng: độ khớp với chính nguồn đã dùng để khôi phục xác nhận thao tác, nhưng không phải phép đánh giá độc lập về khả năng phát hiện sai sót.
+
+\section{Cơ sở thống kê mô tả và tạo biến}
+\label{sec:thongke}
+
+\subsection{Các chỉ số thống kê sử dụng}
+
+Số đếm cho biết quy mô của nhóm, còn tỷ trọng cho biết vị trí của nhóm trong tập đang xét. Gọi $n_g$ là số bản ghi thuộc nhãn $g$ và $N$ là tổng số bản ghi, tỷ trọng là $p_g=100n_g/N$ (\%). Sau khi sắp xếp số đếm giảm dần, tỷ trọng lũy kế $C_k=\sum_{j=1}^{k}p_{(j)}$ biểu thị mức tập trung ở $k$ nhãn đầu. Các đại lượng này chỉ có ý nghĩa khi mẫu số được xác định rõ.
+
+Khi phân nhóm theo dòng thép, cùng một số đếm có thể tạo ra hai tỷ trọng khác nhau. Với $n_{g,s}$ là số bản ghi thuộc nhãn $g$ và dòng thép $s$, ta có
+\begin{equation}
+  p_{g\mid s}=\frac{n_{g,s}}{\sum_h n_{h,s}}\times100\%,
+  \qquad
+  p_{s\mid g}=\frac{n_{g,s}}{\sum_t n_{g,t}}\times100\%.
+  \label{eq:tytronghaichieu}
+\end{equation}
+Tỷ trọng thứ nhất mô tả cơ cấu nhãn trong một dòng thép; tỷ trọng thứ hai mô tả một nhãn phân bố giữa các dòng thép. Nếu mẫu chỉ chứa bản ghi có lỗi, cả hai tỷ trọng đều chưa cho biết xác suất phát sinh lỗi trong sản xuất, bởi chưa có tổng số đơn vị được kiểm tra làm mẫu số.
+
+Đối với biến định lượng, trung vị mô tả vị trí trung tâm; P25 và P75 giới hạn phần trung tâm của phân bố. Khoảng tứ phân vị là $\mathrm{IQR}=\mathrm{P75}-\mathrm{P25}$, phù hợp để đọc độ phân tán khi phân bố lệch. Độ lệch chuẩn mẫu bổ sung thông tin về mức phân tán quanh trung bình~\cite{nistbox}:
+\begin{equation}
+  s=\sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}},
+  \qquad n\geq2.
+  \label{eq:dolechchuan}
+\end{equation}
+Ở đây, $n$ là số giá trị hợp lệ thực sự tham gia phép tính. Nhóm chỉ có một quan sát chưa xác định được độ lệch chuẩn mẫu; ô thiếu cũng khiến cỡ mẫu của từng đặc trưng khác tổng số dòng. Vì vậy, bảng thống kê cần ghi $n$ thay vì để người đọc tự suy đoán.
+
+Hệ số Pearson đo mức liên hệ tuyến tính giữa hai biến định lượng có phương sai khác không~\cite{niststats}. Giá trị gần $1$ hoặc $-1$ thể hiện liên hệ tuyến tính mạnh theo chiều tương ứng; gần $0$ chưa loại trừ quan hệ phi tuyến. Pearson của độ sáng tối thiểu và tối đa không đo khả năng phân loại nhãn. Nó cần được đọc cùng scatter và thống kê theo nhóm, vì một hệ số chung có thể che khuất khác biệt bên trong các nhóm.
+
+\subsection{Biến phái sinh và phép biến đổi logarit}
+
+Biến phái sinh được tạo để phục vụ phép kiểm tra hoặc cách đọc kết quả. Các cờ nhị phân có thể được tổng hợp thành một biến phân loại khi cấu trúc cờ hợp lệ; hiệu cực đại và cực tiểu mô tả khoảng biến thiên. Những phép tính này phải có điều kiện áp dụng và được đối chiếu với metadata. Nếu nguồn đã chứa cùng thông tin, cột tính lại có giá trị kiểm tra nhưng không trở thành đặc trưng độc lập mới.
+
+Với $x>0$, phép biến đổi $z=\log_{10}(x)$ giúp biểu diễn dải giá trị rộng. Cần phân biệt tính thống kê trên $z$ với chỉ đổi trục hiển thị sang log. Trong cách dựng boxplot diện tích của đề tài, tứ phân vị và râu được tính trên giá trị gốc, sau đó mới đổi trục. Các giá trị không dương phải được kiểm tra trước khi dùng thang log; tên cột và công thức cụ thể được trình bày ở phần thực hiện.
+
+\section{Cơ sở lựa chọn biểu đồ và dashboard}
+\label{sec:bieudodashboard}
+
+\subsection{Biểu đồ cơ cấu và so sánh nhóm}
+
+Thanh ngang thuận tiện khi cần đọc thứ hạng và nhãn dài. Pareto kết hợp số đếm giảm dần với tỷ trọng lũy kế để thể hiện mức tập trung, nhưng tần suất cao chưa đồng nghĩa mức thiệt hại cao. Cột nhóm so sánh số lượng giữa các dòng thép; cột 100\% so sánh cơ cấu bằng cách đưa mỗi nhóm về cùng tổng tỷ trọng. Khi dùng cột 100\%, cần giữ thông tin tổng số quan sát vì nhóm nhỏ và nhóm lớn có thể trông giống nhau về tỷ lệ.
+
+Bảng~\ref{tab:luachonbieudo} tổng hợp căn cứ lựa chọn biểu đồ. Khi xây dựng hình, cần tổ chức trục, chú thích và thang hiển thị phù hợp~\cite{matplotlib}; màu của cùng một nhãn được giữ nhất quán giữa các hình. Trục của cột số đếm nên bắt đầu từ 0 để độ dài cột phản ánh đúng chênh lệch. Khi đơn vị chưa được nguồn xác nhận, nhãn trục giữ thang dữ liệu thay vì tự gán một đơn vị vật lý.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Lựa chọn biểu đồ theo nội dung cần phân tích}
+  \label{tab:luachonbieudo}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}Y Y Y@{}}
+    \toprule
+    Nội dung & Biểu đồ phù hợp & Thông tin cần đọc kèm \\
+    \midrule
+    Cơ cấu và mức tập trung của nhãn & Thanh ngang, Pareto & Tổng số bản ghi, tỷ trọng lũy kế \\
+    So sánh nhãn giữa dòng thép & Cột nhóm, cột 100\% & Tổng từng nhóm, mẫu số tỷ trọng \\
+    Liên hệ giữa hai đặc trưng & Scatter, màu theo nhãn & Mức chồng lấn, số quan sát \\
+    Phân bố độ dày theo nhóm & Boxplot & Trung vị, IQR và cỡ mẫu \\
+    Diện tích có dải giá trị rộng & Boxplot, trục log & Thang hiển thị, giá trị gốc và điểm ngoài râu \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+\subsection{Biểu đồ phân bố và mối liên hệ}
+
+Scatter đặt mỗi quan sát tại vị trí xác định bởi hai biến định lượng. Màu theo nhãn cho phép quan sát vùng tập trung và mức chồng lấn. Khi điểm chồng lên nhau, giảm kích thước và tăng độ trong suốt giúp hình dễ đọc hơn, nhưng không thay thế thông tin về cỡ mẫu. Một cụm có vẻ tách biệt cần được đối chiếu bằng thống kê; hình ảnh riêng lẻ chưa chứng minh hiệu năng phân loại.
+
+Boxplot tóm tắt phân bố qua trung vị, hai tứ phân vị và râu~\cite{nistbox}. Với hệ số $1{,}5$, hàng rào dưới và trên được xác định bởi
+\begin{equation}
+  L=\mathrm{P25}-1{,}5\,\mathrm{IQR},
+  \qquad
+  U=\mathrm{P75}+1{,}5\,\mathrm{IQR}.
+  \label{eq:hangraoiqr}
+\end{equation}
+Râu kết thúc tại các giá trị quan sát xa nhất còn nằm trong $[L,U]$, không mặc nhiên trùng với hai hàng rào. Điểm bên ngoài được hiển thị riêng theo quy tắc này; chúng chưa được xác định là dữ liệu sai. Nếu các tứ phân vị bằng nhau, hộp có thể thu thành đường, nên cần đọc cùng bảng và cỡ mẫu. Các tham số dựng hình phải thống nhất với quy tắc được mô tả.
+
+Với boxplot diện tích trên trục log, khoảng cách bằng nhau thể hiện cùng một tỷ số, không phải cùng một hiệu số. Quy tắc IQR áp dụng toàn tập và quy tắc tính riêng từng nhóm cũng có thể gắn cờ những quan sát khác nhau. Vì vậy, chú thích cần nêu phạm vi tính và thang hiển thị; việc giữ hay loại bản ghi phải dựa trên kiểm tra dữ liệu, thay vì dựa riêng vào vị trí của điểm trên hình.
+
+\subsection{Dashboard tương tác}
+
+Dashboard tổ chức bộ lọc, chỉ số tổng hợp (KPI), biểu đồ và bảng trên cùng giao diện; các thành phần tương tác có thể được triển khai bằng Streamlit~\cite{streamlit}. Khi lọc theo dòng thép, nhãn hoặc độ dày, các thành phần của cùng phần phân tích phải dùng cùng tập con. Tỷ trọng cần xác định lại mẫu số sau lọc và ghi rõ ý nghĩa.
+
+Tập con rỗng cần có thông báo phù hợp. Chức năng tải dữ liệu phải xuất đúng phạm vi đã mô tả; nguồn mới được kiểm tra trước khi sử dụng. Kiểm thử cần đối chiếu số đếm, bảng và hình trong các tình huống cụ thể. Kết quả kiểm thử chức năng cung cấp bằng chứng về hoạt động của ứng dụng; hiệu quả sử dụng cần có phép đo riêng.
+
+\section{Tiểu kết chương}
+
+Chất lượng dữ liệu, mẫu số, cỡ mẫu và lựa chọn biểu đồ quyết định phạm vi diễn giải. Những căn cứ vừa trình bày được dùng để khảo sát đầu vào ở Chương 2, triển khai bằng Python ở Chương 3 và đối chiếu kết quả ở Chương 4.

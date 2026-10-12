@@ -1,0 +1,28 @@
+{
+  "notebook_schema": "valid",
+  "executed_code_cells": 41,
+  "cell_errors": 0,
+  "clean_fault_rows": 1941,
+  "removed_duplicates": 20,
+  "restored_values": 67,
+  "repaired_values": 16,
+  "feature_and_label_comparison_to_uci": "all matched",
+  "simulated_dates": 5,
+  "area_outliers_flagged_and_retained": 395,
+  "trade_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "missing_trade_years": [
+    2024
+  ],
+  "source_hashes": "all unchanged",
+  "verification": "passed after CSV export/reload"
+}

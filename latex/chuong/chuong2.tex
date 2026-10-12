@@ -1,0 +1,202 @@
+% !TeX root = ../main.tex
+% !TeX encoding = UTF-8
+\chapter{Khảo sát dữ liệu, công cụ và yêu cầu thực hiện}
+\label{chap:khaosatdulieu}
+
+\section{Nguồn và cấu trúc dữ liệu}
+\label{sec:nguondulieu}
+
+\subsection{Tệp dữ liệu thực hành}
+
+Trang tính dữ liệu chính trong tệp XLSX gồm 1.961 dòng và 29 cột: 27 đặc trưng, cột ngày \tenCot{Production_Date} và cột nhãn \tenCot{Faults}. Một trang tính kèm theo cung cấp mô tả các biến. Bảng chính được dùng để thực hiện quy trình khảo sát, làm sạch và trực quan hóa. XLSX là định dạng lưu trữ; các thao tác đọc, xử lý và vẽ hình được thực hiện bằng Python.
+
+Để kiểm tra cấu trúc ngay sau khi đọc, sử dụng lệnh dưới đây. Trong các đoạn mã khảo sát, \maCot{df} là bảng dữ liệu thực hành ở trạng thái thô, chưa thêm cột truy vết hoặc thực hiện làm sạch. Bảng được đọc với \maCot{dtype=object} và \maCot{keep_default_na=False} để giữ biểu diễn đầu vào; cách đọc được trình bày ở mục~\ref{sec:ch3docdulieu}.
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+df.info()
+\end{lstlisting}
+\end{minipage}\par
+
+Lược trích kết quả cấu trúc từ bảng vừa đọc:
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language={}]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1961 entries, 0 to 1960
+Data columns (total 29 columns):
+...
+dtypes: object(29)
+\end{lstlisting}
+\end{minipage}\par
+
+Kết quả xác nhận quy mô đầu vào và kiểu lưu trữ hiện tại. Do lựa chọn đọc nói trên, cả 29 cột đều có kiểu \maCot{object}; điều này chưa có nghĩa mọi ô đều là chuỗi. Các cột cũng đều được báo có 1.961 giá trị không null, vì chuỗi rỗng vẫn được tính là một giá trị. Bởi vậy, cần kiểm tra riêng ô trống và nội dung từng cột trước khi kết luận dữ liệu đầy đủ.
+
+Số dòng ban đầu chưa thể dùng ngay làm mẫu số phân tích: bảng có ô thiếu, nhãn chưa thống nhất và dòng trùng. Bản gốc cần được giữ riêng; dữ liệu làm việc phải có dấu vết thay đổi. Cột ngày là thông tin mô phỏng bổ sung, không phải thời điểm sản xuất do UCI cung cấp.
+
+\subsection{Nguồn tham chiếu UCI}
+
+Nguồn tham chiếu là bộ \textit{Steel Plates Faults} do Buscema, Terzi và Tastle công bố trên UCI Machine Learning Repository năm 2010, với DOI \texttt{10.24432/C5J88N} và giấy phép CC BY 4.0~\cite{uci}. Bộ dữ liệu có 1.941 bản ghi và 27 đặc trưng. Tệp nguồn biểu diễn bảy nhãn bằng bảy cột nhị phân, nên bảng đọc vào gồm 34 cột. Bảng~\ref{tab:nguonquymo} phân biệt vai trò của hai nguồn.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Quy mô và vai trò của hai nguồn dữ liệu}
+  \label{tab:nguonquymo}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{2.8cm}p{2.6cm}Y@{}}
+    \toprule
+    Nguồn & Quy mô đầu vào & Vai trò \\
+    \midrule
+    Tệp thực hành & 1.961 dòng; 29 cột & Đầu vào cần khảo sát và xử lý; có nhãn văn bản và ngày mô phỏng. \\
+    UCI & 1.941 dòng; 34 cột & Cung cấp cấu trúc đặc trưng, nhãn nhị phân và giá trị tham chiếu. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Bốn tọa độ \tenCot{X_Minimum}, \tenCot{X_Maximum}, \tenCot{Y_Minimum} và \tenCot{Y_Maximum} là khóa ghép dự kiến. Trước khi sử dụng, cần kiểm tra tính đầy đủ, giá trị nguyên, tính duy nhất sau xử lý trùng và mức khớp một--một giữa hai bảng. Ràng buộc ghép được kiểm tra bằng Pandas~\cite{pandasmerge}. Khi khóa chưa đạt yêu cầu, không được tự chọn một dòng tham chiếu để điền giá trị. UCI cung cấp căn cứ khôi phục; độ khớp sau khôi phục chỉ xác nhận thao tác theo nguồn này.
+
+\subsection{Nhóm biến và giới hạn thông tin}
+
+Các đặc trưng gồm tọa độ, kích thước và diện tích; độ sáng; dòng thép và độ dày; các chỉ số hình học, định hướng và logarit. \tenCot{Pixels_Areas} mô tả diện tích; \tenCot{Minimum_of_Luminosity} và \tenCot{Maximum_of_Luminosity} hỗ trợ so sánh độ sáng. Hai cờ A300/A400 cần được kiểm tra trước khi tổng hợp thành dòng thép. Giữ thang số theo nguồn, chưa tự gán đơn vị khi metadata chưa xác nhận. Đặc trưng \tenCot{LogOfAreas} đã có trong nguồn, nên cột logarit diện tích tính thêm cần được kiểm tra sự trùng thông tin.
+
+Bảy nhãn gồm \tenCot{Pastry}, \tenCot{Z_Scratch}, \tenCot{K_Scatch}, \tenCot{Stains}, \tenCot{Dirtiness}, \tenCot{Bumps} và \tenCot{Other_Faults}. Cột \tenCot{K_Scratch} trong bản CSV tham chiếu cần được ánh xạ về \tenCot{K_Scatch} theo nhãn gốc đã kiểm tra. \tenCot{Other_Faults} là nhãn gộp, chưa cho biết thành phần bên trong. Thiếu sản lượng, định danh tấm/cuộn và biến vận hành đầy đủ, dữ liệu chưa cho phép xác định tỷ lệ sản phẩm lỗi. Nguồn UN Comtrade không có khóa liên hệ với các bản ghi lỗi, nên chỉ được trình bày độc lập.
+
+\section{Khảo sát tình trạng dữ liệu trước xử lý}
+\label{sec:tinhtrangbandau}
+
+Sau khi kiểm kê cấu trúc, bảng thô được mô tả bằng lệnh sau:
+
+\noindent\begin{minipage}{\linewidth}
+\setstretch{1}
+\begin{lstlisting}[language=Python]
+df.describe(include="all")
+\end{lstlisting}
+\end{minipage}\par
+
+Với kiểu \maCot{object} được giữ cho toàn bộ cột, kết quả gồm \maCot{count} (số giá trị không null), \maCot{unique} (số giá trị phân biệt), \maCot{top} (giá trị xuất hiện nhiều nhất) và \maCot{freq} (số lần xuất hiện của giá trị đó). Bảng~\ref{tab:motaraw} trích bốn cột đại diện; các giá trị vẫn được đếm theo biểu diễn ban đầu.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Trích kết quả mô tả bốn cột của bảng dữ liệu thô}
+  \label{tab:motaraw}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.1cm}r r Y r@{}}
+    \toprule
+    Cột & \maCot{count} & \maCot{unique} & \maCot{top} & \maCot{freq} \\
+    \midrule
+    \maCot{Faults} & 1.961 & 28 & \maCot{Other_Faults} & 490 \\
+    \maCot{Production_Date} & 1.961 & 27 & 2025-11-10 00:00:00 & 199 \\
+    \maCot{Pixels_Areas} & 1.961 & 912 & Chuỗi rỗng & 32 \\
+    \maCot{Steel_Plate_Thickness} & 1.961 & 25 & 40 & 710 \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Hai dấu hiệu cần được xử lý trước khi đếm nhóm là 28 giá trị phân biệt ở cột nhãn và 27 giá trị phân biệt ở cột ngày. Đây là số biểu diễn trong bảng thô, chưa phải số loại lỗi hay số ngày đã chuẩn hóa. Riêng cột ngày chứa 908 giá trị kiểu ngày và 1.053 chuỗi, nên cùng một ngày có thể được ghi theo nhiều cách. Với diện tích, chuỗi rỗng xuất hiện 32 lần và còn được báo là giá trị phổ biến nhất; con số \maCot{count} bằng 1.961 vì thế không thể dùng làm cỡ mẫu diện tích hợp lệ. Tương tự, số đếm 490 của \maCot{Other_Faults} chỉ áp dụng cho cách viết đang xuất hiện nhiều nhất, chưa bao gồm các biến thể của nhãn này.
+
+Lệnh mô tả trên chưa cho trung bình, độ lệch chuẩn hoặc tứ phân vị của các đặc trưng, vì bảng đang giữ kiểu \maCot{object}. Những đại lượng đó cần được tính sau khi các cột số được chuyển kiểu và kiểm tra ở Chương 3. Khảo sát đầu vào còn phải tách vấn đề của ô, dòng và nhãn; không thể chỉ dựa vào \maCot{info()} và \maCot{describe()} để phát hiện hết lỗi. Bảng~\ref{tab:tinhtrangbandau} tổng hợp tình trạng trước xử lý từ các kiểm tra bổ sung và yêu cầu phát sinh; đây chưa phải bảng kết quả làm sạch.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Tình trạng đầu vào và yêu cầu xử lý tương ứng}
+  \label{tab:tinhtrangbandau}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{2.25cm}Y Y@{}}
+    \toprule
+    Nội dung & Tình trạng ghi nhận & Yêu cầu phát sinh \\
+    \midrule
+    Kiểu số & Một số cột có biểu diễn hỗn hợp. & Chuyển kiểu có theo dõi giá trị không chuyển được. \\
+    Ô thiếu & 70 ô: diện tích 32; độ dày 30; logarit trục Y 4; định hướng 4. & Xác định vị trí thiếu và căn cứ khôi phục từng ô. \\
+    Trùng lặp & 20 dòng trùng theo tiêu chí đặc trưng, ngày gốc và nhãn chuẩn. & Ghi rõ dòng giữ, dòng loại và tiêu chí so sánh. \\
+    Nhãn & 28 biểu diễn cho bảy nhãn chuẩn. & Kiểm tra ánh xạ và thống nhất tên nhóm. \\
+    Chỉ số & Có giá trị đáng ngờ, cần kiểm tra quan hệ giữa các cột. & Phát hiện trước tham chiếu; lưu căn cứ khi sửa. \\
+    Ngày & Định dạng hỗn hợp; giá trị mô phỏng. & Chuẩn hóa hồ sơ, giữ giá trị gốc để truy vết. \\
+    Diện tích & Dải giá trị rộng, có giá trị rất lớn. & Kiểm tra tính hợp lệ; cân nhắc trục log. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Kiểm tra kiểu của từng ô cho thấy \tenCot{X_Perimeter} chứa 1.946 số nguyên và 15 chuỗi biểu diễn số. Vấn đề cần giải quyết là đưa các giá trị tương đương về cùng kiểu tính toán và theo dõi những giá trị không chuyển được. Việc kiểm kê tại chương này giữ nguyên bảng thô; các phép chuyển kiểu, loại trùng và khôi phục giá trị được triển khai ở Chương 3.
+
+Số 70 là tổng ô thiếu trong 27 đặc trưng ban đầu, nằm ở \tenCot{Pixels_Areas}, \tenCot{Steel_Plate_Thickness}, \tenCot{Log_Y_Index} và \tenCot{Orientation_Index}. Tính thống kê trực tiếp khiến cỡ mẫu diện tích và độ dày khác nhau. Số thiếu cần được xác định lại sau từng bước, vì loại dòng trùng có thể làm thay đổi tổng. Tiêu chí trùng dùng 27 đặc trưng sau chuyển kiểu số, ngày gốc và nhãn chuẩn; giữ bản ghi đầu tiên và ghi nhật ký các dòng loại.
+
+Tương tự, 28 biểu diễn nhãn không đồng nghĩa 28 loại lỗi. Chuẩn hóa phải dựa trên ánh xạ đã kiểm tra. \tenCot{Empty_Index} bằng 2031 hoặc \tenCot{Log_Y_Index} bằng 18129 là dấu hiệu cần đối chiếu với quan hệ phái sinh và nguồn tham chiếu. Dấu hiệu phát hiện phải được ghi riêng với căn cứ chọn giá trị sửa. Diện tích lớn hoặc nằm ngoài râu boxplot chưa đủ căn cứ loại bản ghi.
+
+\section{Công cụ và môi trường thực hiện}
+\label{sec:congcu}
+
+\subsection{Công cụ xử lý và trực quan hóa}
+
+Python và Jupyter Notebook tổ chức các bước cùng phần giải thích và đầu ra. Pandas đảm nhiệm đọc bảng, kiểm tra kiểu, chuẩn hóa, ghép nguồn và tổng hợp; NumPy hỗ trợ phép tính số, logarit. Tệp XLSX được đọc qua \tenCot{openpyxl}. Công thức và điều kiện phải thể hiện rõ trong mã.
+
+Matplotlib tạo biểu đồ tĩnh cho báo cáo~\cite{matplotlib}; Streamlit tổ chức dashboard, còn Plotly cung cấp biểu đồ tương tác~\cite{streamlit}. \tenCot{requests} đọc nguồn qua mạng; \tenCot{json} xử lý phản hồi JSON. Phiên bản và lệnh chạy cần được lưu cùng sản phẩm; chỉ liệt kê thư viện thực sự sử dụng.
+
+\subsection{Căn cứ lựa chọn Python}
+
+Python phù hợp với yêu cầu dùng chung quy trình cho dữ liệu, biểu đồ và dashboard. Quy tắc chuẩn hóa hoặc công thức tỷ trọng được viết rõ có thể chạy lại với cùng đầu vào; bảng thống kê được xuất để đưa vào báo cáo. Ưu điểm được xem xét là khả năng tổ chức và truy vết, chưa có phép đo để so sánh tốc độ hoặc hiệu quả với công cụ khác.
+
+\section{Yêu cầu phân tích và tiêu chí đọc kết quả}
+\label{sec:yeucauphanTich}
+
+\subsection{Đầu ra cho Q0--Q5}
+
+Các câu hỏi ở phần mở đầu được cụ thể hóa trong Bảng~\ref{tab:yeucauq0q5}. Biểu đồ cần đi cùng bảng thống kê, cỡ mẫu và phạm vi tính. Kết quả hoàn chỉnh đặt ở Chương 4.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Đầu ra và trọng tâm đọc kết quả cho Q0--Q5}
+  \label{tab:yeucauq0q5}
+  \begingroup
+  \small
+  \setstretch{1.1}
+  \begin{tabularx}{\linewidth}{@{}p{0.7cm}Y Y@{}}
+    \toprule
+    Mã & Đầu ra cần có & Trọng tâm đọc kết quả \\
+    \midrule
+    Q0 & Bảng phát hiện, nhật ký và kiểm tra sau xử lý. & Phân biệt ô/dòng, căn cứ sửa và điều kiện toàn vẹn. \\
+    Q1 & Thanh ngang, Pareto và bảng cơ cấu. & Thứ hạng, ba nhãn đầu, lũy kế 80\% và chênh lệch cỡ mẫu. \\
+    Q2 & Cột nhóm, cột 100\% và tỷ trọng hai chiều. & Cơ cấu trong dòng thép và mức tập trung của từng nhãn. \\
+    Q3 & Scatter độ sáng và bảng tứ phân vị. & Vùng trung tâm, mức chồng lấn và cỡ mẫu theo nhãn. \\
+    Q4 & Boxplot độ dày và bảng nhãn theo dòng thép. & Trung vị, IQR, độ lệch chuẩn và số quan sát. \\
+    Q5 & Boxplot diện tích trục log và bảng thống kê. & Trung vị, IQR, cực trị và điểm ngoài râu theo nhóm. \\
+    \bottomrule
+  \end{tabularx}
+  \endgroup
+\end{table}
+
+Ở Q0, bảng phát hiện được lập trước khi sử dụng giá trị tham chiếu. Nhật ký ghi vị trí, giá trị cũ/mới và căn cứ; kiểm tra sau xử lý gồm số dòng, kiểu, nhãn, khóa ghép và mức khớp nguồn. Q1 cần đọc thứ hạng, tỷ trọng ba nhãn đầu, số nhãn để đạt ít nhất 80\% lũy kế và tỷ số cỡ mẫu lớn nhất/nhỏ nhất. Các chỉ số này mô tả cơ cấu mẫu, chưa xếp hạng thiệt hại.
+
+Q2 dùng tỷ trọng dòng thép trong từng nhãn để xác định mức tập trung. Gọi $n_{g,s}$ là số bản ghi thuộc nhãn $g$ và dòng thép $s$, điều kiện là
+\begin{equation}
+  \max_s\frac{n_{g,s}}{\sum_t n_{g,t}}>0{,}90.
+  \label{eq:tieuchiq2}
+\end{equation}
+Mốc trên 90\% được sử dụng theo mục V.3 của tài liệu đọc~\cite{reading}, như một quy ước khám phá. Đây không phải chuẩn kỹ thuật ngành thép. Khi đọc cơ cấu nhãn trong A300/A400, mẫu số đổi sang tổng bản ghi của từng dòng thép, theo hai cách tính ở công thức~\ref{eq:tytronghaichieu}.
+
+Q3 xét khoảng P25--P75 của độ sáng tối thiểu. Nhãn $g$ đáp ứng tiêu chí khi, với mọi nhãn $h\ne g$, có
+\begin{equation}
+  \mathrm{P75}_g<\mathrm{P25}_h
+  \quad\text{hoặc}\quad
+  \mathrm{P25}_g>\mathrm{P75}_h.
+  \label{eq:tieuchiq3}
+\end{equation}
+Khoảng chạm đầu mút không đáp ứng điều kiện. Tiêu chí được bổ sung sau khảo sát kết quả, không phải giả thuyết xác định trước. Nó chỉ mô tả phần trung tâm; scatter và cực trị cần được đọc để nhận diện chồng lấn. Q4 ghi rõ cỡ mẫu; nhóm $N=1$ chỉ mô tả một bản ghi, chưa đánh giá biến thiên hoặc suy rộng. Q5 sử dụng đại lượng thống kê thay cho nhận xét ``khác biệt rõ'' chưa định nghĩa; kiểm tra diện tích dương trước dùng trục log, tính râu trên thang gốc.
+
+\subsection{Yêu cầu dashboard và kiểm thử}
+
+Dashboard cần lọc theo dòng thép, nhãn và khoảng độ dày; KPI, biểu đồ, bảng trong phần phân tích lỗi sử dụng cùng tập con. Tab chất lượng thể hiện tình trạng toàn nguồn và phải ghi rõ phạm vi. Tập rỗng cần có thông báo; CSV xuất đúng phạm vi đã mô tả. Chức năng đọc lại nguồn phải kiểm tra dữ liệu mới, giữ bản hợp lệ gần nhất khi nguồn lỗi. Kiểm thử bao gồm lọc kết hợp, tập rỗng, xuất dữ liệu, cập nhật và lỗi nguồn. Phạm vi năm thương mại độc lập với bộ lọc lỗi.
+
+\section{Định hướng thực hiện và tiểu kết chương}
+
+Khảo sát xác định những vấn đề cần giải quyết trước khi diễn giải biểu đồ: chuẩn hóa kiểu và nhãn, xác định trùng, kiểm tra quan hệ nội tại, xác nhận khóa rồi khôi phục có truy vết. Chương 3 triển khai bằng Python; Chương 4 đối chiếu kết quả với yêu cầu tại mục~\ref{sec:yeucauphanTich}. Tình trạng đầu vào, cách thực hiện và bằng chứng được trình bày theo mạch này.

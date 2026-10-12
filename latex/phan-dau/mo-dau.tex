@@ -1,0 +1,64 @@
+% !TeX root = ../main.tex
+\chapter*{Phần mở đầu}
+\addcontentsline{toc}{chapter}{Phần mở đầu}
+\label{chap:modau}
+
+\mucMoDau{1}{Bối cảnh và lý do lựa chọn đề tài}
+
+Một biểu đồ có thể làm nổi bật một nhóm lỗi chỉ trong vài giây, nhưng độ tin cậy của nhận xét phụ thuộc vào những việc đã được thực hiện trước khi vẽ. Nhãn được viết không thống nhất có thể làm một nhóm bị tách thành nhiều nhóm; bản ghi trùng làm thay đổi số đếm; giá trị thiếu hoặc bất thường ảnh hưởng đến các đại lượng thống kê. Với dữ liệu lỗi bề mặt thép, kiểm tra đầu vào và lựa chọn cách biểu diễn vì thế cần được xem xét trong cùng một quy trình.
+
+Bộ dữ liệu \textit{Steel Plates Faults} trên UCI Machine Learning Repository gồm 1.941 bản ghi, 27 đặc trưng và bảy nhãn lỗi~\cite{uci}. Các đặc trưng phản ánh những khía cạnh khác nhau của bản ghi, từ tọa độ, diện tích và độ sáng đến dòng thép và độ dày. Khi chỉ đọc bảng, người phân tích khó đồng thời nhận ra nhãn nào xuất hiện nhiều, phân bố đặc trưng khác nhau ra sao và những nhóm nào cần được xem xét kỹ hơn. Biểu đồ giúp tổ chức các thông tin đó thành những góc nhìn có thể đối chiếu.
+
+Đề tài \textit{\tenDeTai} được lựa chọn để thực hiện quá trình từ khảo sát đầu vào đến trình bày kết quả. Quy tắc xử lý, công thức tính và thao tác vẽ được ghi trong mã Python để chạy lại và kiểm tra. Biểu đồ tĩnh phục vụ phần phân tích; dashboard bổ sung khả năng lọc và xem số liệu theo nhóm. Mỗi thao tác được lựa chọn theo vấn đề cụ thể của dữ liệu.
+
+\mucMoDau{2}{Mục tiêu thực hiện}
+
+Mục tiêu chung là xây dựng quy trình xử lý và trực quan hóa dữ liệu lỗi bề mặt thép bằng Python, sau đó tổ chức kết quả thành bảng, biểu đồ và dashboard tương tác. Mục tiêu này được cụ thể hóa thành bốn nội dung có thể đối chiếu với sản phẩm đầu ra.
+
+Trước hết, bài khảo sát nguồn, cấu trúc và chất lượng đầu vào. Tiếp theo, dữ liệu được chuẩn hóa, làm sạch và ghép nguồn tham chiếu có kiểm tra, có nhật ký. Bài sử dụng dữ liệu sau xử lý để tạo biến, tính chỉ số và vẽ biểu đồ cho từng câu hỏi. Cuối cùng, các kết quả được tổ chức thành dashboard; chức năng được kiểm thử và số liệu được đối chiếu với quy trình phân tích.
+
+Mỗi mục tiêu được đối chiếu với đầu ra tương ứng. Người đọc có thể kiểm tra kết quả qua dữ liệu, nhật ký, bảng và hình, cùng bằng chứng về cách tính.
+
+\mucMoDau{3}{Đối tượng và phạm vi thực hiện}
+
+Đối tượng phân tích là các bản ghi có nhãn lỗi trong bộ \textit{Steel Plates Faults} và tệp thực hành tương ứng. Mỗi dòng được xem là một đơn vị quan sát của bài; dữ liệu hiện có chưa đủ để mặc định mỗi dòng là một tấm thép độc lập. Tệp thực hành được dùng làm đầu vào cho các bước khảo sát và làm sạch; nguồn UCI cung cấp metadata và giá trị tham chiếu cho những bản ghi đã xác nhận tương ứng.
+
+Phạm vi nội dung gồm chất lượng dữ liệu, cơ cấu bảy nhãn lỗi và sự khác nhau về dòng thép A300/A400, độ sáng, độ dày, diện tích. Các kết quả mang tính mô tả và khám phá trong tập quan sát. Do chưa có tổng sản lượng, đầy đủ biến vận hành và định danh sản phẩm, bài chưa xác định tỷ lệ sản phẩm lỗi hoặc nguyên nhân gây lỗi. Những thang đo chưa có đơn vị được xác nhận sẽ được giữ theo giá trị của nguồn.
+
+Cột \tenCot{Production_Date} chứa ngày mô phỏng, được chuẩn hóa để quản lý hồ sơ dữ liệu; cột này không dùng để suy ra xu hướng sản xuất thực tế. Phân tích thương mại qua UN Comtrade, mang mã Q6 trong notebook, là nội dung bổ sung ở phụ lục. Nguồn thương mại không có khóa liên hệ với các bản ghi lỗi nên được phân tích riêng. Toàn bộ xử lý và trực quan hóa của đề tài sử dụng Python; XLSX là định dạng tệp đầu vào.
+
+\mucMoDau{4}{Các câu hỏi phân tích}
+
+Các câu hỏi được tổ chức từ kiểm tra dữ liệu đến mô tả cơ cấu và so sánh đặc trưng. Q0 kiểm tra điều kiện đầu vào và kết quả xử lý; Q1--Q5 định hướng nội dung phân tích chính.
+
+\begin{center}
+\small
+\begin{tabularx}{\linewidth}{@{}p{0.75cm}Y@{}}
+\toprule
+\textbf{Mã} & \textbf{Câu hỏi phân tích} \\
+\midrule
+Q0 & Những vấn đề nào được phát hiện trước khi tham chiếu giá trị UCI; việc khôi phục có truy vết và dữ liệu sau xử lý có đáp ứng các điều kiện toàn vẹn không? \\
+Q1 & Cơ cấu bảy nhãn lỗi như thế nào; mức tập trung và mất cân bằng giữa các nhãn ra sao? \\
+Q2 & Cơ cấu nhãn khác nhau thế nào giữa A300/A400; nhãn nào có trên 90\% bản ghi tập trung ở cùng một dòng thép? \\
+Q3 & Phân bố độ sáng tối thiểu/tối đa khác nhau thế nào giữa các nhãn; nhãn nào có khoảng P25--P75 của độ sáng tối thiểu không chồng lấn với mọi nhãn khác? \\
+Q4 & Phân bố độ dày khác nhau thế nào giữa các nhãn và giữa A300/A400 trong cùng nhãn? \\
+Q5 & Diện tích \tenCot{Pixels_Areas} khác nhau thế nào giữa các nhãn về trung vị, IQR và các giá trị ngoài râu boxplot? \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Mốc trên 90\% ở Q2 được sử dụng như một mốc khám phá theo tài liệu đọc, mục V.3~\cite{reading}. Tiêu chí không chồng lấn IQR ở Q3 giúp diễn đạt sự khác nhau của phần trung tâm phân bố; tiêu chí này được bổ sung trong quá trình phân tích, không phải giả thuyết xác định trước. Mẫu số, đầu ra và cách đọc kết quả của từng câu hỏi được cụ thể hóa trong phần yêu cầu phân tích ở Chương 2.
+
+\mucMoDau{5}{Giá trị của đề tài và sản phẩm đầu ra}
+
+Giá trị học tập của đề tài nằm ở việc nối sáu bước môn học thành một quá trình rõ đầu vào và đầu ra. Kiến thức về dữ liệu thiếu, khóa ghép, tỷ trọng, tứ phân vị và thang log giúp giải thích lựa chọn thực hành, kết quả và giới hạn của phương pháp.
+
+Về ứng dụng, bảng và biểu đồ giúp người đọc nhận diện cơ cấu nhãn, đối chiếu các nhóm và tìm những đặc điểm cần kiểm tra thêm. Dashboard cho phép lựa chọn phạm vi quan sát mà vẫn giữ khả năng xem lại số liệu. Những giá trị này được đánh giá qua tính đúng đắn và khả năng hoạt động của sản phẩm; hiệu quả hỗ trợ quyết định trong nhà máy cần một phép đánh giá thực tế riêng.
+
+Sản phẩm đầu ra gồm notebook Python, dữ liệu sau xử lý, nhật ký chuẩn hóa và khôi phục, bảng thống kê, hình trực quan, dashboard cùng kết quả kiểm thử. Báo cáo trình bày những đoạn mã cần thiết để giải thích cách làm; mã đầy đủ, từ điển dữ liệu và các bảng dài được tổ chức trong phụ lục.
+
+\mucMoDau{6}{Bố cục của báo cáo}
+
+Ngoài phần mở đầu, kết luận, tài liệu tham khảo và phụ lục, báo cáo có bốn chương. Chương 1 trình bày bài toán và cơ sở lý thuyết. Chương 2 khảo sát nguồn, cấu trúc, tình trạng dữ liệu, công cụ và yêu cầu thực hiện.
+
+Chương 3 trình bày cách xử lý, tạo biến, xây dựng biểu đồ và dashboard bằng Python. Chương 4 phân tích kết quả, trả lời các câu hỏi, trình bày sản phẩm, kiểm thử và thảo luận. Mạch bài đi từ kiến thức đến vấn đề của dữ liệu, thao tác thực hiện và bằng chứng thu được.

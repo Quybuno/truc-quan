@@ -1,0 +1,183 @@
+{
+  "image_kind": "actual pandas table previews rendered with Matplotlib",
+  "source_row_definition": "Source_Row = original zero-based Excel row index + 2 (header is row 1)",
+  "reference_row_definition": "Source_Row_UCI = zero-based CSV record index + 2 (header is row 1)",
+  "sources": [
+    "data\\raw\\practice\\data_chua_sach_ko_sua.xlsx",
+    "data\\raw\\uci\\steel_plates_faults_original.csv"
+  ],
+  "figures": [
+    {
+      "file": "latex\\figures\\chuong3\\01_du_lieu_tho.png",
+      "caption": "Trích các dòng có nhãn chưa chuẩn, chuỗi số, ô thiếu và giá trị bất thường trong tệp đầu vào.",
+      "source_rows": [
+        7,
+        10,
+        16,
+        101,
+        1331
+      ],
+      "table_csvs": [
+        "01_du_lieu_tho.csv"
+      ],
+      "column_mapping": {
+        "Dòng nguồn": "Source_Row",
+        "Chu vi X": "X_Perimeter",
+        "all_other_headers": "Original feature names split into two lines"
+      },
+      "image_size_inches": [
+        6.6,
+        3.4099999999999997
+      ],
+      "dpi": 300
+    },
+    {
+      "file": "latex\\figures\\chuong3\\02_chuan_hoa.png",
+      "caption": "Chuẩn hóa nhãn và chuyển kiểu số trên cùng các dòng; ô thiếu chưa được điền.",
+      "source_rows": [
+        7,
+        10,
+        1331
+      ],
+      "table_csvs": [
+        "02_chuan_hoa_nhan.csv",
+        "02_chuan_hoa_so.csv"
+      ],
+      "column_mapping": {
+        "Nhãn gốc": "Faults",
+        "Nhãn chuẩn": "Fault_Type_Clean"
+      },
+      "image_size_inches": [
+        6.6,
+        4.380000000000001
+      ],
+      "dpi": 300
+    },
+    {
+      "file": "latex\\figures\\chuong3\\03_loai_trung.png",
+      "caption": "Hai cặp bản ghi trùng được xác nhận bằng toàn bộ tiêu chí; cột tọa độ được trích để minh họa.",
+      "source_rows": [
+        645,
+        1943,
+        748,
+        1947
+      ],
+      "table_csvs": [
+        "03_cap_trung.csv"
+      ],
+      "column_mapping": {
+        "X_min → X_max": "X_Minimum, X_Maximum",
+        "Y_min → Y_max": "Y_Minimum, Y_Maximum",
+        "Xử lý": "Action"
+      },
+      "image_size_inches": [
+        6.6,
+        3.1199999999999997
+      ],
+      "dpi": 300
+    },
+    {
+      "file": "latex\\figures\\chuong3\\04_kiem_tra_noi_tai.png",
+      "caption": "Ví dụ từ phép rà soát bổ sung bằng quan hệ nội tại, thực hiện trước khi lấy giá trị khôi phục từ UCI.",
+      "source_rows": [
+        101,
+        238,
+        16,
+        61
+      ],
+      "table_csvs": [
+        "04_kiem_tra_noi_tai.csv"
+      ],
+      "column_mapping": {
+        "Giá trị gốc": "Before",
+        "Tính từ cùng dòng": "Computed_same_row"
+      },
+      "image_size_inches": [
+        6.6,
+        3.1199999999999997
+      ],
+      "dpi": 300
+    },
+    {
+      "file": "latex\\figures\\chuong3\\05_khoi_phuc_uci.png",
+      "caption": "Các ô trước và sau khôi phục, cùng định danh dòng nguồn và dòng UCI; việc ghép dùng bốn tọa độ.",
+      "source_rows": [
+        7,
+        26,
+        101,
+        16
+      ],
+      "table_csvs": [
+        "05_khoi_phuc_uci.csv"
+      ],
+      "column_mapping": {
+        "Dòng UCI": "Source_Row_UCI",
+        "Sau (UCI)": "After"
+      },
+      "image_size_inches": [
+        6.6,
+        3.1199999999999997
+      ],
+      "dpi": 300
+    },
+    {
+      "file": "latex\\figures\\chuong3\\06_du_lieu_phan_tich.png",
+      "caption": "Trích dữ liệu phân tích sau xử lý: biến phái sinh và ngày chuẩn hóa có cờ mô phỏng.",
+      "source_rows": [
+        7,
+        10,
+        16,
+        101,
+        2,
+        5,
+        7
+      ],
+      "table_csvs": [
+        "06_bien_phan_tich.csv",
+        "06_ngay_mo_phong.csv"
+      ],
+      "column_mapping": {
+        "Dòng thép": "Steel_Type",
+        "Diện tích": "Pixels_Areas",
+        "ΔX": "X_Range",
+        "ΔY": "Y_Range",
+        "Δ sáng": "Luminosity_Range",
+        "log10 diện tích": "Log_Pixels_Areas",
+        "Ngày gốc": "Production_Date",
+        "Ngày chuẩn": "Production_Date_Clean"
+      },
+      "image_size_inches": [
+        6.6,
+        4.960000000000001
+      ],
+      "dpi": 300
+    }
+  ],
+  "checks": {
+    "input_rows": 1961,
+    "input_columns": 29,
+    "clean_rows": 1941,
+    "duplicates_removed": 20,
+    "missing_restored": 67,
+    "numeric_corrected": 16,
+    "unmatched_rows": 0,
+    "feature_mismatches": 0,
+    "labels_match": true,
+    "area_flags_retained": 395,
+    "reference_rows": 1941,
+    "reference_coverage_percent": 100.0,
+    "raw_label_representations": 28,
+    "normalized_labels": 7,
+    "numeric_conversion_failures": 0,
+    "raw_missing_feature_cells": 70,
+    "missing_after_deduplication": 67,
+    "matches_saved_clean_features_and_labels": true,
+    "matches_saved_analysis_derived_fields": true,
+    "sources_unchanged": true
+  },
+  "source_sha256": {
+    "data\\raw\\practice\\data_chua_sach_ko_sua.xlsx": "2973556203c6b4ddd07bbe523ba9e556c10892bd7e6e3f576efac3032b454189",
+    "data\\raw\\uci\\steel_plates_faults_original.csv": "883ed09b2a46fcde7144dd173092c645aacb45499dea703d00228d3ddc3c60de"
+  },
+  "regeneration_command": "python outputs/minh_hoa_chuong3/tao_hinh_du_lieu.py"
+}

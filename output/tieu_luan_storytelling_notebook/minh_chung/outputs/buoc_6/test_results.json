@@ -1,0 +1,29 @@
+{
+  "tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "passed",
+  "api_error_checks": "simulated; no live API calls",
+  "source_reload_check": "modified a separate temporary workbook; original file preserved",
+  "auto_refresh_check": "simulated an elapsed interval; verified source reader called",
+  "run_at": "2026-10-12T21:53:19+07:00",
+  "elapsed_seconds": 49.75,
+  "run_kind": "existing 11 tests against isolated copies of current application and updated tests",
+  "filtered_kpi_check": "A400 + K_Scatch: 390, 1, 6.281,5, 40,0; no widget default/session-state warning",
+  "live_api_calls": false,
+  "log_file": "outputs/buoc_6/test_results_phan_hoi_chuong4.log",
+  "isolated_workspace": "tmp/pdfs/dashboard_validation_phan_hoi_94ceac34a58145368aba83873be44335",
+  "environment_adjustment": "Harness temporary directories inherit workspace ACL and are retained; application code and test assertions are unchanged in copied files",
+  "code_hashes": {
+    "app.py": "875454bc3bdc5d5cd7640dc7e02608e1c92a1de3eaad0a98770e8d96d04a12d9",
+    "steel_analysis.py": "45b6d4006e8439a4a118b46cf8f597791e9d8e87b8cddee606882aff52e769eb",
+    "dashboard_charts.py": "25bc814d73baec6670fa05a8a1cb399091ecd897a6f88333138ea182f297ec57",
+    "tests/test_dashboard.py": "6781521efc9a9d1a75bcaba84e7f1e59cc1b779f983aefc54e59f527b8677f15"
+  },
+  "protected_original_files": 34,
+  "original_files_unchanged": true,
+  "changed_original_files": [],
+  "failure_details": [],
+  "error_details": []
+}

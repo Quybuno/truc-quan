@@ -1,0 +1,10 @@
+﻿Ten_hinh,Cau_hoi,PNG,SVG,Pham_vi
+01_co_cau_loi,Q1,hinh/01_co_cau_loi.png,hinh/01_co_cau_loi.svg,"Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Tỷ trọng trên toàn tập lỗi"
+02_pareto_loi,Q1,hinh/02_pareto_loi.png,hinh/02_pareto_loi.svg,"Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Lũy kế theo số lượng, không theo thiệt hại"
+03_loi_theo_thep_so_luong,Q2,hinh/03_loi_theo_thep_so_luong.png,hinh/03_loi_theo_thep_so_luong.svg,"Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Màu: loại lỗi; họa tiết: dòng thép"
+04_loi_theo_thep_ty_trong,Q2,hinh/04_loi_theo_thep_ty_trong.png,hinh/04_loi_theo_thep_ty_trong.svg,Nguồn: bảng lỗi đối chiếu UCI | Mỗi dòng thép cộng 100%; phần dưới 5% xem bảng số liệu
+05_scatter_do_sang,Q3,hinh/05_scatter_do_sang.png,hinh/05_scatter_do_sang.svg,"Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Mỗi điểm là một bản ghi; các điểm có thể chồng lên nhau"
+06_boxplot_do_day,Q4,hinh/06_boxplot_do_day.png,hinh/06_boxplot_do_day.svg,"Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Hộp: Q1–Q3; râu: 1,5 IQR từng nhãn; giữ mọi bản ghi"
+07_boxplot_dien_tich_log,Q5,hinh/07_boxplot_dien_tich_log.png,hinh/07_boxplot_dien_tich_log.svg,"Nguồn: bảng lỗi đối chiếu UCI | n=1,941 | Boxplot tính trên thang gốc; trục log; giữ mọi bản ghi"
+08_xuat_nhap_khau,Q6,hinh/08_xuat_nhap_khau.png,hinh/08_xuat_nhap_khau.svg,"Nguồn: UN Comtrade | Việt Nam, HS 72, World | 2015–2023 | H4/H5/H6 chưa quy đổi; 2024 chưa có dữ liệu"
+09_chenh_lech_thuong_mai,Q6,hinh/09_chenh_lech_thuong_mai.png,hinh/09_chenh_lech_thuong_mai.svg,"Nguồn: UN Comtrade | Việt Nam, HS 72, World | 2015–2023 | Trị giá danh nghĩa; H4/H5/H6 chưa quy đổi"

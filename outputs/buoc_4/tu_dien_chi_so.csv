@@ -1,0 +1,13 @@
+﻿Chi_so,Cong_thuc,Pham_vi_mau_so,Don_vi_ghi_chu
+Count,Đếm bản ghi,Trong nhóm đang xét,Cơ cấu và bảng chéo
+Percent,Count / tổng số bản ghi × 100,Toàn bộ tập bản ghi lỗi,%
+Cumulative_Percent,Lũy kế Percent theo Count giảm dần,Toàn bộ tập bản ghi lỗi,%
+Percent_Within_Steel,Count / N_Steel × 100,Toàn bộ lỗi của dòng thép,%
+Percent_Within_Fault,Count / N_Fault × 100,Toàn bộ bản ghi của nhãn,%
+"N, Mean, Median, Std, Q1, Q3, Min, Max",Thống kê theo nhãn và từng đặc trưng,Std mẫu ddof=1; Q1/Q3 nội suy tuyến tính,Theo đặc trưng nguồn
+Trade_Balance_USD,Export_USD − Import_USD,"Việt Nam, HS72, World, từng năm",USD
+Export_Change_USD / Import_Change_USD,Giá trị hiện tại − năm trước,Hai năm liền kề có dữ liệu,USD
+Export_Growth_Percent / Import_Growth_Percent,Thay đổi / giá trị năm trước × 100,Năm trước có dữ liệu và khác 0,%
+Trade_Balance_Change_USD,Chênh lệch hiện tại − chênh lệch năm trước,Hai năm liền kề có đủ hai luồng,USD
+HS_Version_Changed,Phiên bản HS khác năm trước có dữ liệu,Hai năm liền kề,"Boolean, cờ cần xem xét"
+HS_Comparison_Note,Ghi chú khi HS_Version_Changed=True,Chưa quy đổi HS về một phiên bản,Thông tin diễn giải

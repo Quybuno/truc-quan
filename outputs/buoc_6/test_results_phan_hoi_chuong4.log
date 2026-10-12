@@ -1,0 +1,24 @@
+Run at: 2026-10-12T21:53:19+07:00; isolated workspace: D:\PTIT\KÌ 1 năm 4\Trực quan hóa dữ liệu\Baocao\tmp\pdfs\dashboard_validation_phan_hoi_94ceac34a58145368aba83873be44335
+test_api_failure_keeps_last_data (dashboard_phan_hoi_tests.AppTests.test_api_failure_keeps_last_data) ... 2026-10-12 21:53:23.069 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_empty_filter_and_missing_year (dashboard_phan_hoi_tests.AppTests.test_empty_filter_and_missing_year) ... 2026-10-12 21:53:30.902 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_filters_trade_independence_and_reset (dashboard_phan_hoi_tests.AppTests.test_filters_trade_independence_and_reset) ... 2026-10-12 21:53:34.716 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_first_load (dashboard_phan_hoi_tests.AppTests.test_first_load) ... 2026-10-12 21:53:44.134 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_manual_and_periodic_refresh_read_sources (dashboard_phan_hoi_tests.AppTests.test_manual_and_periodic_refresh_read_sources) ... 2026-10-12 21:53:46.972 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-12 21:53:52.431 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-12 21:53:56.559 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_api_failure_and_retry (dashboard_phan_hoi_tests.PipelineTests.test_api_failure_and_retry) ... ok
+test_api_scope_error_and_partial_missing (dashboard_phan_hoi_tests.PipelineTests.test_api_scope_error_and_partial_missing) ... ok
+test_boxplot_uses_original_linear_quantiles (dashboard_phan_hoi_tests.PipelineTests.test_boxplot_uses_original_linear_quantiles) ... ok
+test_growth_gaps_and_zero (dashboard_phan_hoi_tests.PipelineTests.test_growth_gaps_and_zero) ... ok
+test_matches_notebook (dashboard_phan_hoi_tests.PipelineTests.test_matches_notebook) ... ok
+test_reload_changed_source_and_keep_valid_on_failure (dashboard_phan_hoi_tests.PipelineTests.test_reload_changed_source_and_keep_valid_on_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 46.032s
+
+OK

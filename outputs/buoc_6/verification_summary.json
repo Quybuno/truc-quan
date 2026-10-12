@@ -1,0 +1,13 @@
+{
+  "status": "functionality_passed_visual_review_pending",
+  "notebook_executed_code_cells": 89,
+  "notebook_errors": 0,
+  "tests_passed": 11,
+  "server_http_health": 200,
+  "notebook_dashboard_comparisons_passed": 5,
+  "source_files_sha256_verified": 26,
+  "previous_notebook_and_clean_analysis_inputs_unchanged": true,
+  "screenshots": 0,
+  "visual_review": "Unavailable: browser inventory empty and native Computer Use pipe disconnected",
+  "api_error_and_timer_tests": "simulated; no live API fetch during verification"
+}
